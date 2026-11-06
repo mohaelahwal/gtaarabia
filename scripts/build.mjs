@@ -1,3 +1,4 @@
+import {renderLeaks} from '../leaks.js';
 import {addGuides,enhanceHTML,writeSEO} from './seo.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -7,6 +8,7 @@ import {routeFile} from '../routes.js';
 console.log('Validated',checkSite());
 const read=async n=>JSON.parse(await fs.readFile('data/'+n+'.json','utf8'));
 const [config,posts,videos,research,catalog]=await Promise.all(['config','posts','videos','research','catalog'].map(read));
+const leaks=await read('leaks');
 posts.splice(0,posts.length,...sortPosts(posts));
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base=config.siteUrl.replace(/\/$/,'');
@@ -24,9 +26,10 @@ for(const p of all){
  if(p.route==='about')p.body='<h2>مجتمع عربي مستقل</h2><p>GTA Arabia موقع يديره كاتب واحد لتقديم تغطية عربية لعالم Grand Theft Auto. لا نتبع روكستار أو Take-Two. نربط الأخبار بمصادرها ونميز التحليل عن المعلومات المؤكدة.</p><h2>المصادر والصور</h2><p>صور اللعبة وشعاراتها لأصحابها. تضم صفحات المقالات روابط المصادر وتواريخ النشر. الخريطة مقدمة للمجتمع ولا تمثل خريطة نهائية موثقة.</p><h2>الخصوصية</h2><p>لا يجمع الموقع البريد الإلكتروني ولا يتيح حسابات مستخدمين. مشغلات يوتيوب الخارجية قد تعالج بيانات الاستخدام وفق سياسة مزودها.</p>';
  if(p.route==='news'||p.route==='stories'){const subset=posts.filter(post=>post.category===(p.route==='news'?'أخبار':'عالم اللعبة'));p.body=subset.map(post=>`<article><a href="${routeFile('post/'+post.id)}"><h2>${esc(post.title)}</h2></a><time datetime="${post.date}">${post.date}</time><p>${esc(post.excerpt)}</p></article>`).join('');}
 }
+add('leaks','تسريبات GTA 6 بالعربية','لقطات ومعلومات متداولة عن GTA VI، مع توضيح أنها غير مؤكدة.',renderLeaks(leaks),'assets/leonida.jpg');
 addGuides(all);
 await fs.mkdir('dist',{recursive:true});for(const name of await fs.readdir('dist'))await fs.rm('dist/'+name,{recursive:true,force:true});
-for(const f of ['style.css','app.js','routes.js','map.js','content.js','transitions.js','ads.js','assets','data'])await fs.cp(f,'dist/'+f,{recursive:true});
+for(const f of ['leaks.js','style.css','app.js','routes.js','map.js','content.js','transitions.js','ads.js','assets','data'])await fs.cp(f,'dist/'+f,{recursive:true});
 for(const p of all){const depth=p.file.split('/').length-1,rel=depth?'../'.repeat(depth):'./';let html=template.replace('<head>',`<head><base href="${rel}">`).replace('<body>',`<body data-route="${p.route}">`).replace(/<title>.*?<\/title>/,`<title>${esc(p.title)} | GTA Arabia</title>`).replace(/<meta name="description"[^>]*>/,`<meta name="description" content="${esc(p.description)}">`).replace('<main id="main"></main>',`<main id="main"><article class="${p.route==='map'?'section map-section':'article'}"><h1 class="${p.route==='map'?'sr-only':''}">${esc(p.title)}</h1>${p.body}</article></main>`);
  html=html.replace(/href="#([^"\s]+)"/g,(whole,r)=>r==='main'?whole:`href="${routeFile(r)}" data-route="${r}"`);
  const canonical=base?base+'/'+p.file:'';

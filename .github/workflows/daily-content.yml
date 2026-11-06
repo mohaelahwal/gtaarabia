@@ -41,6 +41,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}
         run: npm run update
+      - name: Discover GTA VI leaks from the approved public account
+        if: ${{ !cancelled() }}
+        env:
+          AUTOMATION_ENABLED: 'true'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}
+        run: node scripts/update-leaks.mjs
       - name: Validate website before publishing
         run: npm test && npm run build && npm run check:seo
       - uses: actions/upload-artifact@v4
@@ -55,11 +62,11 @@ jobs:
         run: |
           echo 'publish=false' >> "$GITHUB_OUTPUT"
           if [ "$AUTO_PUBLISH" != 'true' ]; then exit 0; fi
-          if ! node -e "const r=JSON.parse(require('fs').readFileSync('drafts/report.json'));process.exit(r.status==='ready-to-publish'?0:1)"; then exit 0; fi
+          if ! node -e "const fs=require('fs');const ok=['drafts/report.json','drafts/leaks-report.json'].some(f=>fs.existsSync(f)&&JSON.parse(fs.readFileSync(f)).status==='ready-to-publish');process.exit(ok?0:1)"; then exit 0; fi
           git config user.name 'GTA Arabia Bot'
           git config user.email 'gta-arabia-bot@users.noreply.github.com'
-          mkdir -p assets/discovered
-          git add data/posts.json data/videos.json data/catalog.json data/research.json data/map-locations.json assets/discovered/ data/automation-state.json
+          mkdir -p assets/discovered assets/leaks
+          git add data/leaks.json automation/leak-sources.json data/posts.json data/videos.json data/catalog.json data/research.json data/map-locations.json assets/ data/automation-state.json
           if git diff --staged --quiet; then exit 0; fi
           git commit -m 'Publish verified Arabic content updates'
           git push

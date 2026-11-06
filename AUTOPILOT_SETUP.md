@@ -78,3 +78,12 @@ Those numbers are format examples, NOT a real location. Allowed map types: city,
 - https://ai.google.dev/gemini-api/docs/google-search
 - https://ai.google.dev/gemini-api/docs/models
 - https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
+
+## Leaks section (التسريبات)
+The complete upload includes a gold navigation item and a dedicated Arabic /leaks/ page. It shows a maximum of four newest eligible records, not four fabricated placeholders. On inspection, the public visitor timeline had four GTA VI posts but only TWO claiming leaks (cheat codes and house cleaning). The car meme and flight-path artwork were excluded. These claims are labeled unconfirmed, never promoted to confirmed news/catalog records.
+
+The two seeded records use original media CDN URLs. Download requests returned HTTP 403 in the editing environment; actual visitor image/video loading is NOT verified. The page shows an Arabic fallback if media fails. Supplying the image/video files would allow reliable local hosting. Videos attempt muted autoplay with controls; users can enable audio. Browser policy determines autoplay availability.
+
+The separate update-leaks.mjs step runs in the same 7 AM Qatar workflow. It reads only the public visitor HTML at the configured exact account, validates the author, filters GTA VI leak claims, excludes unrelated/fan content, summarizes in Arabic and deduplicates by post ID/content. It never asks for an X login. Timeline HTML can change or be limited; if unreadable it preserves existing content and reports the issue. Future accepted media must successfully download and validate before being added. Source records stay in automation/leak-sources.json for maintenance, excluded from the deployed site. This file is still visible in a public GitHub repository; only the visitor-facing site omits source/account links.
+
+Draft artifacts include leaks-preview.html and leaks-report.json. Review these alongside the original news draft reports. Daily automation is NOT enabled by installing this package. The previous Gemini access/model/quota failure remains undiagnosed until report.json is inspected; API warnings now also appear in the Actions summary.

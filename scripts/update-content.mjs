@@ -12,7 +12,7 @@ export async function runAutomation({root=process.cwd(),env=process.env,fetchImp
  const publish=env.AUTO_PUBLISH==='true';
  const report={status:'started',mode:publish?'publish':'draft',startedAt:now.toISOString(),timezone:'Asia/Qatar',schedule:'07:00 Asia/Qatar (04:00 UTC)',sourcesChecked:[],warnings:[]};
  await fs.mkdir(path.join(root,'drafts'),{recursive:true});
- const finish=async(status,message)=>{report.status=status;report.message=message;await write('drafts/report.json',JSON.stringify(report,null,2));const summary=`## GTA Arabia daily content\n\n**Result:** ${status}\n\n${message}\n\nSchedule: 07:00 Doha (04:00 UTC). Mode: ${report.mode}.\n\n${report.articleTitle?'Article: '+esc(report.articleTitle)+'\n\n':''}Download the content-drafts artifact for report.json and, when created, preview.html.\n`;await write('drafts/summary.md',summary);if(env.GITHUB_STEP_SUMMARY)await fs.appendFile(env.GITHUB_STEP_SUMMARY,summary);return report};
+ const finish=async(status,message)=>{report.status=status;report.message=message;await write('drafts/report.json',JSON.stringify(report,null,2));const summary=`## GTA Arabia daily content\n\n**Result:** ${status}\n\n${message}\n\nSchedule: 07:00 Doha (04:00 UTC). Mode: ${report.mode}.\n\n${report.warnings.map(w=>'- '+w).join('\n')}\n\n${report.articleTitle?'Article: '+esc(report.articleTitle)+'\n\n':''}Download the content-drafts artifact for report.json and, when created, preview.html.\n`;await write('drafts/summary.md',summary);if(env.GITHUB_STEP_SUMMARY)await fs.appendFile(env.GITHUB_STEP_SUMMARY,summary);return report};
  try{
   const key=env.GEMINI_API_KEY,model=env.GEMINI_TEXT_MODEL||cfg.textModel;
   if(!key||!model)throw Error('GEMINI_API_KEY secret and a text model are required.');

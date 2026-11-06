@@ -2195,6 +2195,11 @@
     "title": "مضرب البيسبول"
   },
   {
+    "route": "leaks",
+    "file": "leaks/index.html",
+    "title": "تسريبات GTA 6 بالعربية"
+  },
+  {
     "route": "guide",
     "file": "guide/index.html",
     "title": "دليل GTA Arabia: أخبار GTA 6 والخريطة والمقارنات"
