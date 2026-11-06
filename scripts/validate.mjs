@@ -15,6 +15,12 @@ export function validatePost(p){
 export function checkSite(root=process.cwd()){
  const read=n=>JSON.parse(fs.readFileSync(path.join(root,'data',n+'.json')));
  const posts=read('posts'),videos=read('videos'),config=read('config');
+ const localImage=p=>{if(typeof p!=='string'||!p.startsWith('assets/')||p.includes('..')||!fs.existsSync(path.join(root,p)))throw Error('Invalid or missing local media')};
+ const catalog=read('catalog'),research=read('research'),locations=read('map-locations');
+ for(const rows of [catalog.vehicles,catalog.weapons]){const seen=new Set();for(const row of rows){if(!/^[a-z0-9-]+$/.test(row.id)||seen.has(row.id))throw Error('Invalid catalog ID');seen.add(row.id);localImage(row.image);if(!row.name||!row.description||!Array.isArray(row.facts))throw Error('Invalid catalog record')}}
+ for(const c of research.characters)if(c.updatedAt){localImage(c.image);if(!c.name||!c.nameAr||!c.source)throw Error('Invalid character')}
+ const pins=new Set();for(const p of locations){if(!/^[a-z0-9-]+$/.test(p.id)||pins.has(p.id)||!Number.isFinite(p.x)||!Number.isFinite(p.y)||p.x<0||p.x>2048||p.y<0||p.y>2048)throw Error('Invalid map pin');pins.add(p.id);for(const photo of p.photos||[])localImage(photo.src)}
+
  const ids=new Set;for(const p of posts){validatePost(p);if(ids.has(p.id))throw Error('Duplicate post');ids.add(p.id);if(!fs.existsSync(path.join(root,p.image)))throw Error('Missing image '+p.image)}
  const vids=new Set;for(const v of videos){if(!/^[\w-]{11}$/.test(v.id)||vids.has(v.id))throw Error('Invalid/duplicate video');vids.add(v.id);if(!v.title||!v.publisher)throw Error('Missing video metadata');if(v.thumbnail.startsWith('assets/')&&!fs.existsSync(path.join(root,v.thumbnail)))throw Error('Missing thumbnail')}
  for(const u of [config.siteUrl,config.subscribeUrl,config.donationUrl,...Object.values(config.socials)])if(u&&new URL(u).protocol!=='https:')throw Error('Configured URLs must use HTTPS');

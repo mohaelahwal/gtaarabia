@@ -1,0 +1,226 @@
+[
+  {
+    "id": "vice-city",
+    "name": "فايس سيتي",
+    "type": "city",
+    "x": 1060,
+    "y": 1110,
+    "official": true
+  },
+  {
+    "id": "port-gellhorn",
+    "name": "بورت غيلهورن",
+    "type": "city",
+    "x": 390,
+    "y": 600,
+    "official": true
+  },
+  {
+    "id": "ambrosia",
+    "name": "أمبروسيا",
+    "type": "city",
+    "x": 780,
+    "y": 830,
+    "official": true
+  },
+  {
+    "id": "mount-kalaga",
+    "name": "منتزه جبل كالاغا",
+    "type": "nature",
+    "x": 635,
+    "y": 338,
+    "official": true
+  },
+  {
+    "id": "grassrivers",
+    "name": "غراس ريفرز",
+    "type": "nature",
+    "x": 690,
+    "y": 1590,
+    "official": true
+  },
+  {
+    "id": "leonida-keys",
+    "name": "ليونيدا كيز",
+    "type": "island",
+    "x": 820,
+    "y": 1840,
+    "official": true
+  },
+  {
+    "id": "vice-beach",
+    "name": "فايس بيتش",
+    "type": "beach",
+    "x": 1260,
+    "y": 1180,
+    "official": false
+  },
+  {
+    "id": "ocean-beach",
+    "name": "أوشن بيتش",
+    "type": "beach",
+    "x": 1263,
+    "y": 1146,
+    "official": false
+  },
+  {
+    "id": "washington-beach",
+    "name": "واشنطن بيتش",
+    "type": "beach",
+    "x": 1250,
+    "y": 1038,
+    "official": false
+  },
+  {
+    "id": "downtown",
+    "name": "وسط فايس سيتي",
+    "type": "city",
+    "x": 1010,
+    "y": 1220,
+    "official": false
+  },
+  {
+    "id": "little-cuba",
+    "name": "ليتل كوبا",
+    "type": "city",
+    "x": 978,
+    "y": 1176,
+    "official": false
+  },
+  {
+    "id": "rockridge",
+    "name": "روكريدج",
+    "type": "city",
+    "x": 950,
+    "y": 1112,
+    "official": false
+  },
+  {
+    "id": "airport",
+    "name": "مطار فايس سيتي V.C.I.A.",
+    "type": "transport",
+    "x": 806,
+    "y": 1254,
+    "official": false
+  },
+  {
+    "id": "port-vice-city",
+    "name": "ميناء فايس سيتي",
+    "type": "transport",
+    "x": 1167,
+    "y": 1270,
+    "official": false
+  },
+  {
+    "id": "lake-leonida",
+    "name": "بحيرة ليونيدا",
+    "type": "nature",
+    "x": 920,
+    "y": 755,
+    "official": false
+  },
+  {
+    "id": "sundown",
+    "name": "سانداون",
+    "type": "city",
+    "x": 1014,
+    "y": 323,
+    "official": false
+  },
+  {
+    "id": "backtown",
+    "name": "باكتاون",
+    "type": "city",
+    "x": 160,
+    "y": 210,
+    "official": false
+  },
+  {
+    "id": "bohemia",
+    "name": "بوهيميا",
+    "type": "city",
+    "x": 465,
+    "y": 265,
+    "official": false
+  },
+  {
+    "id": "redhill",
+    "name": "ريدهيل",
+    "type": "city",
+    "x": 711,
+    "y": 510,
+    "official": false
+  },
+  {
+    "id": "seaview",
+    "name": "سيفيو",
+    "type": "city",
+    "x": 420,
+    "y": 1245,
+    "official": false
+  },
+  {
+    "id": "watson-bay",
+    "name": "خليج واتسون",
+    "type": "nature",
+    "x": 620,
+    "y": 1507,
+    "official": false
+  },
+  {
+    "id": "sunset-key",
+    "name": "سانسيت كي",
+    "type": "island",
+    "x": 305,
+    "y": 1760,
+    "official": false
+  },
+  {
+    "id": "airward-key",
+    "name": "إيروارد كي",
+    "type": "island",
+    "x": 497,
+    "y": 1838,
+    "official": false
+  },
+  {
+    "id": "key-lento",
+    "name": "كي لينتو",
+    "type": "island",
+    "x": 850,
+    "y": 1785,
+    "official": false
+  },
+  {
+    "id": "gator-key",
+    "name": "غيتور كي",
+    "type": "island",
+    "x": 666,
+    "y": 1886,
+    "official": false
+  },
+  {
+    "id": "hessen",
+    "name": "هيسن",
+    "type": "island",
+    "x": 1690,
+    "y": 1600,
+    "official": false
+  },
+  {
+    "id": "virgin-key",
+    "name": "فيرجن كي",
+    "type": "island",
+    "x": 1132,
+    "y": 1379,
+    "official": false
+  },
+  {
+    "id": "shark-island",
+    "name": "شارك آيلاند",
+    "type": "island",
+    "x": 1252,
+    "y": 1313,
+    "official": false
+  }
+]

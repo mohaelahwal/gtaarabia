@@ -1,13 +1,43 @@
 {
   "enabled": false,
-  "allowedHosts": ["www.rockstargames.com", "www.playstation.com", "blog.playstation.com", "news.xbox.com"],
+  "allowedHosts": [
+    "www.rockstargames.com",
+    "www.playstation.com",
+    "blog.playstation.com",
+    "news.xbox.com",
+    "gta.wiki",
+    "gta.fandom.com"
+  ],
   "sourcePages": [
     "https://www.rockstargames.com/VI",
-    "https://www.rockstargames.com/VI/only-in-leonida",
-    "https://www.playstation.com/en-ca/support/games/gta-vi-support/"
+    "https://gta.wiki/w/Vehicles_in_GTA_VI",
+    "https://gta.wiki/w/Weapons_in_GTA_VI"
   ],
-  "discoveryPages": ["https://www.rockstargames.com/newswire", "https://blog.playstation.com/?s=Grand+Theft+Auto+VI"],
-  "maxSources": 5,
+  "discoveryPages": [
+    "https://www.rockstargames.com/newswire",
+    "https://blog.playstation.com/?s=Grand+Theft+Auto+VI"
+  ],
+  "maxSources": 14,
   "maxCharactersPerSource": 16000,
-  "notes": "Enable only after API model and billing setup. Discovery pages are used to discover new allowlisted article URLs, not as factual source text."
+  "notes": "Seven-category discovery. News/events need a publication date within 72h. Catalog reference pages may be evergreen. Compare all existing entries; exact evidence + independent review + sourced image required. Missing media/coordinates remain drafts. Manual draft never publishes.",
+  "textModel": "gemini-3.8-flash",
+  "maxAgeHours": 72,
+  "maxCandidates": 35,
+  "timezone": "Asia/Qatar",
+  "scheduleUTC": "0 4 * * *",
+  "maxCandidatesPerCategory": 4,
+  "maxChanges": 10,
+  "mediaHosts": [
+    "www.rockstargames.com",
+    "media.rockstargames.com",
+    "videos-rockstargames-com.akamaized.net",
+    "media-rockstargames-com.akamaized.net",
+    "gta.wiki",
+    "static.wikia.nocookie.net",
+    "i.ytimg.com",
+    "blog.playstation.com",
+    "live.staticflickr.com",
+    "news.xbox.com",
+    "assets.xboxservices.com"
+  ]
 }

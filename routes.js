@@ -5,6 +5,7 @@ export function routeFile(route='home'){
  if(page==='post'&&/^[a-z0-9-]+$/.test(id))return `articles/${id}/index.html`;
  if(page==='video'&&/^[\w-]{11}$/.test(id))return `videos/${id}/index.html`;
  if(page==='character'&&characterSlugs[Number(id)])return `characters/${characterSlugs[Number(id)]}/index.html`;
+ if(page==='character'&&/^\d+$/.test(id))return `characters/entry-${id}/index.html`;
  if(page==='vehicle'&&/^[a-z0-9-]+$/.test(id))return `vehicles/${id}/index.html`;
  if(page==='weapon'&&/^[a-z0-9-]+$/.test(id))return `weapons/${id}/index.html`;
  return sections[page]||'404.html';

@@ -84,3 +84,15 @@ Navigation/branding update: moved video library before news, pink neon navigatio
 - Moved the location search from the sidebar into the top-right map overlay, raising the selected location gallery.
 - Removed the SVG's rectangular water fill and applied one continuous viewport gradient; no rectangle edge when zooming, dragging or rotating.
 - Moved the compass below search and excluded form controls from map dragging.
+
+## Daily news automation — 2026-11-06
+- Changed cron to 0 4 * * * (7 AM Doha/Qatar); actual GitHub start may be delayed.
+- Added Google Search-grounded candidate discovery with a separate JSON writing/review stage; approved publishers only, 72-hour publication-date gate, normalized URL/fingerprint/title and semantic deduplication.
+- Manual draft runs bypass the scheduling enable gate but always remain non-publishing. Scheduled runs require AUTOMATION_ENABLED=true; publishing also requires AUTO_PUBLISH=true.
+- Added standalone Arabic preview.html, local cover, article JSON, report.json and Actions summary/artifact including no-news and failure reporting.
+- Default Gemini model: gemini-3.8-flash, configurable through GEMINI_TEXT_MODEL.
+- Added automation integration/unit tests with mocked Gemini/source responses. Live Gemini/API-key/Actions test remains pending in user's GitHub account; no secret was available in workspace and no daily publishing flag was remotely enabled.
+- AUTOPILOT_SETUP.md explains installation, live draft test, enablement and pause controls.
+
+## 2026-11-06 — Seven-category autopilot update
+Replaced the one-article pipeline with category-specific grounded discovery and existing-inventory reconciliation for news, videos, vehicles, weapons, characters, map locations and events. Mandatory sourced local media, byte validation, image-input relevance review, publisher-linked YouTube oEmbed checks, independent fact/novelty review, per-item held reasons and before/after previews. No generic archive/AI-image fallback. Events appear under news with an events filter and date. New character routes extend beyond the original cast. Map pins migrated to data/map-locations.json; new positions require reviewed map-placements.json, never model coordinates. Existing 28 positions preserved. Draft mode makes no public data/media writes; publication stages only accepted candidates after validation. 07:00 Asia/Qatar schedule remains gated by repository variables. No live API invocation, remote repository push or schedule enablement was performed here.

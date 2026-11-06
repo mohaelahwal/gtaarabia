@@ -12,3 +12,5 @@ test('catalog has distinct sourced entries and matching local assets',()=>{const
 test('official background video is bundled',()=>assert.ok(fs.statSync('assets/hero-bg.mp4').size>100000));
 import {sortPosts} from '../content.js';
 test('news sorting puts newest publication first without mutating input',()=>{const input=[{id:'old',date:'2026-10-15'},{id:'today',date:'2026-11-05'},{id:'middle',date:'2026-10-30'}];assert.deepEqual(sortPosts(input).map(p=>p.id),['today','middle','old']);assert.equal(input[0].id,'old');assert.equal(sortPosts([{date:'2026-11-05',publishedAt:'2026-11-05T10:00:00Z'},{date:'2026-11-05',publishedAt:'2026-11-05T12:00:00Z'}])[0].publishedAt,'2026-11-05T12:00:00Z')});
+
+test('new character pages have stable unique routes beyond original cast',()=>{assert.equal(routeFile('character/9'),'characters/entry-9/index.html');assert.notEqual(routeFile('character/10'),routeFile('character/9'))});
