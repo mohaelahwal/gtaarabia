@@ -9,24 +9,22 @@
     "gta.fandom.com"
   ],
   "sourcePages": [
-    "https://www.rockstargames.com/VI",
-    "https://gta.wiki/w/Vehicles_in_GTA_VI",
-    "https://gta.wiki/w/Weapons_in_GTA_VI"
+    "https://www.rockstargames.com/VI"
   ],
   "discoveryPages": [
     "https://www.rockstargames.com/newswire",
     "https://blog.playstation.com/?s=Grand+Theft+Auto+VI"
   ],
-  "maxSources": 14,
+  "maxSources": 4,
   "maxCharactersPerSource": 16000,
-  "notes": "Seven-category discovery. News/events need a publication date within 72h. Catalog reference pages may be evergreen. Compare all existing entries; exact evidence + independent review + sourced image required. Missing media/coordinates remain drafts. Manual draft never publishes.",
+  "notes": "News and leaks only. At most two news articles and one new leak per run; seven Gemini calls maximum shared across both steps, spaced 16 seconds apart. No quota retry. Keep existing libraries unchanged. No new eligible content means no publication. Draft mode never publishes.",
   "textModel": "gemini-3.8-flash",
   "maxAgeHours": 72,
-  "maxCandidates": 35,
+  "maxCandidates": 6,
   "timezone": "Asia/Qatar",
   "scheduleUTC": "0 4 * * *",
-  "maxCandidatesPerCategory": 4,
-  "maxChanges": 10,
+  "maxCandidatesPerCategory": 3,
+  "maxChanges": 2,
   "mediaHosts": [
     "www.rockstargames.com",
     "media.rockstargames.com",
@@ -39,5 +37,12 @@
     "live.staticflickr.com",
     "news.xbox.com",
     "assets.xboxservices.com"
-  ]
+  ],
+  "categories": [
+    "news"
+  ],
+  "maxLeaksPerRun": 1,
+  "maxGeminiRequestsPerRun": 7,
+  "geminiMinIntervalMs": 16000,
+  "maxNewsPerRun": 2
 }

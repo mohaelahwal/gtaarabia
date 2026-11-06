@@ -36,3 +36,12 @@ test('media extraction only uses source HTML/JSONLD links',()=>{const result=ext
 test('media redirects cannot reach unapproved/private hosts',async()=>{await assert.rejects(fetchImage(imageURL,['media.rockstargames.com'],async()=>new Response('',{status:302,headers:{location:'https://127.0.0.1/private'}})),/Unapproved/)});
 test('alias matching blocks spelling duplicates',()=>assert.throws(()=>findExisting({...base,action:'add',name:'DreQuan',category:'characters'},[{name:'Dre Quan',nameAr:'دري'}]),/duplicate/));
 test('publication validation ignores modified/footer dates and rejects future dates',()=>{assert.equal(publicationDate('<footer>2026-11-06</footer>'),null);assert.equal(isRecent(Date.parse('2027-01-01'),now,72),false);assert.equal(allowedURL('https://user@www.rockstargames.com/x',['www.rockstargames.com']),false)});
+
+test('news-only configuration searches once and rejects other categories',async t=>{
+ const root=await setup(t);const cfg=await read(root,'automation');Object.assign(cfg,{categories:['news'],maxChanges:2});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));
+ const f=fixture([{...base,category:'news'},{...base,category:'vehicles',id:'unwanted',name:'Unwanted'}]);
+ const r=await runAutomation({root,env:{...env,AUTO_PUBLISH:'true'},fetchImpl:f.fetchImpl,now});
+ assert.deepEqual(Object.keys(r.categories),['news']);assert.equal(r.changes[1].status,'held');assert.deepEqual((await read(root,'catalog')).vehicles,[]);
+ assert.equal(f.requests.filter(u=>u.includes('generativelanguage')).length,4);
+ const repeat=fixture();const r2=await runAutomation({root,env,fetchImpl:repeat.fetchImpl,now});assert.equal(r2.status,'no-new-news');assert.equal(repeat.requests.filter(u=>u.includes('generativelanguage')).length,1);
+});

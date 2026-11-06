@@ -1,3 +1,18 @@
+# News and leaks automation — November 6, 2026
+
+Current configuration supersedes earlier all-category instructions.
+
+- Only news and leaks are updated automatically. Existing videos, vehicles, weapons, characters, events and map pins remain unchanged.
+- Maximum two news articles and one new/changed leak per daily run. News may include a verified source-linked video inside its article.
+- Maximum SEVEN Gemini requests per workflow run, with at least 16 seconds between requests. This is a per-run cap, not a project-wide daily quota. Other apps and manual reruns consume the same project quota.
+- News requires fresh dated evidence, duplicate checks, supported claims and a verified relevant image. Unchanged previously published evidence skips generation.
+- Leaks are restricted to TheMemeVerseHq GTA VI leak claims. Unchanged existing claims skip translation. Media must download successfully for new additions; unavailable items stay unpublished.
+- If X refuses public access, preserve existing leaks and report source-unavailable. This does not solve X access restrictions; news can still proceed.
+- Gemini 429/401/403 stops further API calls in the run. The report includes the provider error with the key redacted. No automatic retries or key rotation.
+- Schedule remains 07:00 Asia/Qatar (04:00 UTC). No remote settings were changed.
+
+
+
 # Changes
 
 ## 1.0.0 — 2026-11-05
