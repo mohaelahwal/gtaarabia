@@ -1,0 +1,9 @@
+# Public content is available to search crawlers, including AI search.
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /scripts/
+Disallow: /templates/
+Disallow: /tests/
+
+Sitemap: https://www.gtaarabia.com/sitemap.xml

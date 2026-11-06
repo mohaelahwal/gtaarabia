@@ -1,0 +1,448 @@
+{
+  "checkedAt": "2026-11-05",
+  "releaseDate": "2026-11-19",
+  "releaseTimePolicy": "PlayStation official support says midnight local time. Use visitor-local midnight and label this as PS5 local release, or date-only countdown. Do not imply a universal UTC release time.",
+  "releaseSources": [
+    "https://www.rockstargames.com/VI",
+    "https://www.playstation.com/en-ca/support/games/gta-vi-support/"
+  ],
+  "characters": [
+    {
+      "name": "Jason Duval",
+      "nameAr": "جيسون دوفال",
+      "description": "أحد بطلي القصة. خدم في الجيش ثم عمل مع مهربين محليين في منطقة كيز.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Lucia Caminos",
+      "nameAr": "لوسيا كامينوس",
+      "description": "بطلة القصة. خرجت من السجن وتسعى إلى حياة أفضل بخطة جديدة.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Cal Hampton",
+      "nameAr": "كال هامبتون",
+      "description": "صديق جيسون وأحد معارف برايان.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Boobie Ike",
+      "nameAr": "بوبي آيك",
+      "description": "شخصية معروفة في فايس سيتي وله أعمال في العقارات والموسيقى.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Dre’Quan Priest",
+      "nameAr": "دري كوان بريست",
+      "description": "يسعى لبناء مسيرته في مجال الموسيقى.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Real Dimez",
+      "nameAr": "ريل دايمز",
+      "description": "ثنائي موسيقي يضم باي لوكس وروكسي.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Raul Bautista",
+      "nameAr": "راؤول باوتيستا",
+      "description": "سارق بنوك متمرس يبحث عن شركاء مستعدين للمخاطرة.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Brian Heder",
+      "nameAr": "برايان هيدر",
+      "description": "مهرب مخضرم يعمل في منطقة كيز.",
+      "status": "confirmed",
+      "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Vice City",
+      "nameAr": "فايس سيتي",
+      "source": "https://www.rockstargames.com/VI/media/artwork-wallpapers",
+      "status": "confirmed name; coordinates not verified"
+    },
+    {
+      "name": "Leonida Keys",
+      "nameAr": "جزر ليونيدا كيز",
+      "source": "https://www.rockstargames.com/VI/media/artwork-wallpapers",
+      "status": "confirmed name; coordinates not verified"
+    },
+    {
+      "name": "Grassrivers",
+      "nameAr": "غراس ريفرز",
+      "source": "https://www.rockstargames.com/VI/media/artwork-wallpapers",
+      "status": "confirmed name; coordinates not verified"
+    },
+    {
+      "name": "Port Gellhorn",
+      "nameAr": "بورت غيلهورن",
+      "source": "https://www.rockstargames.com/VI/media/artwork-wallpapers",
+      "status": "confirmed name; coordinates not verified"
+    },
+    {
+      "name": "Ambrosia",
+      "nameAr": "أمبروسيا",
+      "source": "https://www.rockstargames.com/VI/media/artwork-wallpapers",
+      "status": "confirmed name; coordinates not verified"
+    },
+    {
+      "name": "Mount Kalaga National Park",
+      "nameAr": "منتزه جبل كالاغا الوطني",
+      "source": "https://www.rockstargames.com/VI/media/artwork-wallpapers",
+      "status": "confirmed name; coordinates not verified"
+    }
+  ],
+  "returningCharacters": {
+    "status": "No returning legacy protagonist confirmation established by this research. Do not portray Tommy, CJ, Michael, Trevor or Franklin as confirmed GTA VI characters."
+  },
+  "mapCaveat": "Names of six regions verified; no authoritative map coordinates obtained. Any custom map must be labelled an illustrative unofficial layout, not an accurate gameplay map.",
+  "videos": [
+    {
+      "id": "rz1B4B2yBZY",
+      "title": "تريلر الإطلاق الرسمي",
+      "originalTitle": "Grand Theft Auto VI Launch Trailer",
+      "publisher": "Rockstar Games",
+      "channelUrl": "https://www.youtube.com/@RockstarGames",
+      "url": "https://www.youtube.com/watch?v=rz1B4B2yBZY",
+      "thumbnail": "https://i.ytimg.com/vi/rz1B4B2yBZY/hqdefault.jpg",
+      "category": "رسمي",
+      "official": true,
+      "caption": "فيديو رسمي من روكستار. العنوان والوصف بالعربية؛ لغة الفيديو والترجمة تعتمد على إعدادات يوتيوب.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "tJbzMqJGH4k",
+      "title": "نظرة موسعة على عالم GTA VI",
+      "originalTitle": "Grand Theft Auto VI: An Extended Look",
+      "publisher": "Rockstar Games",
+      "channelUrl": "https://www.youtube.com/@RockstarGames",
+      "url": "https://www.youtube.com/watch?v=tJbzMqJGH4k",
+      "thumbnail": "https://i.ytimg.com/vi/tJbzMqJGH4k/hqdefault.jpg",
+      "category": "رسمي",
+      "official": true,
+      "caption": "فيديو رسمي من روكستار. العنوان والوصف بالعربية؛ لغة الفيديو والترجمة تعتمد على إعدادات يوتيوب.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "VQRLujxTm3c",
+      "title": "التريلر الرسمي الثاني",
+      "originalTitle": "Grand Theft Auto VI Trailer 2",
+      "publisher": "Rockstar Games",
+      "channelUrl": "https://www.youtube.com/@RockstarGames",
+      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
+      "thumbnail": "https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg",
+      "category": "رسمي",
+      "official": true,
+      "caption": "فيديو رسمي من روكستار. العنوان والوصف بالعربية؛ لغة الفيديو والترجمة تعتمد على إعدادات يوتيوب.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "QdBZY2fkU-0",
+      "title": "التريلر الرسمي الأول",
+      "originalTitle": "Grand Theft Auto VI Trailer 1",
+      "publisher": "Rockstar Games",
+      "channelUrl": "https://www.youtube.com/@RockstarGames",
+      "url": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
+      "thumbnail": "https://i.ytimg.com/vi/QdBZY2fkU-0/hqdefault.jpg",
+      "category": "رسمي",
+      "official": true,
+      "caption": "فيديو رسمي من روكستار. العنوان والوصف بالعربية؛ لغة الفيديو والترجمة تعتمد على إعدادات يوتيوب.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "9zVIy_La7nk",
+      "title": "تحليل تقني: رسوم التريلر الثاني",
+      "originalTitle": "Grand Theft Auto 6 Trailer 2 Tech Breakdown - Incredible Realism, Impressive RT, Astonishing Detail",
+      "publisher": "Digital Foundry",
+      "channelUrl": "https://www.youtube.com/@DigitalFoundry",
+      "url": "https://www.youtube.com/watch?v=9zVIy_La7nk",
+      "thumbnail": "https://i.ytimg.com/vi/9zVIy_La7nk/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من Digital Foundry؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "aU1giydNzzE",
+      "title": "كيف تطورت واقعية الرسوم؟",
+      "originalTitle": "GTA 6 Graphics: How Rockstar Set a New Photorealism Standard | IGN x Digital Foundry",
+      "publisher": "IGN",
+      "channelUrl": "https://www.youtube.com/@IGN",
+      "url": "https://www.youtube.com/watch?v=aU1giydNzzE",
+      "thumbnail": "https://i.ytimg.com/vi/aU1giydNzzE/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من IGN؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "8w3x0DOj3-k",
+      "title": "٩٩ تفصيلاً في العرض الموسع",
+      "originalTitle": "99 Details in the GTA 6 Extended Look",
+      "publisher": "IGN",
+      "channelUrl": "https://www.youtube.com/@IGN",
+      "url": "https://www.youtube.com/watch?v=8w3x0DOj3-k",
+      "thumbnail": "https://i.ytimg.com/vi/8w3x0DOj3-k/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من IGN؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "JmKZUB1NBag",
+      "title": "٨٩ تفصيلاً في التريلر الثاني",
+      "originalTitle": "89 Details From GTA 6 Trailer 2",
+      "publisher": "IGN",
+      "channelUrl": "https://www.youtube.com/@IGN",
+      "url": "https://www.youtube.com/watch?v=JmKZUB1NBag",
+      "thumbnail": "https://i.ytimg.com/vi/JmKZUB1NBag/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من IGN؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "GIxJZMBYl4M",
+      "title": "تفكيك التريلر الثاني: القصة والعالم",
+      "originalTitle": "GTA 6 Trailer 2 Breakdown",
+      "publisher": "GTA Series Videos",
+      "channelUrl": "https://www.youtube.com/@GTASeriesVideos",
+      "url": "https://www.youtube.com/watch?v=GIxJZMBYl4M",
+      "thumbnail": "https://i.ytimg.com/vi/GIxJZMBYl4M/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من GTA Series Videos؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "Y3dHqxY0pxY",
+      "title": "جولة تحليلية في خريطة ليونيدا",
+      "originalTitle": "A Detailed Tour of the GTA 6 Map! (Trailer 2 Update)",
+      "publisher": "JeffTutorials",
+      "channelUrl": "https://www.youtube.com/@jefftutorials",
+      "url": "https://www.youtube.com/watch?v=Y3dHqxY0pxY",
+      "thumbnail": "https://i.ytimg.com/vi/Y3dHqxY0pxY/hqdefault.jpg",
+      "category": "الخريطة",
+      "official": false,
+      "caption": "تحليل مستقل من JeffTutorials؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "5ed_Q3eHkUU",
+      "title": "السيارات والشخصيات والمواقع في التريلر الثاني",
+      "originalTitle": "GTA 6 FULL Trailer 2 Breakdown - All Cars, Characters, Map Locations, Story, & More!",
+      "publisher": "Digital Car Addict",
+      "channelUrl": "https://www.youtube.com/@DigitalCarAddict",
+      "url": "https://www.youtube.com/watch?v=5ed_Q3eHkUU",
+      "thumbnail": "https://i.ytimg.com/vi/5ed_Q3eHkUU/hqdefault.jpg",
+      "category": "السيارات",
+      "official": false,
+      "caption": "تحليل مستقل من Digital Car Addict؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "lrcY4MKPs9k",
+      "title": "٣٠ تفصيلاً ربما فاتك في التريلر الثاني",
+      "originalTitle": "GTA 6 TRAILER 2: 30 Details YOU MISSED! (GTA 6 Trailer 2 Breakdown)",
+      "publisher": "MrDalekJD",
+      "channelUrl": "https://www.youtube.com/@MrDalekJD",
+      "url": "https://www.youtube.com/watch?v=lrcY4MKPs9k",
+      "thumbnail": "https://i.ytimg.com/vi/lrcY4MKPs9k/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من MrDalekJD؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "Vt5kdeGoK_I",
+      "title": "أكثر من ١٠٠ إشارة وتفصيل مخفي",
+      "originalTitle": "GTA VI TRAILER BREAKDOWN! 100+ Easter Eggs You Missed! (Trailer 2)",
+      "publisher": "New Rockstars",
+      "channelUrl": "https://www.youtube.com/@NewRockstars",
+      "url": "https://www.youtube.com/watch?v=Vt5kdeGoK_I",
+      "thumbnail": "https://i.ytimg.com/vi/Vt5kdeGoK_I/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من New Rockstars؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "jraJeYXc2hs",
+      "title": "السيارات الظاهرة ونظيراتها الواقعية",
+      "originalTitle": "All Visible Cars in GTA 6 Trailer 2 | Real-Life Counterparts Revealed!",
+      "publisher": "Runner Unknown",
+      "channelUrl": "https://www.youtube.com/@RunnerUnknown",
+      "url": "https://www.youtube.com/watch?v=jraJeYXc2hs",
+      "thumbnail": "https://i.ytimg.com/vi/jraJeYXc2hs/hqdefault.jpg",
+      "category": "السيارات",
+      "official": false,
+      "caption": "تحليل مستقل من Runner Unknown؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "5QO8eoi4cBo",
+      "title": "سيارات GTA VI ومقارنتها بـ GTA V",
+      "originalTitle": "What Cars Are in GTA 6 So Far? (Trailer Breakdown + GTA 5 Matches)",
+      "publisher": "Evizcerate",
+      "channelUrl": "https://www.youtube.com/@Evizcerate",
+      "url": "https://www.youtube.com/watch?v=5QO8eoi4cBo",
+      "thumbnail": "https://i.ytimg.com/vi/5QO8eoi4cBo/hqdefault.jpg",
+      "category": "السيارات",
+      "official": false,
+      "caption": "تحليل مستقل من Evizcerate؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "HRv9zmYOPOw",
+      "title": "إشارات مخفية في الإعلان",
+      "originalTitle": "GTA 6 Trailer Easter Eggs Breakdown - Every detail you might've missed",
+      "publisher": "All Out Gaming",
+      "channelUrl": "https://www.youtube.com/@AllOutGaming",
+      "url": "https://www.youtube.com/watch?v=HRv9zmYOPOw",
+      "thumbnail": "https://i.ytimg.com/vi/HRv9zmYOPOw/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من All Out Gaming؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "w8w8NxkUy6c",
+      "title": "دليل شامل لما نعرفه عن اللعبة",
+      "originalTitle": "The COMPLETE No-Nonsense Guide To GTA6",
+      "publisher": "Jetro",
+      "channelUrl": "https://www.youtube.com/@JetroYT",
+      "url": "https://www.youtube.com/watch?v=w8w8NxkUy6c",
+      "thumbnail": "https://i.ytimg.com/vi/w8w8NxkUy6c/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من Jetro؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "1rjw7yD6H8Y",
+      "title": "ملخص المعلومات المتاحة عن GTA VI",
+      "originalTitle": "GTA 6 - EVERYTHING WE KNOW!",
+      "publisher": "T5G",
+      "channelUrl": "https://www.youtube.com/@T5G2",
+      "url": "https://www.youtube.com/watch?v=1rjw7yD6H8Y",
+      "thumbnail": "https://i.ytimg.com/vi/1rjw7yD6H8Y/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من T5G؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "3Z8mUzuCGKY",
+      "title": "تحليل أسلوب اللعب والصور الجديدة",
+      "originalTitle": "GTA 6 Gameplay Analysis: New Details, Previews & Screenshots",
+      "publisher": "GTA Series Videos",
+      "channelUrl": "https://www.youtube.com/@GTASeriesVideos",
+      "url": "https://www.youtube.com/watch?v=3Z8mUzuCGKY",
+      "thumbnail": "https://i.ytimg.com/vi/3Z8mUzuCGKY/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من GTA Series Videos؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "obiC2OzgThc",
+      "title": "تحليل تقني للتريلر الأول",
+      "originalTitle": "Grand Theft Auto 6 - DF Direct GTA 6 Special - Trailer 1 Tech Breakdown",
+      "publisher": "Digital Foundry",
+      "channelUrl": "https://www.youtube.com/@DigitalFoundry",
+      "url": "https://www.youtube.com/watch?v=obiC2OzgThc",
+      "thumbnail": "https://i.ytimg.com/vi/obiC2OzgThc/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من Digital Foundry؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "BUeeLF2agZY",
+      "title": "انطباعات IGN من معاينة اللعبة",
+      "originalTitle": "We’ve Seen GTA 6 Gameplay IRL - The First Preview",
+      "publisher": "IGN",
+      "channelUrl": "https://www.youtube.com/@IGN",
+      "url": "https://www.youtube.com/watch?v=BUeeLF2agZY",
+      "thumbnail": "https://i.ytimg.com/vi/BUeeLF2agZY/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من IGN؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "XpPpqZwUwl0",
+      "title": "٢٩ ملاحظة من الكشف الموسع",
+      "originalTitle": "Grand Theft Auto VI (GTA6) - 29 Biggest Takeaways From The Reveal",
+      "publisher": "GameSpot",
+      "channelUrl": "https://www.youtube.com/@gamespot",
+      "url": "https://www.youtube.com/watch?v=XpPpqZwUwl0",
+      "thumbnail": "https://i.ytimg.com/vi/XpPpqZwUwl0/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من GameSpot؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    },
+    {
+      "id": "bMq4OtZTigk",
+      "title": "٩٩ تفصيلاً في التريلر الأول",
+      "originalTitle": "99 Details From the GTA 6 Trailer",
+      "publisher": "IGN",
+      "channelUrl": "https://www.youtube.com/@IGN",
+      "url": "https://www.youtube.com/watch?v=bMq4OtZTigk",
+      "thumbnail": "https://i.ytimg.com/vi/bMq4OtZTigk/hqdefault.jpg",
+      "category": "تحليل",
+      "official": false,
+      "caption": "تحليل مستقل من IGN؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
+      "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rockstar GTA VI",
+      "url": "https://www.rockstargames.com/VI"
+    },
+    {
+      "title": "Official characters and places",
+      "url": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "title": "Official artwork and region postcards",
+      "url": "https://www.rockstargames.com/VI/media/artwork-wallpapers"
+    },
+    {
+      "title": "PlayStation launch support",
+      "url": "https://www.playstation.com/en-ca/support/games/gta-vi-support/"
+    },
+    {
+      "title": "Official launch gallery announcement",
+      "date": "2026-11-05",
+      "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery"
+    },
+    {
+      "title": "Launch trailer announcement",
+      "date": "2026-10-15",
+      "url": "https://www.rockstargames.com/newswire/article/517572321a549a/watch-the-grand-theft-auto-vi-launch-trailer"
+    },
+    {
+      "title": "Extended look announcement",
+      "date": "2026-08-27",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing"
+    }
+  ],
+  "limitations": [
+    "Video IDs, titles and channels verified via YouTube oEmbed, but actual playback, age restriction and geography were not tested. Include external YouTube links as fallback.",
+    "Older creator videos may mention superseded release dates. Show source and categorization.",
+    "No measured GTA VI vehicle or weapon performance stats established. Avoid fake numerical comparisons."
+  ]
+}

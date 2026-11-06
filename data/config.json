@@ -1,0 +1,25 @@
+{
+  "name": "GTA Arabia",
+  "siteUrl": "https://www.gtaarabia.com",
+  "releaseDate": "2026-11-19",
+  "releaseVerifiedAt": "2026-11-05",
+  "releaseSource": "https://www.playstation.com/en-ca/support/games/gta-vi-support/",
+  "socials": {
+    "youtube": "",
+    "instagram": "",
+    "tiktok": "",
+    "facebook": "",
+    "x": ""
+  },
+  "subscribeUrl": "",
+  "donationUrl": "",
+  "automationEnabled": false,
+  "ads": {
+    "enabled": false,
+    "publisherId": "",
+    "slots": {
+      "contentTop": "",
+      "contentBottom": ""
+    }
+  }
+}

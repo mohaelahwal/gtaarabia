@@ -1,0 +1,9 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const base=JSON.parse(fs.readFileSync('data/config.json')).siteUrl;
+const manifest=JSON.parse(fs.readFileSync('data/page-manifest.json'));
+for(const p of manifest){const html=fs.readFileSync('dist/'+p.file,'utf8');assert.ok(html.includes(`rel="canonical" href="${base}/${p.file}"`),p.file);assert.equal((html.match(/rel="canonical"/g)||[]).length,1,p.file);assert.ok(/<main[^>]*>[\s\S]+<\/main>/.test(html));const match=html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);assert.ok(match,p.file);const data=JSON.parse(match[1]);assert.equal(data['@context'],'https://schema.org');assert.ok(data['@graph'].some(n=>n['@type']==='WebSite'));assert.ok(!html.includes('undefined'),p.file);if(p.route==='english')assert.ok(html.includes('<html lang="en" dir="ltr">'));}
+for(const file of ['sitemap.xml','sitemap-ar.xml','sitemap-en.xml','robots.txt','llms.txt','sitemap.html'])assert.equal(fs.readFileSync(file,'utf8'),fs.readFileSync('dist/'+file,'utf8'));
+for(const lang of ['ar','en']){const xml=fs.readFileSync('dist/sitemap-'+lang+'.xml','utf8');assert.ok(!xml.includes('localhost'));for(const m of xml.matchAll(/<loc>(.*?)<\/loc>/g)){assert.ok(m[1].startsWith(base+'/'));assert.ok(fs.existsSync('dist/'+m[1].slice(base.length+1)));}}
+for(const p of ['guide/index.html','en/index.html']){const html=fs.readFileSync('dist/'+p,'utf8');for(const lang of ['ar','en','x-default'])assert.ok(html.includes(`hreflang="${lang}"`));}
+const svg=fs.readFileSync('assets/leonida-map-vector.svg','utf8');assert.ok(svg.includes('viewBox="0 0 2048 2048"'));assert.ok(!/<image\b|data:image/i.test(svg));assert.ok((svg.match(/<path\b/g)||[]).length>1000);
+console.log(`SEO validated: ${manifest.length} pages, canonical/JSON-LD, bilingual sitemap files, language alternates and vector paths.`);

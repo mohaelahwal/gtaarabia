@@ -1,0 +1,14 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {checkSite,validatePost} from '../scripts/validate.mjs';
+const p=JSON.parse(fs.readFileSync('data/posts.json'))[0];
+test('all shipped articles, video IDs and local assets are valid',()=>{const r=checkSite();assert.ok(r.posts>=6);assert.ok(r.videos>=20)});
+test('reject missing evidence',()=>assert.throws(()=>validatePost({...p,sources:[]})));
+test('reject traversal in generated image path',()=>assert.throws(()=>validatePost({...p,image:'assets/../../.env'})));
+test('reject script source URLs',()=>assert.throws(()=>validatePost({...p,sources:[{title:'bad',url:'javascript:alert(1)'}]})));
+test('reject invalid video identifiers',()=>assert.throws(()=>validatePost({...p,videoId:'<iframe>'})));
+test('automation defaults disabled',()=>{const c=JSON.parse(fs.readFileSync('data/automation.json'));assert.equal(c.enabled,false)});
+import {routeFile} from '../routes.js';
+test('full paths replace hash-only URLs',()=>{assert.equal(routeFile('cars'),'vehicles/index.html');assert.equal(routeFile('post/release-date'),'articles/release-date/index.html');assert.equal(routeFile('video/QdBZY2fkU-0'),'videos/QdBZY2fkU-0/index.html');assert.equal(routeFile('vehicle/truffade-adder'),'vehicles/truffade-adder/index.html');assert.equal(routeFile('character/1'),'characters/lucia-caminos/index.html')});
+test('catalog has distinct sourced entries and matching local assets',()=>{const c=JSON.parse(fs.readFileSync('data/catalog.json'));assert.ok(c.vehicles.length>=18);assert.ok(c.weapons.length>=14);for(const group of [c.vehicles,c.weapons]){const ids=new Set();for(const i of group){assert.ok(!ids.has(i.id));ids.add(i.id);assert.ok(i.description&&i.facts.length>=3&&i.gtaV&&i.gtaVI);assert.equal(new URL(i.source).protocol,'https:');assert.ok(fs.existsSync(i.image));assert.ok(fs.statSync(i.image).size>1000)}}});
+test('official background video is bundled',()=>assert.ok(fs.statSync('assets/hero-bg.mp4').size>100000));
+import {sortPosts} from '../content.js';
+test('news sorting puts newest publication first without mutating input',()=>{const input=[{id:'old',date:'2026-10-15'},{id:'today',date:'2026-11-05'},{id:'middle',date:'2026-10-30'}];assert.deepEqual(sortPosts(input).map(p=>p.id),['today','middle','old']);assert.equal(input[0].id,'old');assert.equal(sortPosts([{date:'2026-11-05',publishedAt:'2026-11-05T10:00:00Z'},{date:'2026-11-05',publishedAt:'2026-11-05T12:00:00Z'}])[0].publishedAt,'2026-11-05T12:00:00Z')});

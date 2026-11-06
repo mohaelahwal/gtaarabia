@@ -1,0 +1,14 @@
+{
+  "image": "assets/leonida-map.png",
+  "source": "User-supplied image(20261105-222931).png",
+  "dimensions": [
+    2048,
+    2048
+  ],
+  "coordinateSystem": "Image pixel positions converted to percentages; not geospatial coordinates.",
+  "provenance": "Unverified as an official Rockstar game map.",
+  "pins": 28,
+  "notes": "Named city/region/beach/island/transport locations only; small service icons were not reinterpreted as verified in-game POIs.",
+  "vector": "assets/leonida-map-vector.svg",
+  "vectorNotes": "Automatic path trace with approximate small labels/symbols; no embedded raster. Preserves source geography without adding new verified details."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "pistol",
+    "image": "assets/catalog/pistol.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_pistol.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_pistol"
+  },
+  {
+    "id": "combat-pistol",
+    "image": "assets/catalog/combat-pistol.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_combatpistol.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_combatpistol"
+  },
+  {
+    "id": "ap-pistol",
+    "image": "assets/catalog/ap-pistol.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_appistol.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_appistol"
+  },
+  {
+    "id": "micro-smg",
+    "image": "assets/catalog/micro-smg.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_microsmg.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_microsmg"
+  },
+  {
+    "id": "smg",
+    "image": "assets/catalog/smg.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_smg.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_smg"
+  },
+  {
+    "id": "assault-rifle",
+    "image": "assets/catalog/assault-rifle.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_assaultrifle.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_assaultrifle"
+  },
+  {
+    "id": "carbine-rifle",
+    "image": "assets/catalog/carbine-rifle.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_carbinerifle.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_carbinerifle"
+  },
+  {
+    "id": "pump-shotgun",
+    "image": "assets/catalog/pump-shotgun.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_pumpshotgun.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_pumpshotgun"
+  },
+  {
+    "id": "sawed-off-shotgun",
+    "image": "assets/catalog/sawed-off-shotgun.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_sawnoffshotgun.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_sawnoffshotgun"
+  },
+  {
+    "id": "sniper-rifle",
+    "image": "assets/catalog/sniper-rifle.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_sniperrifle.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_sniperrifle"
+  },
+  {
+    "id": "heavy-sniper",
+    "image": "assets/catalog/heavy-sniper.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_heavysniper.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_heavysniper"
+  },
+  {
+    "id": "rpg",
+    "image": "assets/catalog/rpg.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_rpg.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_rpg"
+  },
+  {
+    "id": "grenade",
+    "image": "assets/catalog/grenade.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_grenade.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_grenade"
+  },
+  {
+    "id": "baseball-bat",
+    "image": "assets/catalog/baseball-bat.png",
+    "url": "https://cdn.msk-scripts.de/weapons/weapon_bat.png?v=2",
+    "page": "https://www.msk-scripts.de/en/tools/images/weapons/weapon_bat"
+  }
+]

@@ -1,0 +1,2177 @@
+[
+  {
+    "route": "home",
+    "file": "index.html",
+    "title": "GTA 6 بالعربية: الأخبار والخريطة والعروض"
+  },
+  {
+    "route": "news",
+    "file": "news/index.html",
+    "title": "أخبار GTA 6 وGTA VI بالعربية"
+  },
+  {
+    "route": "map",
+    "file": "map/index.html",
+    "title": "خريطة GTA 6 التفاعلية: ليونيدا وفايس سيتي"
+  },
+  {
+    "route": "cars",
+    "file": "vehicles/index.html",
+    "title": "سيارات GTA 6 وGTA 5: دليل المركبات والمقارنات"
+  },
+  {
+    "route": "weapons",
+    "file": "weapons/index.html",
+    "title": "أسلحة GTA 6 وGTA 5: الصور والمقارنات"
+  },
+  {
+    "route": "characters",
+    "file": "characters/index.html",
+    "title": "الشخصيات"
+  },
+  {
+    "route": "stories",
+    "file": "stories/index.html",
+    "title": "عالم اللعبة"
+  },
+  {
+    "route": "videos",
+    "file": "videos/index.html",
+    "title": "مكتبة الفيديو"
+  },
+  {
+    "route": "about",
+    "file": "about/index.html",
+    "title": "عن GTA Arabia"
+  },
+  {
+    "route": "post/jason-second-chance",
+    "file": "articles/jason-second-chance/index.html",
+    "title": "جيسون دوفال: هل تكفي الرغبة في حياة أسهل؟"
+  },
+  {
+    "route": "post/lucia-agency",
+    "file": "articles/lucia-agency/index.html",
+    "title": "لوسيا كامينوس: الخطة أهم من الحظ"
+  },
+  {
+    "route": "post/cal-information",
+    "file": "articles/cal-information/index.html",
+    "title": "كال هامبتون: حين تصبح الشكوك جزءاً من العالم"
+  },
+  {
+    "route": "post/boobie-business",
+    "file": "articles/boobie-business/index.html",
+    "title": "بوبي آيك: المدينة بوصفها شبكة مصالح"
+  },
+  {
+    "route": "post/drequan-ambition",
+    "file": "articles/drequan-ambition/index.html",
+    "title": "دري كوان بريست: طموح موسيقي داخل حكاية جريمة"
+  },
+  {
+    "route": "post/realdimez-fame",
+    "file": "articles/realdimez-fame/index.html",
+    "title": "ريل دايمز: الشهرة عندما تتحول إلى رهان"
+  },
+  {
+    "route": "post/raul-risk",
+    "file": "articles/raul-risk/index.html",
+    "title": "راؤول باوتيستا: الخبرة لا تلغي المخاطرة"
+  },
+  {
+    "route": "post/brian-obligations",
+    "file": "articles/brian-obligations/index.html",
+    "title": "برايان هيدر: حين يتحول المعروف إلى التزام"
+  },
+  {
+    "route": "post/score-and-soundtrack",
+    "file": "articles/score-and-soundtrack/index.html",
+    "title": "الموسيقى التصويرية والألبوم: ما الفرق بينهما؟"
+  },
+  {
+    "route": "post/adaptive-score-reading",
+    "file": "articles/adaptive-score-reading/index.html",
+    "title": "الموسيقى المتكيفة: ماذا يعني أن يتغير الصوت مع التجربة؟"
+  },
+  {
+    "route": "post/radio-worldbuilding",
+    "file": "articles/radio-worldbuilding/index.html",
+    "title": "إذاعات ليونيدا: كيف يروي الصوت قصة المكان؟"
+  },
+  {
+    "route": "post/preload-explained",
+    "file": "articles/preload-explained/index.html",
+    "title": "التحميل المسبق: تجهيز الملفات لا يعني فتح اللعبة مبكراً"
+  },
+  {
+    "route": "post/storage-planning",
+    "file": "articles/storage-planning/index.html",
+    "title": "مساحة GTA VI على PS5: كيف تستعد للتنزيل؟"
+  },
+  {
+    "route": "post/language-check",
+    "file": "articles/language-check/index.html",
+    "title": "العربية في موقعنا ولغات اللعبة: تمييز ضروري"
+  },
+  {
+    "route": "post/dualsense-features",
+    "file": "articles/dualsense-features/index.html",
+    "title": "خصائص PS5: ماذا تعني الاهتزازات والمقاومة المتكيفة؟"
+  },
+  {
+    "route": "post/trailer-viewing-order",
+    "file": "articles/trailer-viewing-order/index.html",
+    "title": "من العرض الأول إلى النظرة المطوّلة: طريقة أهدأ للمشاهدة"
+  },
+  {
+    "route": "post/screenshot-literacy",
+    "file": "articles/screenshot-literacy/index.html",
+    "title": "كيف نقرأ صورة رسمية من دون اختراع ميزة لعب؟"
+  },
+  {
+    "route": "post/edition-content-reading",
+    "file": "articles/edition-content-reading/index.html",
+    "title": "صور النسخ الخاصة: لماذا يهم اسم الحزمة؟"
+  },
+  {
+    "route": "post/comparison-method",
+    "file": "articles/comparison-method/index.html",
+    "title": "مقارنة GTA V وVI: الاسم المتشابه ليس نتيجة اختبار"
+  },
+  {
+    "route": "post/story-trust-reading",
+    "file": "articles/story-trust-reading/index.html",
+    "title": "الثقة تحت الضغط: سؤال القصة الذي يستحق المتابعة"
+  },
+  {
+    "route": "post/launch-gallery",
+    "file": "articles/launch-gallery/index.html",
+    "title": "ليونيدا تقترب: نظرة جديدة من معرض الإطلاق"
+  },
+  {
+    "route": "post/release-date",
+    "file": "articles/release-date/index.html",
+    "title": "19 نوفمبر: موعدنا مع GTA VI"
+  },
+  {
+    "route": "post/two-lives",
+    "file": "articles/two-lives/index.html",
+    "title": "جيسون ولوسيا: شخصيتان، مصير واحد"
+  },
+  {
+    "route": "post/explore-leonida",
+    "file": "articles/explore-leonida/index.html",
+    "title": "أبعد من فايس سيتي: ست وجهات في ليونيدا"
+  },
+  {
+    "route": "post/comparison-guide",
+    "file": "articles/comparison-guide/index.html",
+    "title": "قبل المقارنة: ماذا نعرف عن السيارات والأسلحة؟"
+  },
+  {
+    "route": "post/launch-trailer",
+    "file": "articles/launch-trailer/index.html",
+    "title": "تريلر الإطلاق الرسمي: العودة إلى فايس سيتي"
+  },
+  {
+    "route": "video/rz1B4B2yBZY",
+    "file": "videos/rz1B4B2yBZY/index.html",
+    "title": "تريلر الإطلاق الرسمي"
+  },
+  {
+    "route": "video/tJbzMqJGH4k",
+    "file": "videos/tJbzMqJGH4k/index.html",
+    "title": "نظرة موسعة على عالم GTA VI"
+  },
+  {
+    "route": "video/VQRLujxTm3c",
+    "file": "videos/VQRLujxTm3c/index.html",
+    "title": "التريلر الرسمي الثاني"
+  },
+  {
+    "route": "video/QdBZY2fkU-0",
+    "file": "videos/QdBZY2fkU-0/index.html",
+    "title": "التريلر الرسمي الأول"
+  },
+  {
+    "route": "video/9zVIy_La7nk",
+    "file": "videos/9zVIy_La7nk/index.html",
+    "title": "تحليل تقني: رسوم التريلر الثاني"
+  },
+  {
+    "route": "video/aU1giydNzzE",
+    "file": "videos/aU1giydNzzE/index.html",
+    "title": "كيف تطورت واقعية الرسوم؟"
+  },
+  {
+    "route": "video/8w3x0DOj3-k",
+    "file": "videos/8w3x0DOj3-k/index.html",
+    "title": "٩٩ تفصيلاً في العرض الموسع"
+  },
+  {
+    "route": "video/JmKZUB1NBag",
+    "file": "videos/JmKZUB1NBag/index.html",
+    "title": "٨٩ تفصيلاً في التريلر الثاني"
+  },
+  {
+    "route": "video/GIxJZMBYl4M",
+    "file": "videos/GIxJZMBYl4M/index.html",
+    "title": "تفكيك التريلر الثاني: القصة والعالم"
+  },
+  {
+    "route": "video/Y3dHqxY0pxY",
+    "file": "videos/Y3dHqxY0pxY/index.html",
+    "title": "جولة تحليلية في خريطة ليونيدا"
+  },
+  {
+    "route": "video/5ed_Q3eHkUU",
+    "file": "videos/5ed_Q3eHkUU/index.html",
+    "title": "السيارات والشخصيات والمواقع في التريلر الثاني"
+  },
+  {
+    "route": "video/lrcY4MKPs9k",
+    "file": "videos/lrcY4MKPs9k/index.html",
+    "title": "٣٠ تفصيلاً ربما فاتك في التريلر الثاني"
+  },
+  {
+    "route": "video/Vt5kdeGoK_I",
+    "file": "videos/Vt5kdeGoK_I/index.html",
+    "title": "أكثر من ١٠٠ إشارة وتفصيل مخفي"
+  },
+  {
+    "route": "video/jraJeYXc2hs",
+    "file": "videos/jraJeYXc2hs/index.html",
+    "title": "السيارات الظاهرة ونظيراتها الواقعية"
+  },
+  {
+    "route": "video/5QO8eoi4cBo",
+    "file": "videos/5QO8eoi4cBo/index.html",
+    "title": "سيارات GTA VI ومقارنتها بـ GTA V"
+  },
+  {
+    "route": "video/HRv9zmYOPOw",
+    "file": "videos/HRv9zmYOPOw/index.html",
+    "title": "إشارات مخفية في الإعلان"
+  },
+  {
+    "route": "video/w8w8NxkUy6c",
+    "file": "videos/w8w8NxkUy6c/index.html",
+    "title": "دليل شامل لما نعرفه عن اللعبة"
+  },
+  {
+    "route": "video/1rjw7yD6H8Y",
+    "file": "videos/1rjw7yD6H8Y/index.html",
+    "title": "ملخص المعلومات المتاحة عن GTA VI"
+  },
+  {
+    "route": "video/3Z8mUzuCGKY",
+    "file": "videos/3Z8mUzuCGKY/index.html",
+    "title": "تحليل أسلوب اللعب والصور الجديدة"
+  },
+  {
+    "route": "video/obiC2OzgThc",
+    "file": "videos/obiC2OzgThc/index.html",
+    "title": "تحليل تقني للتريلر الأول"
+  },
+  {
+    "route": "video/BUeeLF2agZY",
+    "file": "videos/BUeeLF2agZY/index.html",
+    "title": "انطباعات IGN من معاينة اللعبة"
+  },
+  {
+    "route": "video/XpPpqZwUwl0",
+    "file": "videos/XpPpqZwUwl0/index.html",
+    "title": "٢٩ ملاحظة من الكشف الموسع"
+  },
+  {
+    "route": "video/bMq4OtZTigk",
+    "file": "videos/bMq4OtZTigk/index.html",
+    "title": "٩٩ تفصيلاً في التريلر الأول"
+  },
+  {
+    "route": "character/0",
+    "file": "characters/jason-duval/index.html",
+    "title": "جيسون دوفال"
+  },
+  {
+    "route": "character/1",
+    "file": "characters/lucia-caminos/index.html",
+    "title": "لوسيا كامينوس"
+  },
+  {
+    "route": "character/2",
+    "file": "characters/cal-hampton/index.html",
+    "title": "كال هامبتون"
+  },
+  {
+    "route": "character/3",
+    "file": "characters/boobie-ike/index.html",
+    "title": "بوبي آيك"
+  },
+  {
+    "route": "character/4",
+    "file": "characters/drequan-priest/index.html",
+    "title": "دري كوان بريست"
+  },
+  {
+    "route": "character/5",
+    "file": "characters/real-dimez/index.html",
+    "title": "ريل دايمز"
+  },
+  {
+    "route": "character/6",
+    "file": "characters/raul-bautista/index.html",
+    "title": "راؤول باوتيستا"
+  },
+  {
+    "route": "character/7",
+    "file": "characters/brian-heder/index.html",
+    "title": "برايان هيدر"
+  },
+  {
+    "route": "vehicle/wiki-mamba-gt-vi",
+    "file": "vehicles/wiki-mamba-gt-vi/index.html",
+    "title": "مامبا جي تي"
+  },
+  {
+    "route": "vehicle/wiki-sentinel-classic-cabriolet-vi",
+    "file": "vehicles/wiki-sentinel-classic-cabriolet-vi/index.html",
+    "title": "سينتينل كلاسيك كابريوليه"
+  },
+  {
+    "route": "vehicle/wiki-pegassi-sports-car-vi",
+    "file": "vehicles/wiki-pegassi-sports-car-vi/index.html",
+    "title": "بيغاسي رياضية سيارة"
+  },
+  {
+    "route": "vehicle/wiki-buick-reatta-inspired-convertible-vi",
+    "file": "vehicles/wiki-buick-reatta-inspired-convertible-vi/index.html",
+    "title": "Buick Reatta مستوحاة من مكشوفة"
+  },
+  {
+    "route": "vehicle/wiki-kellison-j4-coupe-experimental-inspired-car-vi",
+    "file": "vehicles/wiki-kellison-j4-coupe-experimental-inspired-car-vi/index.html",
+    "title": "Kellison J4 Coupe \"Experimental\" مستوحاة من سيارة"
+  },
+  {
+    "route": "vehicle/wiki-mercedes-benz-cle-inspired-convertible-vi",
+    "file": "vehicles/wiki-mercedes-benz-cle-inspired-convertible-vi/index.html",
+    "title": "Mercedes-Benz CLE مستوحاة من مكشوفة"
+  },
+  {
+    "route": "vehicle/wiki-dominator-1967-vi",
+    "file": "vehicles/wiki-dominator-1967-vi/index.html",
+    "title": "دوميناتور (1967)"
+  },
+  {
+    "route": "vehicle/vapid-dominator-buggy-67-vi",
+    "file": "vehicles/vapid-dominator-buggy-67-vi/index.html",
+    "title": "دوميناتور باغي"
+  },
+  {
+    "route": "vehicle/wiki-ganado-vi",
+    "file": "vehicles/wiki-ganado-vi/index.html",
+    "title": "غانادو"
+  },
+  {
+    "route": "vehicle/wiki-sirius-vi",
+    "file": "vehicles/wiki-sirius-vi/index.html",
+    "title": "سيريوس"
+  },
+  {
+    "route": "vehicle/wiki-1959-cadillac-inspired-car-vi",
+    "file": "vehicles/wiki-1959-cadillac-inspired-car-vi/index.html",
+    "title": "1959 Cadillac مستوحاة من سيارة"
+  },
+  {
+    "route": "vehicle/wiki-lincoln-mark-viii-inspired-coupe-vi",
+    "file": "vehicles/wiki-lincoln-mark-viii-inspired-coupe-vi/index.html",
+    "title": "Lincoln Mark VIII مستوحاة من coupe"
+  },
+  {
+    "route": "vehicle/wiki-classic-car-vi",
+    "file": "vehicles/wiki-classic-car-vi/index.html",
+    "title": "كلاسيك سيارة"
+  },
+  {
+    "route": "vehicle/wiki-declasse-compact-car-vi",
+    "file": "vehicles/wiki-declasse-compact-car-vi/index.html",
+    "title": "ديكلاس مدمجة سيارة"
+  },
+  {
+    "route": "vehicle/wiki-impaler-fourth-generation-vi",
+    "file": "vehicles/wiki-impaler-fourth-generation-vi/index.html",
+    "title": "إمبالر (fourth generation)"
+  },
+  {
+    "route": "vehicle/wiki-lowline-vi",
+    "file": "vehicles/wiki-lowline-vi/index.html",
+    "title": "لولاين"
+  },
+  {
+    "route": "vehicle/wiki-pmp-700-vi",
+    "file": "vehicles/wiki-pmp-700-vi/index.html",
+    "title": "بي إم بي 700"
+  },
+  {
+    "route": "vehicle/wiki-schafter-third-generation-vi",
+    "file": "vehicles/wiki-schafter-third-generation-vi/index.html",
+    "title": "شافر (third generation)"
+  },
+  {
+    "route": "vehicle/wiki-stanier-1955-vi",
+    "file": "vehicles/wiki-stanier-1955-vi/index.html",
+    "title": "ستانير (1955)"
+  },
+  {
+    "route": "vehicle/wiki-bf-saloon-vi",
+    "file": "vehicles/wiki-bf-saloon-vi/index.html",
+    "title": "بي إف صالون"
+  },
+  {
+    "route": "vehicle/wiki-dinka-sedan-vi",
+    "file": "vehicles/wiki-dinka-sedan-vi/index.html",
+    "title": "دينكا سيدان"
+  },
+  {
+    "route": "vehicle/wiki-obey-saloon-vi",
+    "file": "vehicles/wiki-obey-saloon-vi/index.html",
+    "title": "أوبي صالون"
+  },
+  {
+    "route": "vehicle/wiki-schyster-station-wagon-vi",
+    "file": "vehicles/wiki-schyster-station-wagon-vi/index.html",
+    "title": "شايستر ستيشن واغن"
+  },
+  {
+    "route": "vehicle/wiki-vapid-sedan-vi",
+    "file": "vehicles/wiki-vapid-sedan-vi/index.html",
+    "title": "فابيد سيدان"
+  },
+  {
+    "route": "vehicle/wiki-vapid-taxi-vi",
+    "file": "vehicles/wiki-vapid-taxi-vi/index.html",
+    "title": "فابيد تاكسي"
+  },
+  {
+    "route": "vehicle/wiki-willard-compact-sedan-vi",
+    "file": "vehicles/wiki-willard-compact-sedan-vi/index.html",
+    "title": "ويلارد مدمجة سيدان"
+  },
+  {
+    "route": "vehicle/wiki-willard-sedan-vi",
+    "file": "vehicles/wiki-willard-sedan-vi/index.html",
+    "title": "ويلارد سيدان"
+  },
+  {
+    "route": "vehicle/wiki-dodge-stratus-inspired-sedan-vi",
+    "file": "vehicles/wiki-dodge-stratus-inspired-sedan-vi/index.html",
+    "title": "Dodge Stratus مستوحاة من سيدان"
+  },
+  {
+    "route": "vehicle/wiki-montagne-vi",
+    "file": "vehicles/wiki-montagne-vi/index.html",
+    "title": "مونتاني"
+  },
+  {
+    "route": "vehicle/wiki-riata-classic-vi",
+    "file": "vehicles/wiki-riata-classic-vi/index.html",
+    "title": "رياتا كلاسيك"
+  },
+  {
+    "route": "vehicle/wiki-bravado-suv-vi",
+    "file": "vehicles/wiki-bravado-suv-vi/index.html",
+    "title": "برافادو دفع رباعي"
+  },
+  {
+    "route": "vehicle/wiki-karin-suv-vi",
+    "file": "vehicles/wiki-karin-suv-vi/index.html",
+    "title": "كارين دفع رباعي"
+  },
+  {
+    "route": "vehicle/wiki-vapid-suv-vi",
+    "file": "vehicles/wiki-vapid-suv-vi/index.html",
+    "title": "فابيد دفع رباعي"
+  },
+  {
+    "route": "vehicle/wiki-audi-q7-inspired-suv-vi",
+    "file": "vehicles/wiki-audi-q7-inspired-suv-vi/index.html",
+    "title": "Audi Q7 مستوحاة من دفع رباعي"
+  },
+  {
+    "route": "vehicle/wiki-bison-900-vi",
+    "file": "vehicles/wiki-bison-900-vi/index.html",
+    "title": "بايسون 900"
+  },
+  {
+    "route": "vehicle/wiki-bison-900-monster-truck-vi",
+    "file": "vehicles/wiki-bison-900-monster-truck-vi/index.html",
+    "title": "بايسون 900 (monster شاحنة)"
+  },
+  {
+    "route": "vehicle/wiki-bison-1800-vi",
+    "file": "vehicles/wiki-bison-1800-vi/index.html",
+    "title": "بايسون 1800"
+  },
+  {
+    "route": "vehicle/wiki-bison-3800-vi",
+    "file": "vehicles/wiki-bison-3800-vi/index.html",
+    "title": "بايسون 3800"
+  },
+  {
+    "route": "vehicle/wiki-reclaimer-first-generation-vi",
+    "file": "vehicles/wiki-reclaimer-first-generation-vi/index.html",
+    "title": "ريكليمر (first generation)"
+  },
+  {
+    "route": "vehicle/wiki-reclaimer-second-generation-vi",
+    "file": "vehicles/wiki-reclaimer-second-generation-vi/index.html",
+    "title": "ريكليمر (second generation)"
+  },
+  {
+    "route": "vehicle/wiki-reclaimer-tow-truck-vi",
+    "file": "vehicles/wiki-reclaimer-tow-truck-vi/index.html",
+    "title": "ريكليمر (tow شاحنة)"
+  },
+  {
+    "route": "vehicle/wiki-sandking-xt-vi",
+    "file": "vehicles/wiki-sandking-xt-vi/index.html",
+    "title": "ساندكينغ إكس تي"
+  },
+  {
+    "route": "vehicle/wiki-sandking-xt-monster-truck-vi",
+    "file": "vehicles/wiki-sandking-xt-monster-truck-vi/index.html",
+    "title": "ساندكينغ إكس تي (monster شاحنة)"
+  },
+  {
+    "route": "vehicle/wiki-swamp-blaster-vi",
+    "file": "vehicles/wiki-swamp-blaster-vi/index.html",
+    "title": "سوامب بلاستر"
+  },
+  {
+    "route": "vehicle/wiki-canis-pickup-truck-vi",
+    "file": "vehicles/wiki-canis-pickup-truck-vi/index.html",
+    "title": "كانيس بيك أب شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-vapid-mid-size-pickup-truck-vi",
+    "file": "vehicles/wiki-vapid-mid-size-pickup-truck-vi/index.html",
+    "title": "فابيد mid-size بيك أب شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-dodge-dakota-inspired-pickup-truck-vi",
+    "file": "vehicles/wiki-dodge-dakota-inspired-pickup-truck-vi/index.html",
+    "title": "Dodge Dakota مستوحاة من بيك أب شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-ford-f-series-inspired-pickup-truck-vi",
+    "file": "vehicles/wiki-ford-f-series-inspired-pickup-truck-vi/index.html",
+    "title": "Ford F-Series مستوحاة من بيك أب شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-polaris-ranger-inspired-buggy-vi",
+    "file": "vehicles/wiki-polaris-ranger-inspired-buggy-vi/index.html",
+    "title": "Polaris Ranger مستوحاة من buggy"
+  },
+  {
+    "route": "vehicle/wiki-moocher-vi",
+    "file": "vehicles/wiki-moocher-vi/index.html",
+    "title": "موتشر"
+  },
+  {
+    "route": "vehicle/wiki-burrito-shuttle-bus-vi",
+    "file": "vehicles/wiki-burrito-shuttle-bus-vi/index.html",
+    "title": "بوريتو نقل حافلة"
+  },
+  {
+    "route": "vehicle/wiki-benefactor-van-vi",
+    "file": "vehicles/wiki-benefactor-van-vi/index.html",
+    "title": "بينيفاكتور فان"
+  },
+  {
+    "route": "vehicle/wiki-bravado-minivan-vi",
+    "file": "vehicles/wiki-bravado-minivan-vi/index.html",
+    "title": "برافادو ميني فان"
+  },
+  {
+    "route": "vehicle/wiki-bravado-minivan-taxi-vi",
+    "file": "vehicles/wiki-bravado-minivan-taxi-vi/index.html",
+    "title": "برافادو ميني فان تاكسي"
+  },
+  {
+    "route": "vehicle/wiki-vapid-cargo-van-vi",
+    "file": "vehicles/wiki-vapid-cargo-van-vi/index.html",
+    "title": "فابيد شحن فان"
+  },
+  {
+    "route": "vehicle/wiki-vapid-cargo-van-second-generation-vi",
+    "file": "vehicles/wiki-vapid-cargo-van-second-generation-vi/index.html",
+    "title": "فابيد شحن فان (second generation)"
+  },
+  {
+    "route": "vehicle/wiki-vapid-passenger-van-vi",
+    "file": "vehicles/wiki-vapid-passenger-van-vi/index.html",
+    "title": "فابيد ركاب فان"
+  },
+  {
+    "route": "vehicle/wiki-rexhall-roseair-inspired-motorhome-vi",
+    "file": "vehicles/wiki-rexhall-roseair-inspired-motorhome-vi/index.html",
+    "title": "Rexhall RoseAir مستوحاة من motorhome"
+  },
+  {
+    "route": "vehicle/wiki-phantom-chassis-cab-truck-vi",
+    "file": "vehicles/wiki-phantom-chassis-cab-truck-vi/index.html",
+    "title": "فانتوم chassis cab شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-ford-f-series-inspired-medium-duty-truck-vi",
+    "file": "vehicles/wiki-ford-f-series-inspired-medium-duty-truck-vi/index.html",
+    "title": "Ford F-Series مستوحاة من medium duty شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-freightliner-m2-inspired-truck-vi",
+    "file": "vehicles/wiki-freightliner-m2-inspired-truck-vi/index.html",
+    "title": "Freightliner M2 مستوحاة من شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-gmc-topkick-inspired-truck-vi",
+    "file": "vehicles/wiki-gmc-topkick-inspired-truck-vi/index.html",
+    "title": "GMC TopKick مستوحاة من شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-kenworth-t800-inspired-truck-vi",
+    "file": "vehicles/wiki-kenworth-t800-inspired-truck-vi/index.html",
+    "title": "Kenworth T800 مستوحاة من شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-international-4700-inspired-truck-vi",
+    "file": "vehicles/wiki-international-4700-inspired-truck-vi/index.html",
+    "title": "International 4700 مستوحاة من شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-international-s-1700-inspired-truck-vi",
+    "file": "vehicles/wiki-international-s-1700-inspired-truck-vi/index.html",
+    "title": "International S-1700 مستوحاة من شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-isuzu-elf-inspired-truck-vi",
+    "file": "vehicles/wiki-isuzu-elf-inspired-truck-vi/index.html",
+    "title": "Isuzu Elf مستوحاة من شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-baggage-trailer-vi",
+    "file": "vehicles/wiki-baggage-trailer-vi/index.html",
+    "title": "أمتعة مقطورة"
+  },
+  {
+    "route": "vehicle/wiki-boat-trailer-vi",
+    "file": "vehicles/wiki-boat-trailer-vi/index.html",
+    "title": "قارب مقطورة"
+  },
+  {
+    "route": "vehicle/wiki-car-trailer-vi",
+    "file": "vehicles/wiki-car-trailer-vi/index.html",
+    "title": "Car مقطورة"
+  },
+  {
+    "route": "vehicle/wiki-jet-ski-trailer-vi",
+    "file": "vehicles/wiki-jet-ski-trailer-vi/index.html",
+    "title": "جيت سكي مقطورة"
+  },
+  {
+    "route": "vehicle/wiki-passenger-stair-trailer-vi",
+    "file": "vehicles/wiki-passenger-stair-trailer-vi/index.html",
+    "title": "Passenger stair مقطورة"
+  },
+  {
+    "route": "vehicle/wiki-utility-trailer-vi",
+    "file": "vehicles/wiki-utility-trailer-vi/index.html",
+    "title": "خدمات مقطورة"
+  },
+  {
+    "route": "vehicle/wiki-buster-vi",
+    "file": "vehicles/wiki-buster-vi/index.html",
+    "title": "باستر"
+  },
+  {
+    "route": "vehicle/wiki-jack-sheepe-excavator-vi",
+    "file": "vehicles/wiki-jack-sheepe-excavator-vi/index.html",
+    "title": "Jack Sheepe excavator"
+  },
+  {
+    "route": "vehicle/wiki-maibatsu-excavator-vi",
+    "file": "vehicles/wiki-maibatsu-excavator-vi/index.html",
+    "title": "Maibatsu excavator"
+  },
+  {
+    "route": "vehicle/wiki-telehandler-vi",
+    "file": "vehicles/wiki-telehandler-vi/index.html",
+    "title": "Telehandler"
+  },
+  {
+    "route": "vehicle/wiki-airboat-09-police-vi",
+    "file": "vehicles/wiki-airboat-09-police-vi/index.html",
+    "title": "إيربوت 09 (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-bison-1800-police-vi",
+    "file": "vehicles/wiki-bison-1800-police-vi/index.html",
+    "title": "بايسون 1800 (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-buzzard-police-vi",
+    "file": "vehicles/wiki-buzzard-police-vi/index.html",
+    "title": "بازارد (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-granger-police-vi",
+    "file": "vehicles/wiki-granger-police-vi/index.html",
+    "title": "غرينجر (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-l35p-police-vi",
+    "file": "vehicles/wiki-l35p-police-vi/index.html",
+    "title": "L35P (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-landstalker-xl-police-vi",
+    "file": "vehicles/wiki-landstalker-xl-police-vi/index.html",
+    "title": "لاندستوكر إكس إل (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-montagne-police-vi",
+    "file": "vehicles/wiki-montagne-police-vi/index.html",
+    "title": "مونتاني (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-verus-lifeguard-vi",
+    "file": "vehicles/wiki-verus-lifeguard-vi/index.html",
+    "title": "فيروس (إنقاذ)"
+  },
+  {
+    "route": "vehicle/wiki-vapid-lifeguard-truck-vi",
+    "file": "vehicles/wiki-vapid-lifeguard-truck-vi/index.html",
+    "title": "فابيد إنقاذ شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-vapid-police-car-vi",
+    "file": "vehicles/wiki-vapid-police-car-vi/index.html",
+    "title": "فابيد شرطة سيارة"
+  },
+  {
+    "route": "vehicle/wiki-contender-39st-inspired-police-boat-vi",
+    "file": "vehicles/wiki-contender-39st-inspired-police-boat-vi/index.html",
+    "title": "كونتيندر 39ST مستوحاة من شرطة boat"
+  },
+  {
+    "route": "vehicle/wiki-defender-class-inspired-boat-vi",
+    "file": "vehicles/wiki-defender-class-inspired-boat-vi/index.html",
+    "title": "Defender class مستوحاة من boat"
+  },
+  {
+    "route": "vehicle/wiki-eurocopter-ec135-inspired-police-helicopter-vi",
+    "file": "vehicles/wiki-eurocopter-ec135-inspired-police-helicopter-vi/index.html",
+    "title": "Eurocopter EC135 مستوحاة من شرطة مروحية"
+  },
+  {
+    "route": "vehicle/wiki-pierce-arrow-xt-inspired-fire-truck-vi",
+    "file": "vehicles/wiki-pierce-arrow-xt-inspired-fire-truck-vi/index.html",
+    "title": "Pierce Arrow إكس تي مستوحاة من fire شاحنة"
+  },
+  {
+    "route": "vehicle/wiki-rb-s-ii-inspired-coast-guard-boat-vi",
+    "file": "vehicles/wiki-rb-s-ii-inspired-coast-guard-boat-vi/index.html",
+    "title": "RB-S II مستوحاة من coast guard boat"
+  },
+  {
+    "route": "vehicle/wiki-alvino-v1-vi",
+    "file": "vehicles/wiki-alvino-v1-vi/index.html",
+    "title": "ألفينو V1"
+  },
+  {
+    "route": "vehicle/wiki-carbon-rs-stock-motorcycle-vi",
+    "file": "vehicles/wiki-carbon-rs-stock-motorcycle-vi/index.html",
+    "title": "كاربون آر إس stock دراجة نارية"
+  },
+  {
+    "route": "vehicle/wiki-nagasaki-scooter-vi",
+    "file": "vehicles/wiki-nagasaki-scooter-vi/index.html",
+    "title": "ناغاساكي سكوتر"
+  },
+  {
+    "route": "vehicle/wiki-suzuki-gsx-r1000-inspired-bike-vi",
+    "file": "vehicles/wiki-suzuki-gsx-r1000-inspired-bike-vi/index.html",
+    "title": "Suzuki GSX-R1000 مستوحاة من دراجة"
+  },
+  {
+    "route": "vehicle/wiki-boomazoom-vi",
+    "file": "vehicles/wiki-boomazoom-vi/index.html",
+    "title": "بومازوم"
+  },
+  {
+    "route": "vehicle/wiki-lombike-vi",
+    "file": "vehicles/wiki-lombike-vi/index.html",
+    "title": "لومبايك"
+  },
+  {
+    "route": "vehicle/wiki-del-perro-electric-bike-vi",
+    "file": "vehicles/wiki-del-perro-electric-bike-vi/index.html",
+    "title": "Del Perro كهربائية دراجة"
+  },
+  {
+    "route": "vehicle/wiki-zoot-electric-scooter-vi",
+    "file": "vehicles/wiki-zoot-electric-scooter-vi/index.html",
+    "title": "ZOOT كهربائية سكوتر"
+  },
+  {
+    "route": "vehicle/wiki-airboat-09-vi",
+    "file": "vehicles/wiki-airboat-09-vi/index.html",
+    "title": "إيربوت 09"
+  },
+  {
+    "route": "vehicle/wiki-clarion-vi",
+    "file": "vehicles/wiki-clarion-vi/index.html",
+    "title": "كلاريون"
+  },
+  {
+    "route": "vehicle/wiki-delmar-vi",
+    "file": "vehicles/wiki-delmar-vi/index.html",
+    "title": "ديلمار"
+  },
+  {
+    "route": "vehicle/wiki-dingus-vi",
+    "file": "vehicles/wiki-dingus-vi/index.html",
+    "title": "دينغوس"
+  },
+  {
+    "route": "vehicle/wiki-kayak-vi",
+    "file": "vehicles/wiki-kayak-vi/index.html",
+    "title": "كاياك"
+  },
+  {
+    "route": "vehicle/wiki-l35p-vi",
+    "file": "vehicles/wiki-l35p-vi/index.html",
+    "title": "L35P"
+  },
+  {
+    "route": "vehicle/wiki-s23-vi",
+    "file": "vehicles/wiki-s23-vi/index.html",
+    "title": "S23"
+  },
+  {
+    "route": "vehicle/wiki-seashark-second-generation-vi",
+    "file": "vehicles/wiki-seashark-second-generation-vi/index.html",
+    "title": "سي شارك (second generation)"
+  },
+  {
+    "route": "vehicle/wiki-shasa-vi",
+    "file": "vehicles/wiki-shasa-vi/index.html",
+    "title": "شاسا"
+  },
+  {
+    "route": "vehicle/wiki-yakuruna-vi",
+    "file": "vehicles/wiki-yakuruna-vi/index.html",
+    "title": "ياكورونا"
+  },
+  {
+    "route": "vehicle/wiki-nagasaki-boat-vi",
+    "file": "vehicles/wiki-nagasaki-boat-vi/index.html",
+    "title": "ناغاساكي boat"
+  },
+  {
+    "route": "vehicle/wiki-azimut-85-inspired-yacht-vi",
+    "file": "vehicles/wiki-azimut-85-inspired-yacht-vi/index.html",
+    "title": "Azimut 85 مستوحاة من yacht"
+  },
+  {
+    "route": "vehicle/wiki-azimut-atlantis-45-inspired-yacht-vi",
+    "file": "vehicles/wiki-azimut-atlantis-45-inspired-yacht-vi/index.html",
+    "title": "Azimut Atlantis 45 مستوحاة من yacht"
+  },
+  {
+    "route": "vehicle/wiki-contender-39st-inspired-boat-vi",
+    "file": "vehicles/wiki-contender-39st-inspired-boat-vi/index.html",
+    "title": "كونتيندر 39ST مستوحاة من boat"
+  },
+  {
+    "route": "vehicle/wiki-frauscher-1017-gt-inspired-boat-vi",
+    "file": "vehicles/wiki-frauscher-1017-gt-inspired-boat-vi/index.html",
+    "title": "Frauscher 1017 جي تي مستوحاة من boat"
+  },
+  {
+    "route": "vehicle/wiki-horizon-pc60-inspired-yacht-vi",
+    "file": "vehicles/wiki-horizon-pc60-inspired-yacht-vi/index.html",
+    "title": "Horizon PC60 مستوحاة من yacht"
+  },
+  {
+    "route": "vehicle/wiki-l-rssen-73m-coral-ocean-inspired-yacht-vi",
+    "file": "vehicles/wiki-l-rssen-73m-coral-ocean-inspired-yacht-vi/index.html",
+    "title": "Lürssen 73m Coral Ocean مستوحاة من yacht"
+  },
+  {
+    "route": "vehicle/wiki-sea-doo-rxt-x-300-inspired-boat-vi",
+    "file": "vehicles/wiki-sea-doo-rxt-x-300-inspired-boat-vi/index.html",
+    "title": "سي-Doo RXT-X 300 مستوحاة من boat"
+  },
+  {
+    "route": "vehicle/wiki-shipyard-de-hoop-brion-inspired-barge-vi",
+    "file": "vehicles/wiki-shipyard-de-hoop-brion-inspired-barge-vi/index.html",
+    "title": "Shipyard De Hoop Brion مستوحاة من barge"
+  },
+  {
+    "route": "vehicle/wiki-skater-388-inspired-boat-vi",
+    "file": "vehicles/wiki-skater-388-inspired-boat-vi/index.html",
+    "title": "Skater 388 مستوحاة من boat"
+  },
+  {
+    "route": "vehicle/wiki-cruise-ship-vi",
+    "file": "vehicles/wiki-cruise-ship-vi/index.html",
+    "title": "سياحية سفينة"
+  },
+  {
+    "route": "vehicle/wiki-dive-boat-vi",
+    "file": "vehicles/wiki-dive-boat-vi/index.html",
+    "title": "غوص boat"
+  },
+  {
+    "route": "vehicle/wiki-ferry-vi",
+    "file": "vehicles/wiki-ferry-vi/index.html",
+    "title": "عبّارة"
+  },
+  {
+    "route": "vehicle/wiki-fishing-boat-vi",
+    "file": "vehicles/wiki-fishing-boat-vi/index.html",
+    "title": "صيد boat"
+  },
+  {
+    "route": "vehicle/wiki-self-propelled-barge-vi",
+    "file": "vehicles/wiki-self-propelled-barge-vi/index.html",
+    "title": "Self-propelled barge"
+  },
+  {
+    "route": "vehicle/wiki-shrimp-boat-vi",
+    "file": "vehicles/wiki-shrimp-boat-vi/index.html",
+    "title": "روبيان boat"
+  },
+  {
+    "route": "vehicle/wiki-water-taxi-vi",
+    "file": "vehicles/wiki-water-taxi-vi/index.html",
+    "title": "مائي تاكسي"
+  },
+  {
+    "route": "vehicle/wiki-boeing-767-inspired-airplane-vi",
+    "file": "vehicles/wiki-boeing-767-inspired-airplane-vi/index.html",
+    "title": "Boeing 767 مستوحاة من airplane"
+  },
+  {
+    "route": "vehicle/wiki-tethered-aerostat-radar-system-inspired-aircraft-vi",
+    "file": "vehicles/wiki-tethered-aerostat-radar-system-inspired-aircraft-vi/index.html",
+    "title": "Tethered Aerostat Radar System مستوحاة من aircraft"
+  },
+  {
+    "route": "vehicle/wiki-maverick-civilian-helicopter-vi",
+    "file": "vehicles/wiki-maverick-civilian-helicopter-vi/index.html",
+    "title": "مافريك مدنية مروحية"
+  },
+  {
+    "route": "vehicle/wiki-vcia-train-vi",
+    "file": "vehicles/wiki-vcia-train-vi/index.html",
+    "title": "VCIA قطار"
+  },
+  {
+    "route": "vehicle/wiki-vcmm-train-vi",
+    "file": "vehicles/wiki-vcmm-train-vi/index.html",
+    "title": "VCMM قطار"
+  },
+  {
+    "route": "vehicle/wiki-ge-genesis-inspired-locomotive-vi",
+    "file": "vehicles/wiki-ge-genesis-inspired-locomotive-vi/index.html",
+    "title": "GE Genesis مستوحاة من locomotive"
+  },
+  {
+    "route": "vehicle/wiki-hitachi-rail-inspired-train-vi",
+    "file": "vehicles/wiki-hitachi-rail-inspired-train-vi/index.html",
+    "title": "Hitachi Rail مستوحاة من قطار"
+  },
+  {
+    "route": "vehicle/wiki-viewliner-inspired-railroad-car-vi",
+    "file": "vehicles/wiki-viewliner-inspired-railroad-car-vi/index.html",
+    "title": "Viewliner مستوحاة من railroad سيارة"
+  },
+  {
+    "route": "vehicle/wiki-8f-drafter-vi",
+    "file": "vehicles/wiki-8f-drafter-vi/index.html",
+    "title": "8F Drafter"
+  },
+  {
+    "route": "vehicle/wiki-banshee-vi",
+    "file": "vehicles/wiki-banshee-vi/index.html",
+    "title": "بانشي"
+  },
+  {
+    "route": "vehicle/wiki-carbonizzare-vi",
+    "file": "vehicles/wiki-carbonizzare-vi/index.html",
+    "title": "كاربونيزاري"
+  },
+  {
+    "route": "vehicle/grotti-cheetah-95-vi",
+    "file": "vehicles/grotti-cheetah-95-vi/index.html",
+    "title": "تشيتا (1995)"
+  },
+  {
+    "route": "vehicle/wiki-comet-retro-custom-vi",
+    "file": "vehicles/wiki-comet-retro-custom-vi/index.html",
+    "title": "كوميت ريترو كاستم"
+  },
+  {
+    "route": "vehicle/wiki-comet-s2-cabriolet-vi",
+    "file": "vehicles/wiki-comet-s2-cabriolet-vi/index.html",
+    "title": "كوميت S2 Cabriolet"
+  },
+  {
+    "route": "vehicle/wiki-coquette-vi",
+    "file": "vehicles/wiki-coquette-vi/index.html",
+    "title": "كوكيت"
+  },
+  {
+    "route": "vehicle/wiki-coquette-classic-vi",
+    "file": "vehicles/wiki-coquette-classic-vi/index.html",
+    "title": "كوكيت كلاسيك"
+  },
+  {
+    "route": "vehicle/wiki-coquette-d10-vi",
+    "file": "vehicles/wiki-coquette-d10-vi/index.html",
+    "title": "كوكيت D10"
+  },
+  {
+    "route": "vehicle/wiki-elegy-1990-vi",
+    "file": "vehicles/wiki-elegy-1990-vi/index.html",
+    "title": "إليجي (1990)"
+  },
+  {
+    "route": "vehicle/wiki-emerus-vi",
+    "file": "vehicles/wiki-emerus-vi/index.html",
+    "title": "إميروس"
+  },
+  {
+    "route": "vehicle/wiki-fr36-vi",
+    "file": "vehicles/wiki-fr36-vi/index.html",
+    "title": "FR36"
+  },
+  {
+    "route": "vehicle/wiki-furia-vi",
+    "file": "vehicles/wiki-furia-vi/index.html",
+    "title": "فيوريا"
+  },
+  {
+    "route": "vehicle/wiki-growler-vi",
+    "file": "vehicles/wiki-growler-vi/index.html",
+    "title": "غراولر"
+  },
+  {
+    "route": "vehicle/wiki-infernus-classic-vi",
+    "file": "vehicles/wiki-infernus-classic-vi/index.html",
+    "title": "إنفيرنوس كلاسيك"
+  },
+  {
+    "route": "vehicle/wiki-itali-gto-vi",
+    "file": "vehicles/wiki-itali-gto-vi/index.html",
+    "title": "إيطالي GTO"
+  },
+  {
+    "route": "vehicle/wiki-itali-rsx-vi",
+    "file": "vehicles/wiki-itali-rsx-vi/index.html",
+    "title": "إيطالي RSX"
+  },
+  {
+    "route": "vehicle/wiki-paragon-r-vi",
+    "file": "vehicles/wiki-paragon-r-vi/index.html",
+    "title": "باراغون R"
+  },
+  {
+    "route": "vehicle/wiki-tempesta-vi",
+    "file": "vehicles/wiki-tempesta-vi/index.html",
+    "title": "تيمبيستا"
+  },
+  {
+    "route": "vehicle/wiki-thrax-vi",
+    "file": "vehicles/wiki-thrax-vi/index.html",
+    "title": "ثراكس"
+  },
+  {
+    "route": "vehicle/wiki-vectre-vi",
+    "file": "vehicles/wiki-vectre-vi/index.html",
+    "title": "فيكتر"
+  },
+  {
+    "route": "vehicle/wiki-zion-vi",
+    "file": "vehicles/wiki-zion-vi/index.html",
+    "title": "زيون"
+  },
+  {
+    "route": "vehicle/wiki-zion-cabrio-vi",
+    "file": "vehicles/wiki-zion-cabrio-vi/index.html",
+    "title": "زيون كابريو"
+  },
+  {
+    "route": "vehicle/wiki-zorrusso-vi",
+    "file": "vehicles/wiki-zorrusso-vi/index.html",
+    "title": "زوروسو"
+  },
+  {
+    "route": "vehicle/wiki-buccaneer-vi",
+    "file": "vehicles/wiki-buccaneer-vi/index.html",
+    "title": "بوكانير"
+  },
+  {
+    "route": "vehicle/wiki-chino-vi",
+    "file": "vehicles/wiki-chino-vi/index.html",
+    "title": "تشينو"
+  },
+  {
+    "route": "vehicle/wiki-deviant-vi",
+    "file": "vehicles/wiki-deviant-vi/index.html",
+    "title": "ديفيانت"
+  },
+  {
+    "route": "vehicle/wiki-dominator-vi",
+    "file": "vehicles/wiki-dominator-vi/index.html",
+    "title": "دوميناتور"
+  },
+  {
+    "route": "vehicle/wiki-dominator-asp-vi",
+    "file": "vehicles/wiki-dominator-asp-vi/index.html",
+    "title": "دوميناتور ASP"
+  },
+  {
+    "route": "vehicle/wiki-dominator-gt-vi",
+    "file": "vehicles/wiki-dominator-gt-vi/index.html",
+    "title": "دوميناتور جي تي"
+  },
+  {
+    "route": "vehicle/wiki-dominator-gtx-vi",
+    "file": "vehicles/wiki-dominator-gtx-vi/index.html",
+    "title": "دوميناتور GTX"
+  },
+  {
+    "route": "vehicle/wiki-faction-vi",
+    "file": "vehicles/wiki-faction-vi/index.html",
+    "title": "فاكشن"
+  },
+  {
+    "route": "vehicle/wiki-gauntlet-classic-custom-vi",
+    "file": "vehicles/wiki-gauntlet-classic-custom-vi/index.html",
+    "title": "غونتليت كلاسيك كاستم"
+  },
+  {
+    "route": "vehicle/wiki-gauntlet-hellfire-vi",
+    "file": "vehicles/wiki-gauntlet-hellfire-vi/index.html",
+    "title": "غونتليت هيلفاير"
+  },
+  {
+    "route": "vehicle/wiki-hermes-vi",
+    "file": "vehicles/wiki-hermes-vi/index.html",
+    "title": "هيرميس"
+  },
+  {
+    "route": "vehicle/wiki-hustler-vi",
+    "file": "vehicles/wiki-hustler-vi/index.html",
+    "title": "هاسلر"
+  },
+  {
+    "route": "vehicle/wiki-manana-vi",
+    "file": "vehicles/wiki-manana-vi/index.html",
+    "title": "مانيانا"
+  },
+  {
+    "route": "vehicle/wiki-phoenix-vi",
+    "file": "vehicles/wiki-phoenix-vi/index.html",
+    "title": "فينيكس"
+  },
+  {
+    "route": "vehicle/wiki-ruiner-vi",
+    "file": "vehicles/wiki-ruiner-vi/index.html",
+    "title": "روينر"
+  },
+  {
+    "route": "vehicle/wiki-stallion-vi",
+    "file": "vehicles/wiki-stallion-vi/index.html",
+    "title": "ستاليون"
+  },
+  {
+    "route": "vehicle/wiki-tulip-vi",
+    "file": "vehicles/wiki-tulip-vi/index.html",
+    "title": "توليب"
+  },
+  {
+    "route": "vehicle/wiki-tulip-m-100-vi",
+    "file": "vehicles/wiki-tulip-m-100-vi/index.html",
+    "title": "توليب M-100"
+  },
+  {
+    "route": "vehicle/wiki-vigero-zx-convertible-vi",
+    "file": "vehicles/wiki-vigero-zx-convertible-vi/index.html",
+    "title": "فيغيرو ZX Convertible"
+  },
+  {
+    "route": "vehicle/wiki-blista-compact-vi",
+    "file": "vehicles/wiki-blista-compact-vi/index.html",
+    "title": "بليستا Compact"
+  },
+  {
+    "route": "vehicle/wiki-cypher-vi",
+    "file": "vehicles/wiki-cypher-vi/index.html",
+    "title": "سايفر"
+  },
+  {
+    "route": "vehicle/wiki-futo-vi",
+    "file": "vehicles/wiki-futo-vi/index.html",
+    "title": "فوتو"
+  },
+  {
+    "route": "vehicle/wiki-penumbra-vi",
+    "file": "vehicles/wiki-penumbra-vi/index.html",
+    "title": "بينومبرا"
+  },
+  {
+    "route": "vehicle/wiki-sugoi-vi",
+    "file": "vehicles/wiki-sugoi-vi/index.html",
+    "title": "سوغوي"
+  },
+  {
+    "route": "vehicle/wiki-tailgater-s-vi",
+    "file": "vehicles/wiki-tailgater-s-vi/index.html",
+    "title": "تيلغيتر S"
+  },
+  {
+    "route": "vehicle/wiki-asterope-gz-vi",
+    "file": "vehicles/wiki-asterope-gz-vi/index.html",
+    "title": "أستروب GZ"
+  },
+  {
+    "route": "vehicle/wiki-buffalo-vi",
+    "file": "vehicles/wiki-buffalo-vi/index.html",
+    "title": "بافالو"
+  },
+  {
+    "route": "vehicle/wiki-buffalo-stx-vi",
+    "file": "vehicles/wiki-buffalo-stx-vi/index.html",
+    "title": "بافالو STX"
+  },
+  {
+    "route": "vehicle/wiki-emperor-vi",
+    "file": "vehicles/wiki-emperor-vi/index.html",
+    "title": "إمبيرور"
+  },
+  {
+    "route": "vehicle/wiki-feroci-vi",
+    "file": "vehicles/wiki-feroci-vi/index.html",
+    "title": "فيروتشي"
+  },
+  {
+    "route": "vehicle/wiki-impaler-1980-vi",
+    "file": "vehicles/wiki-impaler-1980-vi/index.html",
+    "title": "إمبالر (1980)"
+  },
+  {
+    "route": "vehicle/wiki-impaler-sz-vi",
+    "file": "vehicles/wiki-impaler-sz-vi/index.html",
+    "title": "إمبالر SZ"
+  },
+  {
+    "route": "vehicle/wiki-intruder-vi",
+    "file": "vehicles/wiki-intruder-vi/index.html",
+    "title": "إنترودر"
+  },
+  {
+    "route": "vehicle/wiki-jugular-vi",
+    "file": "vehicles/wiki-jugular-vi/index.html",
+    "title": "جاغولار"
+  },
+  {
+    "route": "vehicle/wiki-neon-vi",
+    "file": "vehicles/wiki-neon-vi/index.html",
+    "title": "نيون"
+  },
+  {
+    "route": "vehicle/wiki-primo-vi",
+    "file": "vehicles/wiki-primo-vi/index.html",
+    "title": "بريمو"
+  },
+  {
+    "route": "vehicle/wiki-raiden-vi",
+    "file": "vehicles/wiki-raiden-vi/index.html",
+    "title": "رايدن"
+  },
+  {
+    "route": "vehicle/wiki-schafter-second-generation-vi",
+    "file": "vehicles/wiki-schafter-second-generation-vi/index.html",
+    "title": "شافر (second generation)"
+  },
+  {
+    "route": "vehicle/wiki-stanier-vi",
+    "file": "vehicles/wiki-stanier-vi/index.html",
+    "title": "ستانير"
+  },
+  {
+    "route": "vehicle/wiki-stratum-vi",
+    "file": "vehicles/wiki-stratum-vi/index.html",
+    "title": "ستراتوم"
+  },
+  {
+    "route": "vehicle/wiki-sultan-vi",
+    "file": "vehicles/wiki-sultan-vi/index.html",
+    "title": "سلطان"
+  },
+  {
+    "route": "vehicle/wiki-tailgater-vi",
+    "file": "vehicles/wiki-tailgater-vi/index.html",
+    "title": "تيلغيتر"
+  },
+  {
+    "route": "vehicle/wiki-v-str-vi",
+    "file": "vehicles/wiki-v-str-vi/index.html",
+    "title": "V-STR"
+  },
+  {
+    "route": "vehicle/wiki-windsor-drop-vi",
+    "file": "vehicles/wiki-windsor-drop-vi/index.html",
+    "title": "ويندسور دروب"
+  },
+  {
+    "route": "vehicle/wiki-aleutian-vi",
+    "file": "vehicles/wiki-aleutian-vi/index.html",
+    "title": "ألوتيان"
+  },
+  {
+    "route": "vehicle/wiki-astron-vi",
+    "file": "vehicles/wiki-astron-vi/index.html",
+    "title": "أسترون"
+  },
+  {
+    "route": "vehicle/wiki-baller-vi",
+    "file": "vehicles/wiki-baller-vi/index.html",
+    "title": "بالر"
+  },
+  {
+    "route": "vehicle/wiki-baller-st-d-vi",
+    "file": "vehicles/wiki-baller-st-d-vi/index.html",
+    "title": "بالر ST-D"
+  },
+  {
+    "route": "vehicle/wiki-cavalcade-xl-vi",
+    "file": "vehicles/wiki-cavalcade-xl-vi/index.html",
+    "title": "كافالكيد إكس إل"
+  },
+  {
+    "route": "vehicle/wiki-dorado-vi",
+    "file": "vehicles/wiki-dorado-vi/index.html",
+    "title": "دورادو"
+  },
+  {
+    "route": "vehicle/wiki-dubsta-vi",
+    "file": "vehicles/wiki-dubsta-vi/index.html",
+    "title": "دوبستا"
+  },
+  {
+    "route": "vehicle/wiki-granger-vi",
+    "file": "vehicles/wiki-granger-vi/index.html",
+    "title": "غرينجر"
+  },
+  {
+    "route": "vehicle/wiki-granger-3600lx-vi",
+    "file": "vehicles/wiki-granger-3600lx-vi/index.html",
+    "title": "غرينجر 3600LX"
+  },
+  {
+    "route": "vehicle/wiki-hellion-vi",
+    "file": "vehicles/wiki-hellion-vi/index.html",
+    "title": "هيليون"
+  },
+  {
+    "route": "vehicle/wiki-jubilee-vi",
+    "file": "vehicles/wiki-jubilee-vi/index.html",
+    "title": "جوبيلي"
+  },
+  {
+    "route": "vehicle/wiki-landstalker-xl-vi",
+    "file": "vehicles/wiki-landstalker-xl-vi/index.html",
+    "title": "لاندستوكر إكس إل"
+  },
+  {
+    "route": "vehicle/wiki-mesa-vi",
+    "file": "vehicles/wiki-mesa-vi/index.html",
+    "title": "ميسا"
+  },
+  {
+    "route": "vehicle/wiki-rebla-gts-vi",
+    "file": "vehicles/wiki-rebla-gts-vi/index.html",
+    "title": "ريبلا GTS"
+  },
+  {
+    "route": "vehicle/wiki-toros-vi",
+    "file": "vehicles/wiki-toros-vi/index.html",
+    "title": "توروس"
+  },
+  {
+    "route": "vehicle/wiki-xls-vi",
+    "file": "vehicles/wiki-xls-vi/index.html",
+    "title": "XLS"
+  },
+  {
+    "route": "vehicle/wiki-bison-vi",
+    "file": "vehicles/wiki-bison-vi/index.html",
+    "title": "بايسون"
+  },
+  {
+    "route": "vehicle/wiki-blazer-vi",
+    "file": "vehicles/wiki-blazer-vi/index.html",
+    "title": "بليزر"
+  },
+  {
+    "route": "vehicle/wiki-bobcat-xl-vi",
+    "file": "vehicles/wiki-bobcat-xl-vi/index.html",
+    "title": "بوبكات إكس إل"
+  },
+  {
+    "route": "vehicle/wiki-caddy-vi",
+    "file": "vehicles/wiki-caddy-vi/index.html",
+    "title": "كادي"
+  },
+  {
+    "route": "vehicle/wiki-caracara-4x4-vi",
+    "file": "vehicles/wiki-caracara-4x4-vi/index.html",
+    "title": "كاراكارا 4x4"
+  },
+  {
+    "route": "vehicle/wiki-contender-vi",
+    "file": "vehicles/wiki-contender-vi/index.html",
+    "title": "كونتيندر"
+  },
+  {
+    "route": "vehicle/wiki-kamacho-vi",
+    "file": "vehicles/wiki-kamacho-vi/index.html",
+    "title": "كاماتشو"
+  },
+  {
+    "route": "vehicle/wiki-outlaw-vi",
+    "file": "vehicles/wiki-outlaw-vi/index.html",
+    "title": "أوتلاو"
+  },
+  {
+    "route": "vehicle/wiki-patriot-mil-spec-vi",
+    "file": "vehicles/wiki-patriot-mil-spec-vi/index.html",
+    "title": "باتريوت Mil-Spec"
+  },
+  {
+    "route": "vehicle/wiki-rancher-vi",
+    "file": "vehicles/wiki-rancher-vi/index.html",
+    "title": "رانشر"
+  },
+  {
+    "route": "vehicle/wiki-rebel-vi",
+    "file": "vehicles/wiki-rebel-vi/index.html",
+    "title": "ريبيل"
+  },
+  {
+    "route": "vehicle/wiki-sandking-xl-vi",
+    "file": "vehicles/wiki-sandking-xl-vi/index.html",
+    "title": "ساندكينغ إكس إل"
+  },
+  {
+    "route": "vehicle/wiki-slamvan-vi",
+    "file": "vehicles/wiki-slamvan-vi/index.html",
+    "title": "سلامفان"
+  },
+  {
+    "route": "vehicle/wiki-terminus-vi",
+    "file": "vehicles/wiki-terminus-vi/index.html",
+    "title": "تيرمينوس"
+  },
+  {
+    "route": "vehicle/wiki-verus-vi",
+    "file": "vehicles/wiki-verus-vi/index.html",
+    "title": "فيروس"
+  },
+  {
+    "route": "vehicle/wiki-walton-l35-vi",
+    "file": "vehicles/wiki-walton-l35-vi/index.html",
+    "title": "والتون L35"
+  },
+  {
+    "route": "vehicle/wiki-yosemite-1500-vi",
+    "file": "vehicles/wiki-yosemite-1500-vi/index.html",
+    "title": "يوسيمايت 1500"
+  },
+  {
+    "route": "vehicle/wiki-boxville-vi",
+    "file": "vehicles/wiki-boxville-vi/index.html",
+    "title": "بوكسفيل"
+  },
+  {
+    "route": "vehicle/wiki-burrito-vi",
+    "file": "vehicles/wiki-burrito-vi/index.html",
+    "title": "بوريتو"
+  },
+  {
+    "route": "vehicle/wiki-journey-ii-vi",
+    "file": "vehicles/wiki-journey-ii-vi/index.html",
+    "title": "جورني II"
+  },
+  {
+    "route": "vehicle/wiki-speedo-vi",
+    "file": "vehicles/wiki-speedo-vi/index.html",
+    "title": "سبيدو"
+  },
+  {
+    "route": "vehicle/wiki-vivanite-vi",
+    "file": "vehicles/wiki-vivanite-vi/index.html",
+    "title": "فيفانايت"
+  },
+  {
+    "route": "vehicle/wiki-youga-classic-vi",
+    "file": "vehicles/wiki-youga-classic-vi/index.html",
+    "title": "يوغا كلاسيك"
+  },
+  {
+    "route": "vehicle/wiki-hauler-vi",
+    "file": "vehicles/wiki-hauler-vi/index.html",
+    "title": "هولر"
+  },
+  {
+    "route": "vehicle/wiki-mule-vi",
+    "file": "vehicles/wiki-mule-vi/index.html",
+    "title": "ميول"
+  },
+  {
+    "route": "vehicle/wiki-packer-vi",
+    "file": "vehicles/wiki-packer-vi/index.html",
+    "title": "باكر"
+  },
+  {
+    "route": "vehicle/wiki-phantom-vi",
+    "file": "vehicles/wiki-phantom-vi/index.html",
+    "title": "فانتوم"
+  },
+  {
+    "route": "vehicle/wiki-stockade-vi",
+    "file": "vehicles/wiki-stockade-vi/index.html",
+    "title": "ستوكيد"
+  },
+  {
+    "route": "vehicle/wiki-boat-trailer-vi-247",
+    "file": "vehicles/wiki-boat-trailer-vi-247/index.html",
+    "title": "قارب Trailer"
+  },
+  {
+    "route": "vehicle/wiki-dock-trailer-vi",
+    "file": "vehicles/wiki-dock-trailer-vi/index.html",
+    "title": "رصيف Trailer"
+  },
+  {
+    "route": "vehicle/wiki-freight-trailer-vi",
+    "file": "vehicles/wiki-freight-trailer-vi/index.html",
+    "title": "شحن Trailer"
+  },
+  {
+    "route": "vehicle/wiki-trailer-box-vi",
+    "file": "vehicles/wiki-trailer-box-vi/index.html",
+    "title": "Trailer (box)"
+  },
+  {
+    "route": "vehicle/wiki-trailer-flatbed-vi",
+    "file": "vehicles/wiki-trailer-flatbed-vi/index.html",
+    "title": "Trailer (flatbed)"
+  },
+  {
+    "route": "vehicle/wiki-trailer-tanker-vi",
+    "file": "vehicles/wiki-trailer-tanker-vi/index.html",
+    "title": "Trailer (tanker)"
+  },
+  {
+    "route": "vehicle/wiki-airport-bus-vi",
+    "file": "vehicles/wiki-airport-bus-vi/index.html",
+    "title": "مطار حافلة"
+  },
+  {
+    "route": "vehicle/wiki-airtug-vi",
+    "file": "vehicles/wiki-airtug-vi/index.html",
+    "title": "إيرتاغ"
+  },
+  {
+    "route": "vehicle/wiki-dashound-vi",
+    "file": "vehicles/wiki-dashound-vi/index.html",
+    "title": "داشهاوند"
+  },
+  {
+    "route": "vehicle/wiki-forklift-vi",
+    "file": "vehicles/wiki-forklift-vi/index.html",
+    "title": "رافعة شوكية"
+  },
+  {
+    "route": "vehicle/wiki-ripley-vi",
+    "file": "vehicles/wiki-ripley-vi/index.html",
+    "title": "ريبلي"
+  },
+  {
+    "route": "vehicle/wiki-ambulance-vi",
+    "file": "vehicles/wiki-ambulance-vi/index.html",
+    "title": "إسعاف"
+  },
+  {
+    "route": "vehicle/wiki-buffalo-police-vi",
+    "file": "vehicles/wiki-buffalo-police-vi/index.html",
+    "title": "بافالو (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-buffalo-stx-pursuit-vi",
+    "file": "vehicles/wiki-buffalo-stx-pursuit-vi/index.html",
+    "title": "بافالو STX مطاردة"
+  },
+  {
+    "route": "vehicle/wiki-gauntlet-interceptor-vi",
+    "file": "vehicles/wiki-gauntlet-interceptor-vi/index.html",
+    "title": "غونتليت إنترسيبتور"
+  },
+  {
+    "route": "vehicle/wiki-lowline-police-vi",
+    "file": "vehicles/wiki-lowline-police-vi/index.html",
+    "title": "لولاين (شرطة)"
+  },
+  {
+    "route": "vehicle/wiki-police-riot-vi",
+    "file": "vehicles/wiki-police-riot-vi/index.html",
+    "title": "شرطة مكافحة الشغب"
+  },
+  {
+    "route": "vehicle/wiki-avarus-vi",
+    "file": "vehicles/wiki-avarus-vi/index.html",
+    "title": "أفاروس"
+  },
+  {
+    "route": "vehicle/wiki-carbon-rs-vi",
+    "file": "vehicles/wiki-carbon-rs-vi/index.html",
+    "title": "كاربون آر إس"
+  },
+  {
+    "route": "vehicle/wiki-cliffhanger-vi",
+    "file": "vehicles/wiki-cliffhanger-vi/index.html",
+    "title": "كليفهانغر"
+  },
+  {
+    "route": "vehicle/wiki-double-t-vi",
+    "file": "vehicles/wiki-double-t-vi/index.html",
+    "title": "Double-T"
+  },
+  {
+    "route": "vehicle/wiki-enduro-vi",
+    "file": "vehicles/wiki-enduro-vi/index.html",
+    "title": "إندورو"
+  },
+  {
+    "route": "vehicle/wiki-faggio-vi",
+    "file": "vehicles/wiki-faggio-vi/index.html",
+    "title": "فاجيو"
+  },
+  {
+    "route": "vehicle/wiki-lectro-vi",
+    "file": "vehicles/wiki-lectro-vi/index.html",
+    "title": "ليكترو"
+  },
+  {
+    "route": "vehicle/wiki-manchez-vi",
+    "file": "vehicles/wiki-manchez-vi/index.html",
+    "title": "مانشيز"
+  },
+  {
+    "route": "vehicle/wiki-nightblade-vi",
+    "file": "vehicles/wiki-nightblade-vi/index.html",
+    "title": "نايتبليد"
+  },
+  {
+    "route": "vehicle/wiki-sanchez-vi",
+    "file": "vehicles/wiki-sanchez-vi/index.html",
+    "title": "سانشيز"
+  },
+  {
+    "route": "vehicle/wiki-sovereign-107-vi",
+    "file": "vehicles/wiki-sovereign-107-vi/index.html",
+    "title": "سوفيرين 107"
+  },
+  {
+    "route": "vehicle/wiki-zombie-chopper-vi",
+    "file": "vehicles/wiki-zombie-chopper-vi/index.html",
+    "title": "زومبي تشوبر"
+  },
+  {
+    "route": "vehicle/wiki-bmx-vi",
+    "file": "vehicles/wiki-bmx-vi/index.html",
+    "title": "BMX"
+  },
+  {
+    "route": "vehicle/wiki-cruiser-vi",
+    "file": "vehicles/wiki-cruiser-vi/index.html",
+    "title": "كروزر"
+  },
+  {
+    "route": "vehicle/wiki-endurex-race-bike-vi",
+    "file": "vehicles/wiki-endurex-race-bike-vi/index.html",
+    "title": "إندوريكس سباق دراجة"
+  },
+  {
+    "route": "vehicle/wiki-scorcher-vi",
+    "file": "vehicles/wiki-scorcher-vi/index.html",
+    "title": "سكورشر"
+  },
+  {
+    "route": "vehicle/wiki-dinghy-vi",
+    "file": "vehicles/wiki-dinghy-vi/index.html",
+    "title": "دينغي"
+  },
+  {
+    "route": "vehicle/wiki-marquis-vi",
+    "file": "vehicles/wiki-marquis-vi/index.html",
+    "title": "ماركيز"
+  },
+  {
+    "route": "vehicle/wiki-seashark-vi",
+    "file": "vehicles/wiki-seashark-vi/index.html",
+    "title": "سي شارك"
+  },
+  {
+    "route": "vehicle/wiki-squalo-vi",
+    "file": "vehicles/wiki-squalo-vi/index.html",
+    "title": "سكوالو"
+  },
+  {
+    "route": "vehicle/wiki-dodo-vi",
+    "file": "vehicles/wiki-dodo-vi/index.html",
+    "title": "دودو"
+  },
+  {
+    "route": "vehicle/wiki-duster-vi",
+    "file": "vehicles/wiki-duster-vi/index.html",
+    "title": "داستر"
+  },
+  {
+    "route": "vehicle/wiki-jet-vi",
+    "file": "vehicles/wiki-jet-vi/index.html",
+    "title": "جيت"
+  },
+  {
+    "route": "vehicle/wiki-luxor-vi",
+    "file": "vehicles/wiki-luxor-vi/index.html",
+    "title": "لوكسور"
+  },
+  {
+    "route": "vehicle/wiki-mammatus-vi",
+    "file": "vehicles/wiki-mammatus-vi/index.html",
+    "title": "ماماتوس"
+  },
+  {
+    "route": "vehicle/wiki-nimbus-vi",
+    "file": "vehicles/wiki-nimbus-vi/index.html",
+    "title": "نيمبوس"
+  },
+  {
+    "route": "vehicle/wiki-shamal-vi",
+    "file": "vehicles/wiki-shamal-vi/index.html",
+    "title": "شامال"
+  },
+  {
+    "route": "vehicle/wiki-buzzard-vi",
+    "file": "vehicles/wiki-buzzard-vi/index.html",
+    "title": "بازارد"
+  },
+  {
+    "route": "vehicle/wiki-buzzard-attack-chopper-vi",
+    "file": "vehicles/wiki-buzzard-attack-chopper-vi/index.html",
+    "title": "بازارد هجومية تشوبر"
+  },
+  {
+    "route": "vehicle/wiki-dh-7-iron-mule-vi",
+    "file": "vehicles/wiki-dh-7-iron-mule-vi/index.html",
+    "title": "DH-7 آيرون ميول"
+  },
+  {
+    "route": "vehicle/wiki-maverick-vi",
+    "file": "vehicles/wiki-maverick-vi/index.html",
+    "title": "مافريك"
+  },
+  {
+    "route": "vehicle/wiki-police-maverick-vi",
+    "file": "vehicles/wiki-police-maverick-vi/index.html",
+    "title": "شرطة مافريك"
+  },
+  {
+    "route": "vehicle/wiki-sea-sparrow-vi",
+    "file": "vehicles/wiki-sea-sparrow-vi/index.html",
+    "title": "سي سبارو"
+  },
+  {
+    "route": "vehicle/wiki-supervolito-vi",
+    "file": "vehicles/wiki-supervolito-vi/index.html",
+    "title": "سوبرفوليتو"
+  },
+  {
+    "route": "vehicle/wiki-swift-vi",
+    "file": "vehicles/wiki-swift-vi/index.html",
+    "title": "سويفت"
+  },
+  {
+    "route": "vehicle/wiki-valkyrie-vi",
+    "file": "vehicles/wiki-valkyrie-vi/index.html",
+    "title": "فالكيري"
+  },
+  {
+    "route": "vehicle/wiki-volatus-vi",
+    "file": "vehicles/wiki-volatus-vi/index.html",
+    "title": "فولاتوس"
+  },
+  {
+    "route": "vehicle/wiki-freight-train-vi",
+    "file": "vehicles/wiki-freight-train-vi/index.html",
+    "title": "شحن قطار"
+  },
+  {
+    "route": "vehicle/wiki-freight-train-tanker-vi",
+    "file": "vehicles/wiki-freight-train-tanker-vi/index.html",
+    "title": "شحن قطار (tanker)"
+  },
+  {
+    "route": "vehicle/truffade-adder",
+    "file": "vehicles/truffade-adder/index.html",
+    "title": "أدر"
+  },
+  {
+    "route": "vehicle/bravado-banshee",
+    "file": "vehicles/bravado-banshee/index.html",
+    "title": "بانشي"
+  },
+  {
+    "route": "vehicle/bravado-buffalo-s",
+    "file": "vehicles/bravado-buffalo-s/index.html",
+    "title": "بافالو إس"
+  },
+  {
+    "route": "vehicle/pfister-comet",
+    "file": "vehicles/pfister-comet/index.html",
+    "title": "كوميت"
+  },
+  {
+    "route": "vehicle/grotti-carbonizzare",
+    "file": "vehicles/grotti-carbonizzare/index.html",
+    "title": "كاربونيزاري"
+  },
+  {
+    "route": "vehicle/grotti-cheetah",
+    "file": "vehicles/grotti-cheetah/index.html",
+    "title": "تشيتا"
+  },
+  {
+    "route": "vehicle/pegassi-infernus",
+    "file": "vehicles/pegassi-infernus/index.html",
+    "title": "إنفرنوس"
+  },
+  {
+    "route": "vehicle/pegassi-zentorno",
+    "file": "vehicles/pegassi-zentorno/index.html",
+    "title": "زينتورنو"
+  },
+  {
+    "route": "vehicle/obey-9f",
+    "file": "vehicles/obey-9f/index.html",
+    "title": "ناين إف"
+  },
+  {
+    "route": "vehicle/karin-sultan",
+    "file": "vehicles/karin-sultan/index.html",
+    "title": "سلطان"
+  },
+  {
+    "route": "vehicle/albany-buccaneer",
+    "file": "vehicles/albany-buccaneer/index.html",
+    "title": "بوكانير"
+  },
+  {
+    "route": "vehicle/declasse-sabre-turbo",
+    "file": "vehicles/declasse-sabre-turbo/index.html",
+    "title": "سيبر توربو"
+  },
+  {
+    "route": "vehicle/vapid-dominator",
+    "file": "vehicles/vapid-dominator/index.html",
+    "title": "دومينيتر"
+  },
+  {
+    "route": "vehicle/imponte-dukes",
+    "file": "vehicles/imponte-dukes/index.html",
+    "title": "ديوكس"
+  },
+  {
+    "route": "vehicle/benefactor-schafter",
+    "file": "vehicles/benefactor-schafter/index.html",
+    "title": "شافتر"
+  },
+  {
+    "route": "vehicle/gallivanter-baller",
+    "file": "vehicles/gallivanter-baller/index.html",
+    "title": "بالر"
+  },
+  {
+    "route": "vehicle/canis-mesa",
+    "file": "vehicles/canis-mesa/index.html",
+    "title": "ميسا"
+  },
+  {
+    "route": "vehicle/vapid-sandking-xl",
+    "file": "vehicles/vapid-sandking-xl/index.html",
+    "title": "ساندكينغ إكس إل"
+  },
+  {
+    "route": "vehicle/pegassi-bati-801",
+    "file": "vehicles/pegassi-bati-801/index.html",
+    "title": "باتي ٨٠١"
+  },
+  {
+    "route": "vehicle/maibatsu-sanchez",
+    "file": "vehicles/maibatsu-sanchez/index.html",
+    "title": "سانشيز"
+  },
+  {
+    "route": "vehicle/shitzu-jetmax",
+    "file": "vehicles/shitzu-jetmax/index.html",
+    "title": "جيتماكس"
+  },
+  {
+    "route": "vehicle/nagasaki-buzzard-attack-chopper",
+    "file": "vehicles/nagasaki-buzzard-attack-chopper/index.html",
+    "title": "بازارد الهجومية"
+  },
+  {
+    "route": "vehicle/western-company-cuban-800",
+    "file": "vehicles/western-company-cuban-800/index.html",
+    "title": "كيوبان ٨٠٠"
+  },
+  {
+    "route": "vehicle/bf-bifta",
+    "file": "vehicles/bf-bifta/index.html",
+    "title": "بيفتا"
+  },
+  {
+    "route": "weapon/baseball-bat-vi",
+    "file": "weapons/baseball-bat-vi/index.html",
+    "title": "مضرب البيسبول"
+  },
+  {
+    "route": "weapon/fishing-rod-vi",
+    "file": "weapons/fishing-rod-vi/index.html",
+    "title": "صنارة الصيد"
+  },
+  {
+    "route": "weapon/hammer-vi",
+    "file": "weapons/hammer-vi/index.html",
+    "title": "المطرقة"
+  },
+  {
+    "route": "weapon/pool-cue-vi",
+    "file": "weapons/pool-cue-vi/index.html",
+    "title": "عصا البلياردو"
+  },
+  {
+    "route": "weapon/mini-golf-club-vi",
+    "file": "weapons/mini-golf-club-vi/index.html",
+    "title": "عصا الغولف المصغّر"
+  },
+  {
+    "route": "weapon/es9-vi",
+    "file": "weapons/es9-vi/index.html",
+    "title": "مسدس ES9"
+  },
+  {
+    "route": "weapon/k17-vi",
+    "file": "weapons/k17-vi/index.html",
+    "title": "مسدس K17"
+  },
+  {
+    "route": "weapon/morgan-revolvers-vi",
+    "file": "weapons/morgan-revolvers-vi/index.html",
+    "title": "مسدسات مورغان"
+  },
+  {
+    "route": "weapon/mustang-357-vi",
+    "file": "weapons/mustang-357-vi/index.html",
+    "title": "موستانغ ‎.357"
+  },
+  {
+    "route": "weapon/nipper-38-vi",
+    "file": "weapons/nipper-38-vi/index.html",
+    "title": "نيبر ‎.38"
+  },
+  {
+    "route": "weapon/pistol-vi",
+    "file": "weapons/pistol-vi/index.html",
+    "title": "المسدس"
+  },
+  {
+    "route": "weapon/capo-pistol-vi",
+    "file": "weapons/capo-pistol-vi/index.html",
+    "title": "مسدس كابو"
+  },
+  {
+    "route": "weapon/850-vi",
+    "file": "weapons/850-vi/index.html",
+    "title": "شوزن 850"
+  },
+  {
+    "route": "weapon/stoeger-longfowler-inspired-shotgun-vi",
+    "file": "weapons/stoeger-longfowler-inspired-shotgun-vi/index.html",
+    "title": "شوزن بتصميم Stoeger Longfowler"
+  },
+  {
+    "route": "weapon/dw9-vi",
+    "file": "weapons/dw9-vi/index.html",
+    "title": "رشاش DW9"
+  },
+  {
+    "route": "weapon/br-gger-thomet-mp9-inspired-submachine-gun-vi",
+    "file": "weapons/br-gger-thomet-mp9-inspired-submachine-gun-vi/index.html",
+    "title": "رشاش بتصميم MP9"
+  },
+  {
+    "route": "weapon/heckler-koch-mp5-40-inspired-submachine-gun-vi",
+    "file": "weapons/heckler-koch-mp5-40-inspired-submachine-gun-vi/index.html",
+    "title": "رشاش بتصميم MP5/40"
+  },
+  {
+    "route": "weapon/mac-11-inspired-submachine-gun-vi",
+    "file": "weapons/mac-11-inspired-submachine-gun-vi/index.html",
+    "title": "رشاش بتصميم MAC-11"
+  },
+  {
+    "route": "weapon/assault-rifle-vi",
+    "file": "weapons/assault-rifle-vi/index.html",
+    "title": "البندقية الهجومية"
+  },
+  {
+    "route": "weapon/556-vi",
+    "file": "weapons/556-vi/index.html",
+    "title": "بندقية 556"
+  },
+  {
+    "route": "weapon/duke-special-ops-carbine-vi",
+    "file": "weapons/duke-special-ops-carbine-vi/index.html",
+    "title": "كاربين ديوك للعمليات الخاصة"
+  },
+  {
+    "route": "weapon/duke-assault-sniper-rifle-vi",
+    "file": "weapons/duke-assault-sniper-rifle-vi/index.html",
+    "title": "بندقية قنص ديوك الهجومية"
+  },
+  {
+    "route": "weapon/remington-700-bdl-inspired-rifle-vi",
+    "file": "weapons/remington-700-bdl-inspired-rifle-vi/index.html",
+    "title": "بندقية بتصميم Remington 700 BDL"
+  },
+  {
+    "route": "weapon/ruger-10-22-inspired-rifle-vi",
+    "file": "weapons/ruger-10-22-inspired-rifle-vi/index.html",
+    "title": "بندقية بتصميم Ruger 10/22"
+  },
+  {
+    "route": "weapon/springfield-armory-m1a-inspired-rifle-vi",
+    "file": "weapons/springfield-armory-m1a-inspired-rifle-vi/index.html",
+    "title": "بندقية بتصميم Springfield M1A"
+  },
+  {
+    "route": "weapon/grenade-launcher-vi",
+    "file": "weapons/grenade-launcher-vi/index.html",
+    "title": "قاذف القنابل"
+  },
+  {
+    "route": "weapon/jerry-can-vi",
+    "file": "weapons/jerry-can-vi/index.html",
+    "title": "عبوة الوقود"
+  },
+  {
+    "route": "weapon/pistol",
+    "file": "weapons/pistol/index.html",
+    "title": "المسدس"
+  },
+  {
+    "route": "weapon/combat-pistol",
+    "file": "weapons/combat-pistol/index.html",
+    "title": "المسدس القتالي"
+  },
+  {
+    "route": "weapon/ap-pistol",
+    "file": "weapons/ap-pistol/index.html",
+    "title": "المسدس الآلي"
+  },
+  {
+    "route": "weapon/micro-smg",
+    "file": "weapons/micro-smg/index.html",
+    "title": "الرشاش المصغر"
+  },
+  {
+    "route": "weapon/smg",
+    "file": "weapons/smg/index.html",
+    "title": "الرشاش الخفيف"
+  },
+  {
+    "route": "weapon/assault-rifle",
+    "file": "weapons/assault-rifle/index.html",
+    "title": "البندقية الهجومية"
+  },
+  {
+    "route": "weapon/carbine-rifle",
+    "file": "weapons/carbine-rifle/index.html",
+    "title": "بندقية كاربين"
+  },
+  {
+    "route": "weapon/pump-shotgun",
+    "file": "weapons/pump-shotgun/index.html",
+    "title": "شوزن بمضخة"
+  },
+  {
+    "route": "weapon/sawed-off-shotgun",
+    "file": "weapons/sawed-off-shotgun/index.html",
+    "title": "الشوزن القصير"
+  },
+  {
+    "route": "weapon/sniper-rifle",
+    "file": "weapons/sniper-rifle/index.html",
+    "title": "بندقية القنص"
+  },
+  {
+    "route": "weapon/heavy-sniper",
+    "file": "weapons/heavy-sniper/index.html",
+    "title": "القناصة الثقيلة"
+  },
+  {
+    "route": "weapon/rpg",
+    "file": "weapons/rpg/index.html",
+    "title": "قاذف الصواريخ"
+  },
+  {
+    "route": "weapon/grenade",
+    "file": "weapons/grenade/index.html",
+    "title": "القنبلة اليدوية"
+  },
+  {
+    "route": "weapon/baseball-bat",
+    "file": "weapons/baseball-bat/index.html",
+    "title": "مضرب البيسبول"
+  },
+  {
+    "route": "guide",
+    "file": "guide/index.html",
+    "title": "دليل GTA Arabia: أخبار GTA 6 والخريطة والمقارنات"
+  },
+  {
+    "route": "english",
+    "file": "en/index.html",
+    "title": "GTA Arabia: GTA 6 news, map and guides in Arabic"
+  }
+]

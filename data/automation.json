@@ -1,0 +1,13 @@
+{
+  "enabled": false,
+  "allowedHosts": ["www.rockstargames.com", "www.playstation.com", "blog.playstation.com", "news.xbox.com"],
+  "sourcePages": [
+    "https://www.rockstargames.com/VI",
+    "https://www.rockstargames.com/VI/only-in-leonida",
+    "https://www.playstation.com/en-ca/support/games/gta-vi-support/"
+  ],
+  "discoveryPages": ["https://www.rockstargames.com/newswire", "https://blog.playstation.com/?s=Grand+Theft+Auto+VI"],
+  "maxSources": 5,
+  "maxCharactersPerSource": 16000,
+  "notes": "Enable only after API model and billing setup. Discovery pages are used to discover new allowlisted article URLs, not as factual source text."
+}
