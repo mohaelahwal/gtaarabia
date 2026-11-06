@@ -61,3 +61,26 @@ Navigation/branding update: moved video library before news, pink neon navigatio
 - Imported 302 illustrated GTA VI gallery entries; retained 24 GTA V reference entries. One wiki entry had no actual image and was excluded. Existing VI detail URLs retained.
 - Added Arabic labels/categories, per-image credits, game filters and 36-card incremental loading.
 - AdSense slots stay hidden and make no requests while disabled. See ADSENSE_SETUP.md before activation.
+
+## November 5 reader-submitted news
+- Added four Arabic articles: Kodak Black reporting, nightclub visual comparison, launch screenshot gallery, and WSJ interview.
+- Added Kodak Black as press-reported, with an official gallery image and source attribution; no unverified role details.
+- Added the WSJ Events full interview r7BWW8gvxRw to the video library and linked its article; added an interview filter.
+- Exact GTA6.only screenshot-compilation Reel could not be resolved. Needs its direct Instagram link; no unrelated video substituted.
+- Articles and character/video detail pages have dedicated URLs and sitemap entries.
+
+## Map layout cleanup
+- Removed the map explanation note and visible intro heading; map starts directly below navigation.
+- Homepage CTA now reads اكتشف خريطة ليونيدا.
+
+## Map photo galleries — 2026-11-06
+- Added 18 local Rockstar region images with source URLs in data/map-image-sources.json.
+- All 28 pins select a right-side gallery with three thumbnails and a keyboard-accessible enlarged viewer.
+- Non-official pin names use clearly labeled reference region photography, not a claim of exact location imagery.
+- Hover/focus keeps the tooltip but no longer overwrites the selected gallery. Selected pins update the shareable location query parameter.
+- Preserved map zoom, drag, rotation, filtering, and compact header.
+
+## Map layout refinement — 2026-11-06
+- Moved the location search from the sidebar into the top-right map overlay, raising the selected location gallery.
+- Removed the SVG's rectangular water fill and applied one continuous viewport gradient; no rectangle edge when zooming, dragging or rotating.
+- Moved the compass below search and excluded form controls from map dragging.

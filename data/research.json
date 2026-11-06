@@ -62,6 +62,17 @@
       "description": "مهرب مخضرم يعمل في منطقة كيز.",
       "status": "confirmed",
       "source": "https://www.rockstargames.com/VI/only-in-leonida"
+    },
+    {
+      "name": "Kodak Black",
+      "nameAr": "كوداك بلاك",
+      "description": "تحدد IGN كوداك بلاك في إحدى صور معرض إطلاق GTA VI. طبيعة الدور واسمه داخل اللعبة ومشاركته الصوتية لم تتضح في المصادر التي راجعناها.",
+      "status": "reported",
+      "source": "https://www.ign.com/articles/rapper-kodak-black-will-be-in-npc-in-gta-6-creating-speculation-over-other-artists-appearing-in-game",
+      "image": "assets/news/kodak-launch.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/launch-gallery",
+      "imageCaption": "صورة رسمية © Rockstar Games؛ تحديد الهوية من تقرير IGN.",
+      "articleId": "kodak-black-gta-vi-launch-gallery"
     }
   ],
   "locations": [

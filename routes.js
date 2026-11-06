@@ -1,4 +1,4 @@
-export const characterSlugs=['jason-duval','lucia-caminos','cal-hampton','boobie-ike','drequan-priest','real-dimez','raul-bautista','brian-heder'];
+export const characterSlugs=['jason-duval','lucia-caminos','cal-hampton','boobie-ike','drequan-priest','real-dimez','raul-bautista','brian-heder','kodak-black'];
 export function routeFile(route='home'){
  const [page,id]=route.replace(/^#/,'').split('/');
  const sections={home:'index.html',guide:'guide/index.html',english:'en/index.html',news:'news/index.html',map:'map/index.html',cars:'vehicles/index.html',weapons:'weapons/index.html',characters:'characters/index.html',stories:'stories/index.html',videos:'videos/index.html',about:'about/index.html'};

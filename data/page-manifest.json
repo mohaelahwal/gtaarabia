@@ -45,6 +45,26 @@
     "title": "عن GTA Arabia"
   },
   {
+    "route": "post/kodak-black-gta-vi-launch-gallery",
+    "file": "articles/kodak-black-gta-vi-launch-gallery/index.html",
+    "title": "كوداك بلاك في GTA VI؟ تقرير IGN يحدد ظهوره في الصور الجديدة"
+  },
+  {
+    "route": "post/nightclub-trailer-2023-launch-gallery-2026",
+    "file": "articles/nightclub-trailer-2023-launch-gallery-2026/index.html",
+    "title": "النادي الليلي بين تريلر 2023 وصور 2026: قراءة في الإضاءة والتفاصيل"
+  },
+  {
+    "route": "post/gta-vi-new-launch-screenshots-november",
+    "file": "articles/gta-vi-new-launch-screenshots-november/index.html",
+    "title": "روكستار تنشر معرض إطلاق جديداً: فايس سيتي وما وراءها"
+  },
+  {
+    "route": "post/strauss-zelnick-wsj-interview-november",
+    "file": "articles/strauss-zelnick-wsj-interview-november/index.html",
+    "title": "زيلنيك في مقابلة WSJ: الجودة وراء التأجيل وGTA عمل مصنوع بعناية"
+  },
+  {
     "route": "post/jason-second-chance",
     "file": "articles/jason-second-chance/index.html",
     "title": "جيسون دوفال: هل تكفي الرغبة في حياة أسهل؟"
@@ -178,6 +198,11 @@
     "route": "video/rz1B4B2yBZY",
     "file": "videos/rz1B4B2yBZY/index.html",
     "title": "تريلر الإطلاق الرسمي"
+  },
+  {
+    "route": "video/r7BWW8gvxRw",
+    "file": "videos/r7BWW8gvxRw/index.html",
+    "title": "زيلنيك يتحدث عن GTA VI: مقابلة WSJ الكاملة"
   },
   {
     "route": "video/tJbzMqJGH4k",
@@ -328,6 +353,11 @@
     "route": "character/7",
     "file": "characters/brian-heder/index.html",
     "title": "برايان هيدر"
+  },
+  {
+    "route": "character/8",
+    "file": "characters/kodak-black/index.html",
+    "title": "كوداك بلاك"
   },
   {
     "route": "vehicle/wiki-mamba-gt-vi",

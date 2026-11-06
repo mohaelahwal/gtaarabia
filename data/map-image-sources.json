@@ -1,0 +1,128 @@
+[
+  {
+    "region": "vice-city",
+    "regionName": "فايس سيتي",
+    "src": "assets/map/vice-city-1.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_01.135x56yoeu.6t.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "vice-city",
+    "regionName": "فايس سيتي",
+    "src": "assets/map/vice-city-2.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_02.0c5.7qx17u9kl.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "vice-city",
+    "regionName": "فايس سيتي",
+    "src": "assets/map/vice-city-3.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_03.0nqz~lrqdmlze.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "port-gellhorn",
+    "regionName": "بورت غيلهورن",
+    "src": "assets/map/port-gellhorn-1.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_01.0fmisvza-5-cq.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "port-gellhorn",
+    "regionName": "بورت غيلهورن",
+    "src": "assets/map/port-gellhorn-2.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_02.00e7cz6lwrup-.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "port-gellhorn",
+    "regionName": "بورت غيلهورن",
+    "src": "assets/map/port-gellhorn-3.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_03.00c2b0eh7sm~q.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "ambrosia",
+    "regionName": "أمبروسيا",
+    "src": "assets/map/ambrosia-1.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_01.0rqphs0gazkm..jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "ambrosia",
+    "regionName": "أمبروسيا",
+    "src": "assets/map/ambrosia-2.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_02.0wtqs05ozl.ym.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "ambrosia",
+    "regionName": "أمبروسيا",
+    "src": "assets/map/ambrosia-3.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_03.0vt46a.1s.7-y.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "mount-kalaga",
+    "regionName": "منتزه جبل كالاغا",
+    "src": "assets/map/mount-kalaga-1.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_01.0v5fl0f83hjv_.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "mount-kalaga",
+    "regionName": "منتزه جبل كالاغا",
+    "src": "assets/map/mount-kalaga-2.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_02.0f24dhopdprvx.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "mount-kalaga",
+    "regionName": "منتزه جبل كالاغا",
+    "src": "assets/map/mount-kalaga-3.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_03.037k2s87rwuxc.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "grassrivers",
+    "regionName": "غراس ريفرز",
+    "src": "assets/map/grassrivers-1.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_01.1096rw4lbjur_.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "grassrivers",
+    "regionName": "غراس ريفرز",
+    "src": "assets/map/grassrivers-2.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_02.0teqs5xe2pem1.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "grassrivers",
+    "regionName": "غراس ريفرز",
+    "src": "assets/map/grassrivers-3.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_03.14cuv-vg9orw4.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "leonida-keys",
+    "regionName": "ليونيدا كيز",
+    "src": "assets/map/leonida-keys-1.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_01.0zgz7tveur6y8.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "leonida-keys",
+    "regionName": "ليونيدا كيز",
+    "src": "assets/map/leonida-keys-2.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_02.0~ptk-53gl0lq.jpg",
+    "credit": "© Rockstar Games"
+  },
+  {
+    "region": "leonida-keys",
+    "regionName": "ليونيدا كيز",
+    "src": "assets/map/leonida-keys-3.jpg",
+    "source": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_03.0v_3~-9ceyixc.jpg",
+    "credit": "© Rockstar Games"
+  }
+]

@@ -22,6 +22,10 @@ Primary articles: Arabic (ar). English introduction: https://www.gtaarabia.com/e
 Article sources are linked. Editorial interpretation is labeled. GTA V reference stats are not GTA VI confirmation. Map coordinates follow a user-supplied image, not verified game coordinates.
 
 ## Articles
+- [كوداك بلاك في GTA VI؟ تقرير IGN يحدد ظهوره في الصور الجديدة](https://www.gtaarabia.com/articles/kodak-black-gta-vi-launch-gallery/index.html): صورة من معرض الإطلاق تثير الحديث عن ظهور مغني الراب، مع بقاء حجم دوره غير معلن.
+- [النادي الليلي بين تريلر 2023 وصور 2026: قراءة في الإضاءة والتفاصيل](https://www.gtaarabia.com/articles/nightclub-trailer-2023-launch-gallery-2026/index.html): المقارنة المتداولة تلفت النظر إلى اختلاف الألوان وكثافة المشهد، لكنها ليست اختبار أداء تقنياً.
+- [روكستار تنشر معرض إطلاق جديداً: فايس سيتي وما وراءها](https://www.gtaarabia.com/articles/gta-vi-new-launch-screenshots-november/index.html): صور جديدة تستعرض الحياة الليلية والمناطق البرية وتفاصيل عالم ليونيدا قبل الإصدار.
+- [زيلنيك في مقابلة WSJ: الجودة وراء التأجيل وGTA عمل مصنوع بعناية](https://www.gtaarabia.com/articles/strauss-zelnick-wsj-interview-november/index.html): المقابلة الكاملة توضح حديث رئيس Take-Two عن التأجيل ونجاحات الشركة والذكاء الاصطناعي.
 - [جيسون دوفال: هل تكفي الرغبة في حياة أسهل؟](https://www.gtaarabia.com/articles/jason-second-chance/index.html): قراءة في التناقض بين طموح جيسون وماضيه كما تقدمه روكستار.
 - [لوسيا كامينوس: الخطة أهم من الحظ](https://www.gtaarabia.com/articles/lucia-agency/index.html): كيف نقرأ إرادة لوسيا من دون اختزالها في ماضي السجن؟
 - [كال هامبتون: حين تصبح الشكوك جزءاً من العالم](https://www.gtaarabia.com/articles/cal-information/index.html): دور الشخصية الساخرة في بناء الإحساس بالمكان والمعلومات.
