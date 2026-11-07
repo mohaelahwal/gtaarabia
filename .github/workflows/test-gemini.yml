@@ -41,7 +41,7 @@ jobs:
               body: JSON.stringify({
                 contents: [{ parts: [{ text: 'Reply with OK.' }] }]
               }),
-              signal: AbortSignal.timeout(60000)
+              signal: AbortSignal.timeout(180000)
             }
           );
 
