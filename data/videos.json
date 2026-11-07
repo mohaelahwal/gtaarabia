@@ -311,5 +311,31 @@
     "official": false,
     "caption": "تحليل مستقل من IGN؛ الاستنتاجات والتوقعات لا تمثل تأكيداً من روكستار.",
     "verification": "YouTube oEmbed returned matching title, author and embed HTML on 2026-11-05. Playback/region/age restrictions not tested."
+  },
+  {
+    "id": "KxoXCI9lGY0",
+    "title": "قصة Cyberleek وتسريبات GTA VI: شرح Voxel",
+    "originalTitle": "GTA 6 VAZOU! Quem é Cyberleek e o que está acontecendo com a Rockstar Games? Resumo da treta",
+    "publisher": "Voxel",
+    "channelUrl": "https://www.youtube.com/@VOXELOFICIAL",
+    "url": "https://www.youtube.com/watch?v=KxoXCI9lGY0",
+    "thumbnail": "assets/videos/KxoXCI9lGY0.jpg",
+    "category": "تسريبات وتحليل",
+    "official": false,
+    "caption": "فيديو شرح وتحليل مستقل، وليس تأكيداً رسمياً للتسريبات. العنوان والوصف بالعربية؛ الصوت باللغة البرتغالية والترجمة بحسب خيارات يوتيوب.",
+    "verification": "YouTube oEmbed verified title, channel and embed HTML on 2026-11-07. Full playback and regional availability not verified."
+  },
+  {
+    "id": "XlxPdje37SM",
+    "title": "قراءة Flowstreet في مقاطع GTA VI المتداولة",
+    "originalTitle": "TODO sobre los 3 NUEVOS GAMEPLAYS FILTRADOS de GTA VI",
+    "publisher": "Flowstreet",
+    "channelUrl": "https://www.youtube.com/@FlowstreetYT",
+    "url": "https://www.youtube.com/watch?v=XlxPdje37SM",
+    "thumbnail": "assets/videos/XlxPdje37SM.jpg",
+    "category": "تسريبات وتحليل",
+    "official": false,
+    "caption": "فيديو شرح وتحليل مستقل، وليس تأكيداً رسمياً للتسريبات. العنوان والوصف بالعربية؛ الصوت باللغة الإسبانية والترجمة بحسب خيارات يوتيوب.",
+    "verification": "YouTube oEmbed verified title, channel and embed HTML on 2026-11-07. Full playback and regional availability not verified."
   }
 ]

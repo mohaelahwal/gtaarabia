@@ -195,6 +195,26 @@
     "title": "تريلر الإطلاق الرسمي: العودة إلى فايس سيتي"
   },
   {
+    "route": "post/gta6-leonida-map-leak-report",
+    "file": "articles/gta6-leonida-map-leak-report/index.html",
+    "title": "خريطة ليونيدا المتداولة: قراءة حذرة في تقرير Cyberleek"
+  },
+  {
+    "route": "post/gta6-leak-key-cloning-analysis",
+    "file": "articles/gta6-leak-key-cloning-analysis/index.html",
+    "title": "استنساخ مفاتيح السيارات والتحية: تفاصيل من مقاطع GTA VI المتداولة"
+  },
+  {
+    "route": "post/gta6-leak-stamina-police-analysis",
+    "file": "articles/gta6-leak-stamina-police-analysis/index.html",
+    "title": "قراءة في تسريبات GTA VI: التحمل ومؤشرات تعرّف الشرطة"
+  },
+  {
+    "route": "post/gta6-animation-reel-bike-rental",
+    "file": "articles/gta6-animation-reel-bike-rental/index.html",
+    "title": "دراجات للإيجار وركوب الشاحنات؟ ماذا أظهر عرض الأنيميشن المتداول"
+  },
+  {
     "route": "video/rz1B4B2yBZY",
     "file": "videos/rz1B4B2yBZY/index.html",
     "title": "تريلر الإطلاق الرسمي"
@@ -313,6 +333,16 @@
     "route": "video/bMq4OtZTigk",
     "file": "videos/bMq4OtZTigk/index.html",
     "title": "٩٩ تفصيلاً في التريلر الأول"
+  },
+  {
+    "route": "video/KxoXCI9lGY0",
+    "file": "videos/KxoXCI9lGY0/index.html",
+    "title": "قصة Cyberleek وتسريبات GTA VI: شرح Voxel"
+  },
+  {
+    "route": "video/XlxPdje37SM",
+    "file": "videos/XlxPdje37SM/index.html",
+    "title": "قراءة Flowstreet في مقاطع GTA VI المتداولة"
   },
   {
     "route": "character/0",

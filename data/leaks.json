@@ -25,5 +25,69 @@
         "poster": "https://pbs.twimg.com/amplify_video_thumb/2118747661402812416/img/wxNopAiSovZoH8K_.jpg"
       }
     ]
+  },
+  {
+    "id": "9000000000000000000",
+    "title": "قراءة في تسريبات GTA VI: التحمل ومؤشرات تعرّف الشرطة",
+    "description": "تقرير أرشيفي يناقش مؤشرات ظهرت في مقاطع منسوبة إلى اللعبة، دون تأكيد أنها تمثل النسخة النهائية.",
+    "publishedAt": "2026-08-18T12:00:00Z",
+    "status": "تقرير أرشيفي · معلومات غير مؤكدة",
+    "articleId": "gta6-leak-stamina-police-analysis",
+    "videoId": "XlxPdje37SM",
+    "mediaCaption": "صورة رسمية توضيحية © Rockstar Games؛ ليست لقطة تثبت التسريب.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/leaks/editorial-0.jpg"
+      }
+    ]
+  },
+  {
+    "id": "9000000000000000001",
+    "title": "استنساخ مفاتيح السيارات والتحية: تفاصيل من مقاطع GTA VI المتداولة",
+    "description": "خيارات منسوبة إلى نسخة تطوير قديمة تفتح نقاشاً حول سرقة السيارات والتفاعل مع الشخصيات.",
+    "publishedAt": "2026-08-19T12:00:00Z",
+    "status": "تقرير أرشيفي · معلومات غير مؤكدة",
+    "articleId": "gta6-leak-key-cloning-analysis",
+    "videoId": null,
+    "mediaCaption": "صورة رسمية توضيحية © Rockstar Games؛ ليست لقطة تثبت التسريب.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/leaks/editorial-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "9000000000000000002",
+    "title": "دراجات للإيجار وركوب الشاحنات؟ ماذا أظهر عرض الأنيميشن المتداول",
+    "description": "أرشيف ديسمبر 2025: عرض أعمال نُسب إلى موظف سابق يثير التكهنات بشأن تفاعلات الحركة.",
+    "publishedAt": "2025-12-01T12:00:00Z",
+    "status": "تقرير أرشيفي · معلومات غير مؤكدة",
+    "articleId": "gta6-animation-reel-bike-rental",
+    "videoId": null,
+    "mediaCaption": "صورة رسمية توضيحية © Rockstar Games؛ ليست لقطة تثبت التسريب.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/leaks/editorial-2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "9000000000000000003",
+    "title": "خريطة ليونيدا المتداولة: قراءة حذرة في تقرير Cyberleek",
+    "description": "ملخص لتغطية صحفية عن الخريطة المزعومة، مع فصلها عن المعلومات الرسمية.",
+    "publishedAt": "2026-10-13T12:00:00Z",
+    "status": "تقرير أرشيفي · معلومات غير مؤكدة",
+    "articleId": "gta6-leonida-map-leak-report",
+    "videoId": "KxoXCI9lGY0",
+    "mediaCaption": "صورة توضيحية من تقرير Insider Gaming؛ ليست صورة الخريطة المتداولة.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/leaks/editorial-3.jpg"
+      }
+    ]
   }
 ]

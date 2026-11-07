@@ -8,9 +8,9 @@
   ],
   "sourcePages": [],
   "discoveryPages": [],
-  "maxSources": 4,
-  "maxCharactersPerSource": 16000,
-  "notes": "Direct publisher discovery from IGN and Kotaku; no Gemini Search. Up to two news articles and one leak in the daily run. Six Gemini calls maximum, used only for Arabic writing and review when evidence is available. Verified associated YouTube videos also appear in video library. Existing catalog and map unchanged.",
+  "maxSources": 2,
+  "maxCharactersPerSource": 3000,
+  "notes": "Groq free-tier text and image review, direct publisher discovery, compact news-only prompts. At most 2 news and 1 leak per Qatar calendar day across published runs. Retry transient errors at most twice within a 10-request total budget. X access remains conditional; no bypass.",
   "textModel": "gemini-3.8-flash",
   "maxAgeHours": 72,
   "maxCandidates": 8,
@@ -61,5 +61,16 @@
       ]
     }
   ],
-  "includeNewsVideos": true
+  "includeNewsVideos": true,
+  "aiProvider": "groq",
+  "groqTextModel": "qwen/qwen3.8-27b",
+  "groqVisionModel": "qwen/qwen3.8-27b",
+  "maxPromptCharacters": 18000,
+  "maxAIRequestsPerRun": 10,
+  "aiMinIntervalMs": 65000,
+  "aiTimeoutMs": 45000,
+  "dailyLimits": {
+    "news": 2,
+    "leaks": 1
+  }
 }

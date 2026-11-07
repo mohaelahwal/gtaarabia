@@ -1,3 +1,11 @@
+# 2026-11-07 — Expanded leak archive
+
+- Added four Arabic editorial reports from PC Gamer, TechRadar and Insider Gaming with original source dates, full article pages and local illustrative images.
+- Added two YouTube explainers, metadata verified with oEmbed; Arabic titles/descriptions, original Portuguese/Spanish audio. Embedded in the related leak cards and article views, and listed in the video library.
+- Removed the four-card display limit; all six existing and added entries are visible.
+- Groq configuration and daily publication limits are unchanged. These are curated additions; automated leak discovery still uses the original X account and may return HTTP 403.
+- Validated 52 tests and a 448-page build. Full video playback/region availability is not verified.
+
 # Direct IGN and Kotaku discovery
 
 This configuration supersedes earlier Gemini Search instructions.

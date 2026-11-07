@@ -6,9 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Discovery checks publishers without Gemini; draft writes Arabic previews; publish requires AUTO_PUBLISH=true.'
+        description: 'Connection tests Groq; discovery checks publishers; draft previews; publish requires AUTO_PUBLISH=true.'
         type: choice
         options:
+          - connection
           - discovery
           - draft
           - publish
@@ -24,10 +25,14 @@ jobs:
   generate:
     if: github.event_name == 'workflow_dispatch' || vars.AUTOMATION_ENABLED == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     outputs:
       publish: ${{ steps.commit.outputs.publish }}
     env:
+      AI_PROVIDER: groq
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_TEXT_MODEL: ${{ vars.GROQ_TEXT_MODEL }}
+      GROQ_VISION_MODEL: ${{ vars.GROQ_VISION_MODEL }}
       DISCOVERY_ONLY: ${{ inputs.mode == 'discovery' && 'true' || 'false' }}
       AUTO_PUBLISH: ${{ vars.AUTO_PUBLISH == 'true' && (github.event_name == 'schedule' || inputs.mode == 'publish') && 'true' || 'false' }}
     steps:
@@ -38,19 +43,22 @@ jobs:
         with:
           node-version: '22'
       - name: Reset per-run request budget
-        run: rm -f drafts/gemini-budget.json
+        run: |
+          rm -rf drafts
+          mkdir -p drafts
+      - name: Check Groq Arabic and image access
+        id: connection
+        if: inputs.mode != 'discovery'
+        run: node scripts/check-ai.mjs
       - name: Discover and review up to two new Arabic news articles
+        if: inputs.mode != 'connection'
         env:
           AUTOMATION_ENABLED: 'true'
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}
         run: npm run update
       - name: Discover GTA VI leaks from the approved public account
-        if: ${{ !cancelled() && inputs.mode != 'discovery' }}
+        if: ${{ !cancelled() && steps.connection.outcome == 'success' && inputs.mode != 'discovery' && inputs.mode != 'connection' }}
         env:
           AUTOMATION_ENABLED: 'true'
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}
         run: node scripts/update-leaks.mjs
       - name: Validate website before publishing
         run: npm test && npm run build && npm run check:seo
