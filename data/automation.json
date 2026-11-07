@@ -72,5 +72,6 @@
   "dailyLimits": {
     "news": 2,
     "leaks": 1
-  }
+  },
+  "aiMaxOutputTokens": 800
 }

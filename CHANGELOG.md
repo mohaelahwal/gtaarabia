@@ -1,3 +1,12 @@
+# 2026-11-07 — Arabic draft and output-budget fix
+
+- Fixed oversized Groq output requests against the observed 1,000-token account ceiling: 800 maximum, one news article per generation, 220 for text review and 120 for visual review.
+- Oversized-request errors can reduce the request budget; billing upsell text no longer incorrectly marks them as exhausted daily quota.
+- Draft interface uses Arabic statuses and explanations, with no raw API errors, internal JSON or source hyperlinks.
+- Source-linked draft images are downloaded before AI review and embedded in the HTML. Held articles show an explicit unapproved-image message; publishing still requires all reviews to pass.
+- Removed visible source hyperlinks from public article pages; evidence retained in data and diagnostic records.
+- 55 automated tests passed, including reproduction of the held-image and output-budget failures. Build and SEO checks passed for 448 pages. Live authenticated article generation still requires the user's next draft run.
+
 # 2026-11-07 — Expanded leak archive
 
 - Added four Arabic editorial reports from PC Gamer, TechRadar and Insider Gaming with original source dates, full article pages and local illustrative images.

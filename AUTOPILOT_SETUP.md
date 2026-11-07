@@ -15,7 +15,7 @@ This replaces earlier Gemini setup instructions. Do not create another Gemini ke
 - News discovery fetches IGN and Kotaku directly. No AI search requests. Recent GTA VI stories only; unchanged published sources are skipped.
 - Original short Arabic summaries with source attribution, not full article translations. Matching images required; source-linked supported YouTube videos are verified and included in the video library.
 - Groq qwen/qwen3.8-27b handles text and images. This is a preview model and may change. Optional GROQ_TEXT_MODEL and GROQ_VISION_MODEL repository variables must name compatible JSON/text and JSON/vision models respectively.
-- Requests are spaced 65 seconds apart, timed out after 45 seconds, retried at most twice for temporary failures, and capped at 10 total attempts per run. Normal full drafts can take several minutes because of free-tier pacing.
+- Each news article is generated separately, with 50–70 Arabic words and an 800-token maximum output. Text reviews request 220 tokens, image reviews 120. Requests are spaced 65 seconds apart, timed out after 45 seconds, retried at most twice for temporary failures, and capped at 10 total attempts per run. Normal full drafts can take several minutes because of free-tier pacing.
 - Authentication/daily-quota failures stop further AI requests. Invalid, unsupported or incomplete content is held; no fabricated fallback articles are published.
 - discovery mode checks publishers without any API key; connection tests the provider; draft creates private artifacts; publish can commit validated results.
 
@@ -24,3 +24,6 @@ The approved X account is still unavailable to automated requests in observed ru
 
 ## Verification
 Automated tests use controlled provider responses. Live Kotaku discovery succeeded locally without an AI key; IGN returned an unavailable page. Authenticated Groq generation has NOT been verified here because your Groq key is not available. The connection workflow is the explicit live check before any article run. The free tier remains subject to Groq account limits and service availability.
+
+## Draft presentation
+The Arabic preview has no source hyperlinks or raw English API messages. Source-linked images are embedded directly into preview.html and also included in images/, so they remain visible when a review is held. A visible candidate image is NOT approval: held entries are labeled in Arabic and cannot publish. Raw diagnostics and sources remain in report.json/changes.json for auditing. Article source links are also removed from the public article view; evidence remains in data records.

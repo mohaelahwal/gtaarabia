@@ -19,7 +19,7 @@ export function modelFetch({root,cfg,env,fetchImpl=fetch,sleep=ms=>new Promise(r
   const model=hasImage?(env.GROQ_VISION_MODEL||cfg.groqVisionModel):(env.GROQ_TEXT_MODEL||cfg.groqTextModel);
   if(!/^[\w./-]+$/.test(model||''))throw Error('Missing or invalid Groq model');
   const content=parts.map(p=>p.text?{type:'text',text:p.text}:{type:'image_url',image_url:{url:`data:${p.inlineData.mimeType};base64,${p.inlineData.data}`}});
-  const body={model,reasoning_effort:'none',messages:[{role:'user',content}],temperature:.2,max_completion_tokens:Math.min(input.generationConfig?.maxOutputTokens||1800,1800),response_format:{type:'json_object'}};
+  const body={model,reasoning_effort:'none',messages:[{role:'user',content}],temperature:.2,max_completion_tokens:Math.min(input.generationConfig?.maxOutputTokens||800,cfg.aiMaxOutputTokens||800),response_format:{type:'json_object'}};
   for(let attempt=0;attempt<3;attempt++){
    let state={calls:0,lastCall:0};try{state=JSON.parse(await fs.readFile(file,'utf8'))}catch(e){if(e.code!=='ENOENT')throw e}
    if(state.blocked)throw Error('AI requests paused after an account/quota error. See ai-requests.jsonl.');
@@ -45,8 +45,10 @@ export function modelFetch({root,cfg,env,fetchImpl=fetch,sleep=ms=>new Promise(r
    }catch(e){errorText=redact(e.message)}finally{clearTimeout(timer)}
    await fs.appendFile(path.join(root,'drafts/ai-requests.jsonl'),JSON.stringify({provider,model,status,attempt:attempt+1,error:errorText})+'\n');
    const retryAfter=Number(response?.headers.get('retry-after'))||0;
-   const exhausted=status===429&&(/per day|daily|billing|quota|credits/i.test(errorText)||retryAfter>120);
-   const retryable=!exhausted&&(status===0||status===429||[500,502,503,504].includes(status));
+   const oversized=status===429&&/request too large|expected output tokens exceed|reduce.*max_tokens/i.test(errorText);
+   const exhausted=status===429&&!oversized&&(/per day|daily|quota (?:reached|exceeded)|insufficient (?:quota|credits)/i.test(errorText)||retryAfter>120);
+   if(oversized){const limit=Number(errorText.match(/Limit:\s*(\d+)/i)?.[1]);if(attempt<2&&limit>0&&body.max_completion_tokens>Math.floor(limit*.75)){body.max_completion_tokens=Math.floor(limit*.75);await sleep(65000);continue}}
+   const retryable=!exhausted&&(status===0||(status===429&&!oversized)||[500,502,503,504].includes(status));
    if([401,403].includes(status)||exhausted){state.blocked=true;await fs.writeFile(file,JSON.stringify(state))}
    if(retryable&&attempt<2){await sleep(Math.max(retryAfter*1000,10000*(attempt+1)));continue}
    throw Error(`Groq ${status?'HTTP '+status:'connection error'}: ${errorText}. ${retryable?'Bounded retries exhausted.':'No automatic retry.'}`);
