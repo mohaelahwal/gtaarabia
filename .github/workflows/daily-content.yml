@@ -6,9 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Draft saves an Arabic preview; publish also requires AUTO_PUBLISH=true.'
+        description: 'Discovery checks publishers without Gemini; draft writes Arabic previews; publish requires AUTO_PUBLISH=true.'
         type: choice
         options:
+          - discovery
           - draft
           - publish
         default: draft
@@ -27,6 +28,7 @@ jobs:
     outputs:
       publish: ${{ steps.commit.outputs.publish }}
     env:
+      DISCOVERY_ONLY: ${{ inputs.mode == 'discovery' && 'true' || 'false' }}
       AUTO_PUBLISH: ${{ vars.AUTO_PUBLISH == 'true' && (github.event_name == 'schedule' || inputs.mode == 'publish') && 'true' || 'false' }}
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +46,7 @@ jobs:
           GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}
         run: npm run update
       - name: Discover GTA VI leaks from the approved public account
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && inputs.mode != 'discovery' }}
         env:
           AUTOMATION_ENABLED: 'true'
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

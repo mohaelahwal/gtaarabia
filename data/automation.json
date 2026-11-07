@@ -1,26 +1,19 @@
 {
   "enabled": false,
   "allowedHosts": [
-    "www.rockstargames.com",
-    "www.playstation.com",
-    "blog.playstation.com",
-    "news.xbox.com",
-    "gta.wiki",
-    "gta.fandom.com"
+    "www.ign.com",
+    "ign.com",
+    "kotaku.com",
+    "www.kotaku.com"
   ],
-  "sourcePages": [
-    "https://www.rockstargames.com/VI"
-  ],
-  "discoveryPages": [
-    "https://www.rockstargames.com/newswire",
-    "https://blog.playstation.com/?s=Grand+Theft+Auto+VI"
-  ],
+  "sourcePages": [],
+  "discoveryPages": [],
   "maxSources": 4,
   "maxCharactersPerSource": 16000,
-  "notes": "News and leaks only. At most two news articles and one new leak per run; seven Gemini calls maximum shared across both steps, spaced 16 seconds apart. No quota retry. Keep existing libraries unchanged. No new eligible content means no publication. Draft mode never publishes.",
+  "notes": "Direct publisher discovery from IGN and Kotaku; no Gemini Search. Up to two news articles and one leak in the daily run. Six Gemini calls maximum, used only for Arabic writing and review when evidence is available. Verified associated YouTube videos also appear in video library. Existing catalog and map unchanged.",
   "textModel": "gemini-3.8-flash",
   "maxAgeHours": 72,
-  "maxCandidates": 6,
+  "maxCandidates": 8,
   "timezone": "Asia/Qatar",
   "scheduleUTC": "0 4 * * *",
   "maxCandidatesPerCategory": 3,
@@ -36,13 +29,37 @@
     "blog.playstation.com",
     "live.staticflickr.com",
     "news.xbox.com",
-    "assets.xboxservices.com"
+    "assets.xboxservices.com",
+    "assets-prd.ignimgs.com",
+    "oyster.ignimgs.com",
+    "sm.ign.com",
+    "kotaku.com",
+    "www.kotaku.com",
+    "i.kinja-img.com"
   ],
   "categories": [
     "news"
   ],
   "maxLeaksPerRun": 1,
-  "maxGeminiRequestsPerRun": 7,
+  "maxGeminiRequestsPerRun": 6,
   "geminiMinIntervalMs": 16000,
-  "maxNewsPerRun": 2
+  "maxNewsPerRun": 2,
+  "discoveryMode": "publishers",
+  "publishers": [
+    {
+      "name": "IGN",
+      "endpoints": [
+        "https://www.ign.com/rss/v2/articles/feed",
+        "https://www.ign.com/articles/"
+      ]
+    },
+    {
+      "name": "Kotaku",
+      "endpoints": [
+        "https://kotaku.com/rss",
+        "https://kotaku.com/"
+      ]
+    }
+  ],
+  "includeNewsVideos": true
 }

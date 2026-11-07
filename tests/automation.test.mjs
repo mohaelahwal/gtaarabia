@@ -45,3 +45,12 @@ test('news-only configuration searches once and rejects other categories',async 
  assert.equal(f.requests.filter(u=>u.includes('generativelanguage')).length,4);
  const repeat=fixture();const r2=await runAutomation({root,env,fetchImpl:repeat.fetchImpl,now});assert.equal(r2.status,'no-new-news');assert.equal(repeat.requests.filter(u=>u.includes('generativelanguage')).length,1);
 });
+test('publisher discovery saves fresh evidence with zero model requests or API key',async t=>{
+ const root=await setup(t);const cfg=await read(root,'automation');Object.assign(cfg,{categories:['news'],discoveryMode:'publishers',publishers:[{name:'Publisher',endpoints:['https://www.rockstargames.com/feed']} ]});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));
+ const f=fixture();let apiCalls=0;const fetchImpl=async(u,o)=>{if(u.includes('generativelanguage'))apiCalls++;if(u.endsWith('/feed'))return new Response('<rss><channel><item><title>GTA VI new announcement</title><link>'+url+'</link><description>'+('New announcement '.repeat(30))+'</description></item></channel></rss>');return f.fetchImpl(u,o)};
+ const r=await runAutomation({root,env:{AUTOMATION_ENABLED:'true',DISCOVERY_ONLY:'true'},fetchImpl,now});assert.equal(r.status,'discovery-ready');assert.equal(apiCalls,0);assert.equal(JSON.parse(await fs.readFile(root+'/drafts/discovered-news.json'))[0].url,url);assert.deepEqual(await read(root,'posts'),[]);
+});
+test('blocked publishers report unavailable instead of claiming no news',async t=>{
+ const root=await setup(t);const cfg=await read(root,'automation');Object.assign(cfg,{categories:['news'],discoveryMode:'publishers',publishers:[{name:'Publisher',endpoints:['https://www.rockstargames.com/feed']}]});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));let requests=0;
+ const r=await runAutomation({root,env,fetchImpl:async()=>{requests++;return new Response('',{status:403})},now});assert.equal(r.status,'source-unavailable');assert.equal(requests,1);
+});
