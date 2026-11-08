@@ -1,3 +1,10 @@
+## 2026-11-08 — Phone apps editorial
+
+- Added one Arabic phone apps article to News and Leaks.
+- Gold editorial layout, local cover, eight illustrative icon positions and accessible section navigation.
+- Missing sixth app retained as unknown; unnamed financial app retained without invented branding.
+- Preload date distinguished from unverified size and Online claims. No public source links.
+
 # 2026-11-07 — Arabic draft and output-budget fix
 
 - Fixed oversized Groq output requests against the observed 1,000-token account ceiling: 800 maximum, one news article per generation, 220 for text review and 120 for visual review.
