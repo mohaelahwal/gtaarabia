@@ -1,3 +1,9 @@
+## 2026-11-08 — Leonida video report
+- Added Arabic Leonida exploration report to News and Leaks.
+- Bundled the 71-second uploaded video, optimized for web playback, and poster.
+- Included previous phone apps update in the same incremental package.
+- Map area estimates clearly distinguished from published reports.
+
 ## 2026-11-08 — Phone apps editorial
 
 - Added one Arabic phone apps article to News and Leaks.
