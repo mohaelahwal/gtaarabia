@@ -23,6 +23,16 @@ Primary articles: Arabic (ar). English introduction: https://www.gtaarabia.com/e
 Article sources are linked. Editorial interpretation is labeled. GTA V reference stats are not GTA VI confirmation. Map coordinates follow a user-supplied image, not verified game coordinates.
 
 ## Articles
+- [استعداداً لـ GTA VI: زيادة مؤقتة لسرعة الإنترنت لدى سبكترم](https://www.gtaarabia.com/articles/gta6-spectrum-download-speed-offer/index.html): عرض أمريكي يبدأ في 9 نوفمبر للمشتركين المؤهلين، ولا يمنح دخولاً مبكراً إلى اللعبة.
+- [الحافلات والقطارات في GTA VI: رحلة هادئة داخل عالم صاخب](https://www.gtaarabia.com/articles/gta6-buses-trains-edge/index.html): معاينة إيدج تصف وسائل نقل تعمل فعلياً في ليونيدا.
+- [قبل الهروب في GTA VI: راقب الوقود وحالة المحرك](https://www.gtaarabia.com/articles/gta6-fuel-engine-condition/index.html): تفصيل من معاينة إيدج يضيف قراراً جديداً إلى اختيار السيارة.
+- [الملف الإجرامي: أسلوبك في GTA VI يترك أثراً في القصة](https://www.gtaarabia.com/articles/gta6-criminal-profile-edge/index.html): معاينة صحفية تصف تقييماً للسلوك، منفصلاً عن مجرد مطاردة الشرطة.
+- [جيسون ولوسيا: وقتكما معاً يغيّر مستوى العلاقة](https://www.gtaarabia.com/articles/gta6-jason-lucia-relationship-scale/index.html): المشي والرياضة والقيادة المشتركة تدخل في مقياس تقارب من أربع درجات.
+- [طقس ليونيدا: الرياح تحرّك القوارب والعواصف تهز الطائرات](https://www.gtaarabia.com/articles/gta6-weather-boats-aircraft/index.html): تفاصيل صحفية عن تفاعل الطقس مع المركبات والسكان، وليس مظهر السماء فقط.
+- [خلف زحام GTA VI: فريق مخصص للشخصيات وأكثر من 600 ألف حركة](https://www.gtaarabia.com/articles/gta6-npc-animation-team/index.html): تقرير عن العمل اليدوي الذي يمنح سكان ليونيدا ومواقعها تفاصيل مختلفة.
+- [تسريب منظور الشخص الأول: ماذا ظهر، وما الذي لم يتأكد؟](https://www.gtaarabia.com/articles/gta6-first-person-leak-context/index.html): تقارير أكتوبر تصف قيادة ومشياً من منظور الشخص الأول، دون حسم وجود طور كامل عند الإطلاق.
+- [55 كأساً في GTA VI؟ الرقم متداول والقائمة لم تُعلن](https://www.gtaarabia.com/articles/gta6-trophy-count-rumor/index.html): تقرير حديث يناقش عدد الجوائز المزعوم دون كشف أسماء المهمات أو حرق القصة.
+- [صور عبوة GTA VI تتداول قبل الإطلاق: ماذا يعني رقم 230 جيجابايت؟](https://www.gtaarabia.com/articles/gta6-retail-box-photos/index.html): صور منسوبة إلى متجر ألماني تثير أسئلة عن التخزين والخصائص المتصلة بالإنترنت.
 - [ليونيدا أكبر من القصة: ست مناطق وعالم ينتظر الاستكشاف](https://www.gtaarabia.com/articles/gta6-leonida-map-exploration/index.html): إنهاء القصة لا يعني رؤية كل ليونيدا. شاهد التقرير المصوّر، وتعرّف على المناطق الست والحياة البرية، مع توضيح ما تعنيه تقديرات مساحة الخريطة.
 - [هاتف GTA VI: ثمانية تطبيقات مزعومة تغيّر يومك في ليونيدا](https://www.gtaarabia.com/articles/gta6-phone-apps-leaks-explained/index.html): من تصفح المنشورات وطلب سيارة إلى فحص المركبات ومتابعة النوم: قراءة بصرية في التفاصيل المتداولة، مع فصل المعلوم عن غير المؤكد.
 - [كوداك بلاك في GTA VI؟ تقرير IGN يحدد ظهوره في الصور الجديدة](https://www.gtaarabia.com/articles/kodak-black-gta-vi-launch-gallery/index.html): صورة من معرض الإطلاق تثير الحديث عن ظهور مغني الراب، مع بقاء حجم دوره غير معلن.

@@ -45,6 +45,56 @@
     "title": "عن GTA Arabia"
   },
   {
+    "route": "post/gta6-spectrum-download-speed-offer",
+    "file": "articles/gta6-spectrum-download-speed-offer/index.html",
+    "title": "استعداداً لـ GTA VI: زيادة مؤقتة لسرعة الإنترنت لدى سبكترم"
+  },
+  {
+    "route": "post/gta6-buses-trains-edge",
+    "file": "articles/gta6-buses-trains-edge/index.html",
+    "title": "الحافلات والقطارات في GTA VI: رحلة هادئة داخل عالم صاخب"
+  },
+  {
+    "route": "post/gta6-fuel-engine-condition",
+    "file": "articles/gta6-fuel-engine-condition/index.html",
+    "title": "قبل الهروب في GTA VI: راقب الوقود وحالة المحرك"
+  },
+  {
+    "route": "post/gta6-criminal-profile-edge",
+    "file": "articles/gta6-criminal-profile-edge/index.html",
+    "title": "الملف الإجرامي: أسلوبك في GTA VI يترك أثراً في القصة"
+  },
+  {
+    "route": "post/gta6-jason-lucia-relationship-scale",
+    "file": "articles/gta6-jason-lucia-relationship-scale/index.html",
+    "title": "جيسون ولوسيا: وقتكما معاً يغيّر مستوى العلاقة"
+  },
+  {
+    "route": "post/gta6-weather-boats-aircraft",
+    "file": "articles/gta6-weather-boats-aircraft/index.html",
+    "title": "طقس ليونيدا: الرياح تحرّك القوارب والعواصف تهز الطائرات"
+  },
+  {
+    "route": "post/gta6-npc-animation-team",
+    "file": "articles/gta6-npc-animation-team/index.html",
+    "title": "خلف زحام GTA VI: فريق مخصص للشخصيات وأكثر من 600 ألف حركة"
+  },
+  {
+    "route": "post/gta6-first-person-leak-context",
+    "file": "articles/gta6-first-person-leak-context/index.html",
+    "title": "تسريب منظور الشخص الأول: ماذا ظهر، وما الذي لم يتأكد؟"
+  },
+  {
+    "route": "post/gta6-trophy-count-rumor",
+    "file": "articles/gta6-trophy-count-rumor/index.html",
+    "title": "55 كأساً في GTA VI؟ الرقم متداول والقائمة لم تُعلن"
+  },
+  {
+    "route": "post/gta6-retail-box-photos",
+    "file": "articles/gta6-retail-box-photos/index.html",
+    "title": "صور عبوة GTA VI تتداول قبل الإطلاق: ماذا يعني رقم 230 جيجابايت؟"
+  },
+  {
     "route": "post/gta6-leonida-map-exploration",
     "file": "articles/gta6-leonida-map-exploration/index.html",
     "title": "ليونيدا أكبر من القصة: ست مناطق وعالم ينتظر الاستكشاف"
@@ -223,6 +273,21 @@
     "route": "post/gta6-animation-reel-bike-rental",
     "file": "articles/gta6-animation-reel-bike-rental/index.html",
     "title": "دراجات للإيجار وركوب الشاحنات؟ ماذا أظهر عرض الأنيميشن المتداول"
+  },
+  {
+    "route": "video/ABb_jP4UzEM",
+    "file": "videos/ABb_jP4UzEM/index.html",
+    "title": "تسريبات الجوائز والعبوة: قراءة في أحدث المتداول"
+  },
+  {
+    "route": "video/qaujI_Mgb80",
+    "file": "videos/qaujI_Mgb80/index.html",
+    "title": "معاينة إيدج: الأنظمة الجديدة والعلاقة والقيادة"
+  },
+  {
+    "route": "video/c0Com9SMv1s",
+    "file": "videos/c0Com9SMv1s/index.html",
+    "title": "الطقس والعواصف: قراءة في تفاصيل جيم إنفورمر"
   },
   {
     "route": "video/rz1B4B2yBZY",
