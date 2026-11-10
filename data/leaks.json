@@ -1,5 +1,68 @@
 [
   {
+    "id": "9000000000000000110",
+    "title": "شعارات دولبي على عبوة Xbox المتداولة: ماذا نعرف؟",
+    "description": "تقرير جديد عن صور التغليف يثير نقاش الصورة والصوت، دون اختبار فعلي.",
+    "publishedAt": "2026-11-10T12:50:00Z",
+    "status": "تسريب غير مؤكد · عبوة Xbox",
+    "articleId": "gta6-xbox-packaging-dolby-rumor",
+    "mediaCaption": "صورة رسمية توضيحية من GTA VI © Rockstar Games؛ لا تؤكد التفاصيل المتداولة في التقرير.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/car2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "9000000000000000108",
+    "title": "تسريب إعداد عرض في GTA VI يشعل توقعات الأداء",
+    "description": "إشارة متداولة إلى 120 هرتز، دون تأكيد وضع 40 أو 60 إطاراً.",
+    "publishedAt": "2026-11-10T12:52:00Z",
+    "status": "تسريب غير مؤكد · إعدادات العرض",
+    "articleId": "gta6-display-mode-datamine-november",
+    "mediaCaption": "صورة رسمية توضيحية من GTA VI © Rockstar Games؛ لا تؤكد التفاصيل المتداولة في التقرير.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/news/november-09/weather.jpg"
+      }
+    ],
+    "videoId": "kqGKEVdC5k4"
+  },
+  {
+    "id": "9000000000000000107",
+    "title": "إشارات جماعية في بيانات GTA VI: هل تمهّد لأونلاين جديدة؟",
+    "description": "أسماء أنشطة وجلسات تتداول في بيانات بلايستيشن، دون إعلان موعد رسمي.",
+    "publishedAt": "2026-11-10T12:53:00Z",
+    "status": "تسريب غير مؤكد · بيانات تقنية",
+    "articleId": "gta6-multiplayer-metadata-november",
+    "mediaCaption": "صورة رسمية توضيحية من GTA VI © Rockstar Games؛ لا تؤكد التفاصيل المتداولة في التقرير.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/news/november-09/police.jpg"
+      }
+    ],
+    "videoId": "kqGKEVdC5k4"
+  },
+  {
+    "id": "9000000000000000106",
+    "title": "موسيقى GTA VI على واجهة PS5 تتداول مع بدء التحميل",
+    "description": "مقطع صوتي لواجهة الجهاز يثير الحماس، لكنه لا يثبت موسيقى قائمة اللعبة الداخلية.",
+    "publishedAt": "2026-11-10T12:54:00Z",
+    "status": "تقرير متداول · تفاصيل غير مؤكدة",
+    "articleId": "gta6-ps5-home-screen-music",
+    "mediaCaption": "الصورة المصغرة لتجربة التحميل من TGG؛ ليست لقطة مثبتة من القائمة الداخلية للعبة.",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/videos/1SIIZLSJ7QI.jpg"
+      }
+    ],
+    "videoId": "1SIIZLSJ7QI"
+  },
+  {
     "id": "9000000000000000017",
     "title": "تسريب منظور الشخص الأول: ماذا ظهر، وما الذي لم يتأكد؟",
     "description": "تقارير أكتوبر تصف قيادة ومشياً من منظور الشخص الأول، دون حسم وجود طور كامل عند الإطلاق.",

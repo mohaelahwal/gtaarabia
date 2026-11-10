@@ -1,0 +1,30 @@
+GTA Arabia — November 10, 2026 content update
+
+10 new Arabic articles, including 4 unconfirmed reports also added to Leaks.
+5 new YouTube videos added to the video library.
+Images included or reused from your existing site.
+
+UPLOAD:
+1. Extract this ZIP.
+2. Merge the included folders/files into the ROOT of mohaelahwal/gtaarabia.
+3. Replace matching files. Keep all other existing files and folders.
+4. Commit to main and wait for Publish website to complete.
+5. Refresh the News, Leaks and Video Library pages.
+
+No API keys or bot settings are changed. This package does not repair or enable scheduled automation.
+The articles are in Arabic. Independent videos retain their original English audio; subtitles depend on the publisher.
+Source URLs are retained in content data for verification, not displayed as article source links.
+
+NEW ARTICLES:
+بدأ التحميل المسبق لـ GTA VI: ملفات اللعبة تصل إلى الأجهزة
+طلبات GTA VI المسبقة تصل إلى مستويات غير مسبوقة
+موسيقى فايس سيتي على المسرح: روكستار تعلن مهرجان GTA VI
+زيلنيك: اكتمل تطوير GTA VI والتركيز الآن على تسليم اللعبة
+ماذا يحدث لـ GTA Online بعد GTA VI؟ الدعم مستمر
+موسيقى GTA VI على واجهة PS5 تتداول مع بدء التحميل
+إشارات جماعية في بيانات GTA VI: هل تمهّد لأونلاين جديدة؟
+تسريب إعداد عرض في GTA VI يشعل توقعات الأداء
+حلبة وطرق طينية: وجه آخر للقيادة في ليونيدا
+شعارات دولبي على عبوة Xbox المتداولة: ماذا نعرف؟
+
+Validation: 59 tests passed; build, data and SEO checks passed. Video metadata and embed HTML verified. Regional playback availability may vary.

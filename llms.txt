@@ -23,6 +23,16 @@ Primary articles: Arabic (ar). English introduction: https://www.gtaarabia.com/e
 Article sources are linked. Editorial interpretation is labeled. GTA V reference stats are not GTA VI confirmation. Map coordinates follow a user-supplied image, not verified game coordinates.
 
 ## Articles
+- [بدأ التحميل المسبق لـ GTA VI: ملفات اللعبة تصل إلى الأجهزة](https://www.gtaarabia.com/articles/gta6-preload-rollout-november-10/index.html): بدأت مرحلة التنزيل قبل الإطلاق؛ اكتمال التحميل لا يفتح اللعب مبكراً.
+- [طلبات GTA VI المسبقة تصل إلى مستويات غير مسبوقة](https://www.gtaarabia.com/articles/gta6-preorders-take-two-november/index.html): تيك تو تعلن قوة الطلب قبل الإطلاق، من دون كشف عدد رسمي للنسخ.
+- [موسيقى فايس سيتي على المسرح: روكستار تعلن مهرجان GTA VI](https://www.gtaarabia.com/articles/gta6-festival-miami-announcement/index.html): احتفال في ميامي يوم 21 نوفمبر، بمشاركة فنانين من موسيقى اللعبة.
+- [زيلنيك: اكتمل تطوير GTA VI والتركيز الآن على تسليم اللعبة](https://www.gtaarabia.com/articles/gta6-development-complete-zelnick/index.html): تصريح جديد في مكالمة النتائج المالية قبل الإطلاق المنتظر.
+- [ماذا يحدث لـ GTA Online بعد GTA VI؟ الدعم مستمر](https://www.gtaarabia.com/articles/gta6-online-support-after-vi/index.html): تصريحات جديدة تفصل بين مستقبل أونلاين الحالية وأي طور محتمل للجزء السادس.
+- [موسيقى GTA VI على واجهة PS5 تتداول مع بدء التحميل](https://www.gtaarabia.com/articles/gta6-ps5-home-screen-music/index.html): مقطع صوتي لواجهة الجهاز يثير الحماس، لكنه لا يثبت موسيقى قائمة اللعبة الداخلية.
+- [إشارات جماعية في بيانات GTA VI: هل تمهّد لأونلاين جديدة؟](https://www.gtaarabia.com/articles/gta6-multiplayer-metadata-november/index.html): أسماء أنشطة وجلسات تتداول في بيانات بلايستيشن، دون إعلان موعد رسمي.
+- [تسريب إعداد عرض في GTA VI يشعل توقعات الأداء](https://www.gtaarabia.com/articles/gta6-display-mode-datamine-november/index.html): إشارة متداولة إلى 120 هرتز، دون تأكيد وضع 40 أو 60 إطاراً.
+- [حلبة وطرق طينية: وجه آخر للقيادة في ليونيدا](https://www.gtaarabia.com/articles/gta6-racetrack-mud-club-driving/index.html): قراءة جديدة في السباقات ونادي الطرق الوعرة، مع فصل المشاهد عن نظريات المعجبين.
+- [شعارات دولبي على عبوة Xbox المتداولة: ماذا نعرف؟](https://www.gtaarabia.com/articles/gta6-xbox-packaging-dolby-rumor/index.html): تقرير جديد عن صور التغليف يثير نقاش الصورة والصوت، دون اختبار فعلي.
 - [استعداداً لـ GTA VI: زيادة مؤقتة لسرعة الإنترنت لدى سبكترم](https://www.gtaarabia.com/articles/gta6-spectrum-download-speed-offer/index.html): عرض أمريكي يبدأ في 9 نوفمبر للمشتركين المؤهلين، ولا يمنح دخولاً مبكراً إلى اللعبة.
 - [الحافلات والقطارات في GTA VI: رحلة هادئة داخل عالم صاخب](https://www.gtaarabia.com/articles/gta6-buses-trains-edge/index.html): معاينة إيدج تصف وسائل نقل تعمل فعلياً في ليونيدا.
 - [قبل الهروب في GTA VI: راقب الوقود وحالة المحرك](https://www.gtaarabia.com/articles/gta6-fuel-engine-condition/index.html): تفصيل من معاينة إيدج يضيف قراراً جديداً إلى اختيار السيارة.

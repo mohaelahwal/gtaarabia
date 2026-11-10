@@ -45,6 +45,56 @@
     "title": "عن GTA Arabia"
   },
   {
+    "route": "post/gta6-preload-rollout-november-10",
+    "file": "articles/gta6-preload-rollout-november-10/index.html",
+    "title": "بدأ التحميل المسبق لـ GTA VI: ملفات اللعبة تصل إلى الأجهزة"
+  },
+  {
+    "route": "post/gta6-preorders-take-two-november",
+    "file": "articles/gta6-preorders-take-two-november/index.html",
+    "title": "طلبات GTA VI المسبقة تصل إلى مستويات غير مسبوقة"
+  },
+  {
+    "route": "post/gta6-festival-miami-announcement",
+    "file": "articles/gta6-festival-miami-announcement/index.html",
+    "title": "موسيقى فايس سيتي على المسرح: روكستار تعلن مهرجان GTA VI"
+  },
+  {
+    "route": "post/gta6-development-complete-zelnick",
+    "file": "articles/gta6-development-complete-zelnick/index.html",
+    "title": "زيلنيك: اكتمل تطوير GTA VI والتركيز الآن على تسليم اللعبة"
+  },
+  {
+    "route": "post/gta6-online-support-after-vi",
+    "file": "articles/gta6-online-support-after-vi/index.html",
+    "title": "ماذا يحدث لـ GTA Online بعد GTA VI؟ الدعم مستمر"
+  },
+  {
+    "route": "post/gta6-ps5-home-screen-music",
+    "file": "articles/gta6-ps5-home-screen-music/index.html",
+    "title": "موسيقى GTA VI على واجهة PS5 تتداول مع بدء التحميل"
+  },
+  {
+    "route": "post/gta6-multiplayer-metadata-november",
+    "file": "articles/gta6-multiplayer-metadata-november/index.html",
+    "title": "إشارات جماعية في بيانات GTA VI: هل تمهّد لأونلاين جديدة؟"
+  },
+  {
+    "route": "post/gta6-display-mode-datamine-november",
+    "file": "articles/gta6-display-mode-datamine-november/index.html",
+    "title": "تسريب إعداد عرض في GTA VI يشعل توقعات الأداء"
+  },
+  {
+    "route": "post/gta6-racetrack-mud-club-driving",
+    "file": "articles/gta6-racetrack-mud-club-driving/index.html",
+    "title": "حلبة وطرق طينية: وجه آخر للقيادة في ليونيدا"
+  },
+  {
+    "route": "post/gta6-xbox-packaging-dolby-rumor",
+    "file": "articles/gta6-xbox-packaging-dolby-rumor/index.html",
+    "title": "شعارات دولبي على عبوة Xbox المتداولة: ماذا نعرف؟"
+  },
+  {
     "route": "post/gta6-spectrum-download-speed-offer",
     "file": "articles/gta6-spectrum-download-speed-offer/index.html",
     "title": "استعداداً لـ GTA VI: زيادة مؤقتة لسرعة الإنترنت لدى سبكترم"
@@ -273,6 +323,31 @@
     "route": "post/gta6-animation-reel-bike-rental",
     "file": "articles/gta6-animation-reel-bike-rental/index.html",
     "title": "دراجات للإيجار وركوب الشاحنات؟ ماذا أظهر عرض الأنيميشن المتداول"
+  },
+  {
+    "route": "video/AvBcfBrBl60",
+    "file": "videos/AvBcfBrBl60/index.html",
+    "title": "مهرجان GTA VI في ميامي — الإعلان الرسمي"
+  },
+  {
+    "route": "video/FhnlzoAWE_U",
+    "file": "videos/FhnlzoAWE_U/index.html",
+    "title": "إعلان المهرجان وبداية التحميل المسبق: تغطية بالعناوين العربية"
+  },
+  {
+    "route": "video/kqGKEVdC5k4",
+    "file": "videos/kqGKEVdC5k4/index.html",
+    "title": "ملفات GTA VI: نقاش تسريبات الأداء وإشارات أونلاين"
+  },
+  {
+    "route": "video/1SIIZLSJ7QI",
+    "file": "videos/1SIIZLSJ7QI/index.html",
+    "title": "أول تنزيل لـ GTA VI: تجربة TGG"
+  },
+  {
+    "route": "video/yz1b-TwpRJA",
+    "file": "videos/yz1b-TwpRJA/index.html",
+    "title": "تحميل GTA VI خطوة بخطوة: تجربة TmarTn2"
   },
   {
     "route": "video/ABb_jP4UzEM",
