@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {safeMediaURL} from '../article-media.js';
 export function validatePost(p){
  for(const k of ['id','title','excerpt','publisher','date','image','category','status'])if(typeof p[k]!=='string'||!p[k].trim())throw Error('Missing post field: '+k);
  if(!/^[a-z0-9-]{3,100}$/.test(p.id))throw Error('Invalid post ID');
@@ -10,6 +11,7 @@ export function validatePost(p){
  if(!Array.isArray(p.sources)||!p.sources.length)throw Error('Sources required');
  for(const s of p.sources){if(!s.title||new URL(s.url).protocol!=='https:')throw Error('Invalid source')}
  if(p.videoId&&!/^[\w-]{11}$/.test(p.videoId))throw Error('Invalid YouTube ID');
+ if(p.videoFile&&!safeMediaURL(p.videoFile))throw Error('Invalid video file URL');
  return true;
 }
 export function checkSite(root=process.cwd()){

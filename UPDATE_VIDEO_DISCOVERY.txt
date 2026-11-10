@@ -1,0 +1,51 @@
+GTA Arabia — publisher discovery and video-first update
+
+INSTALL
+Extract this ZIP and upload its contents into the existing repository root.
+Keep the folder structure, especially .github/workflows and scripts.
+Replace the included files. Do not delete your other files or assets.
+This is a code/display patch for the current website; it does not replace your article, video or leak data files.
+
+FIRST TEST
+GitHub > Actions > Daily Arabic content > Run workflow > mode: discovery.
+The discovery mode checks news AND leaks without using the AI API or publishing.
+Open the completed run's Summary and download content-drafts-N.
+Read report.json, leaks-report.json, discovered-news.json and discovered-leaks.json when created.
+
+Then run mode: draft. Review preview.html and leaks-preview.html when created.
+A draft never updates the live website. News and leak proposals use separate files.
+Finally use mode: publish when you want accepted changes published.
+
+REPOSITORY SETTINGS
+Settings > Secrets and variables > Actions:
+Secret: GROQ_API_KEY (keep your existing key).
+Variables: AUTOMATION_ENABLED = true; AUTO_PUBLISH = true for scheduled publishing.
+Without AUTOMATION_ENABLED=true, scheduled jobs remain skipped.
+Existing GROQ_TEXT_MODEL and GROQ_VISION_MODEL overrides still apply.
+The schedule remains 04:00 UTC / 07:00 Doha. Limit: 2 news articles + 1 leak per Qatar day.
+
+WHAT CHANGED
+- Searches 12 publishers: IGN, Kotaku, RockstarIntel, VGC, GamesRadar, PC Gamer,
+  Eurogamer, Push Square, Pure Xbox, Insider Gaming, GamingBolt and GameSpot.
+- RSS/Atom feeds first, publisher pages as fallbacks. A blocked source does not stop others.
+- Keeps /games/ article paths, RSS publication dates, freshness and GTA VI relevance checks.
+- Old stories, previously covered URLs and repeated evidence no longer use up the source pool.
+- A rejected candidate does not consume the publication quota; later candidates are attempted.
+- Reports missing dates, duplicates, blocked pages, held reviews and incomplete discovery separately.
+- Leaks now come from these publisher feeds, not the blocked X profile. They remain labelled unconfirmed.
+- A published leak has an article, a leaks-page entry, and a video-library entry when a video is verified.
+- Articles, news cards, leak cards and video pages prefer video over the main still image.
+- YouTube and direct MP4 links are supported. Playback starts muted and inline with controls.
+  Browser settings, regional restrictions or the uploader can prevent autoplay/embedding.
+  Unsupported relevant players are held for manual review; videos are not invented.
+- Still images remain for stories without relevant video, social previews and video posters.
+- Source URLs and technical errors stay in the internal reports, not the reader article body.
+- The normal pipeline combines evidence and actual-image review into one request; connection tests
+  run only when explicitly selected. The existing shared 10-request budget remains enforced.
+
+VALIDATION
+Automated regression tests cover blocked sources, freshness, duplicates, continued discovery after
+rejection, separate leak limits, video-first markup, and MP4 validation. Build and SEO checks pass.
+A live discovery-only test found 10 fresh news candidates and 1 leak candidate across the expanded feeds. Candidates
+still require Arabic generation and evidence review with your own API key; no live articles were
+published by this patch. Check your draft before enabling publishing.

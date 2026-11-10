@@ -1,3 +1,4 @@
+import {runAutomation} from './update-content.mjs';
 import {modelFetch} from './ai-provider.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -9,6 +10,7 @@ import {renderLeaks} from '../leaks.js';
 export async function runLeaks({root=process.cwd(),env=process.env,fetchImpl=fetch,now=new Date()}={}){
  const read=async f=>JSON.parse(await fs.readFile(path.join(root,f),'utf8'));
  const cfg=await read('data/automation.json');if(!cfg.enabled&&env.AUTOMATION_ENABLED!=='true')return {status:'disabled'};
+ if(cfg.leakDiscoveryMode==='publishers')return runAutomation({root,env,fetchImpl,now,kind:'leaks'});
  const report={status:'started',accepted:[],skipped:[],errors:[]};await fs.mkdir(path.join(root,'drafts'),{recursive:true});
  const finish=async()=>{await fs.writeFile(path.join(root,'drafts/leaks-report.json'),JSON.stringify(report,null,2));if(env.GITHUB_STEP_SUMMARY)await fs.appendFile(env.GITHUB_STEP_SUMMARY,'\n## التسريبات\n'+report.status+' · accepted: '+report.accepted.length+'\n'+report.errors.join('\n'));return report};
  try{

@@ -63,10 +63,48 @@ test('Groq draft pipeline completes source, text, image and video validation wit
  const root=await setup(t),cfg=await read(root,'automation');Object.assign(cfg,{aiProvider:'groq',groqTextModel:'qwen/qwen3.8-27b',groqVisionModel:'qwen/qwen3.8-27b',aiMinIntervalMs:0,categories:['news'],discoveryMode:'publishers',publishers:[{name:'Publisher',endpoints:['https://www.rockstargames.com/feed']}],sourcePages:[],maxNewsPerRun:2,dailyLimits:{news:2,leaks:1}});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));
  const f=fixture([{...base,category:'news',videoUrl:videoURL}]);let groqCalls=0;
  const fetchImpl=async(u,o)=>{if(u.endsWith('/feed'))return new Response('<rss><item><title>GTA VI announcement</title><link>'+url+'</link><description>'+('New details '.repeat(40))+'</description></item></rss>');assert.ok(!u.startsWith('https://generativelanguage.googleapis.com/'));if(u.startsWith('https://api.groq.com/')){groqCalls++;const b=JSON.parse(o.body);const parts=b.messages[0].content.map(x=>x.type==='text'?{text:x.text}:{inlineData:{mimeType:'image/jpeg',data:'aGVsbG8='}});const r=await f.fetchImpl('https://generativelanguage.googleapis.com/mock',{body:JSON.stringify({contents:[{parts}]})});const j=await r.json();return json({choices:[{finish_reason:'stop',message:{content:j.candidates[0].content.parts[0].text}}]})}return f.fetchImpl(u,o)};
- const r=await runAutomation({root,env:{AUTOMATION_ENABLED:'true',GROQ_API_KEY:'mock-groq'},fetchImpl,now});assert.equal(r.status,'draft-created',JSON.stringify(r));assert.equal(groqCalls,3);assert.deepEqual(await read(root,'posts'),[]);assert.match(await fs.readFile(root+'/drafts/preview.html','utf8'),/مسودة/);
+ const r=await runAutomation({root,env:{AUTOMATION_ENABLED:'true',GROQ_API_KEY:'mock-groq'},fetchImpl,now});assert.equal(r.status,'draft-created',JSON.stringify(r));assert.equal(groqCalls,2);assert.deepEqual(await read(root,'posts'),[]);assert.match(await fs.readFile(root+'/drafts/preview.html','utf8'),/مسودة/);
 });
 test('held article retains its image while the reader preview hides raw errors and source links',async t=>{
  const root=await setup(t),cfg=await read(root,'automation');Object.assign(cfg,{aiProvider:'groq',groqTextModel:'qwen/qwen3.8-27b',groqVisionModel:'qwen/qwen3.8-27b',aiMinIntervalMs:0,categories:['news'],discoveryMode:'publishers',publishers:[{name:'Publisher',endpoints:['https://www.rockstargames.com/feed']}],maxNewsPerRun:2});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));const f=fixture();let calls=0;
  const fetchImpl=async(u,o)=>{if(u.endsWith('/feed'))return new Response('<rss><item><title>GTA VI announcement</title><link>'+url+'</link><description>'+('New details '.repeat(40))+'</description></item></rss>');if(u.startsWith('https://api.groq.com')){calls++;if(calls===1)return json({choices:[{finish_reason:'stop',message:{content:JSON.stringify({changes:[{...base,category:'news'}]})}}]});return new Response(JSON.stringify({error:{message:'daily quota reached; secret org_detail'}}),{status:429})}return f.fetchImpl(u,o)};
  const r=await runAutomation({root,env:{AUTOMATION_ENABLED:'true',GROQ_API_KEY:'mock'},fetchImpl,now});assert.equal(r.status,'held-for-review');const html=await fs.readFile(root+'/drafts/preview.html','utf8');assert.match(html,/data:image\/jpeg;base64,/);assert.match(html,/لم تكتمل المراجعة/);assert.doesNotMatch(html,/Groq HTTP|org_detail|daily quota|held|update|rockstargames.com|<pre|<a href/);assert.match(await fs.readFile(root+'/drafts/changes.json','utf8'),/daily quota/);assert.deepEqual(await read(root,'posts'),[]);
+});
+
+test('rejected publisher candidate does not consume daily slots; next story is accepted',async t=>{
+ const root=await setup(t),cfg=await read(root,'automation');Object.assign(cfg,{aiProvider:'groq',groqTextModel:'test',groqVisionModel:'test',aiMinIntervalMs:0,categories:['news'],discoveryMode:'publishers',publishers:[{name:'Publisher',endpoints:['https://www.rockstargames.com/feed']}],maxNewsPerRun:1,includeNewsVideos:true});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));
+ const second=url+'-second',f=fixture();let generations=0;
+ const fetchImpl=async(u,o)=>{
+  if(u.endsWith('/feed'))return new Response([url,second].map(x=>`<item><title>GTA VI announcement</title><link>${x}</link></item>`).join(''));
+  if(u===second)return f.fetchImpl(url,o);
+  if(u.startsWith('https://api.groq.com')){
+   const b=JSON.parse(o.body),prompt=b.messages[0].content[0].text;let result;
+   if(prompt.startsWith('You edit')){generations++;result={changes:[{...base,id:'candidate-'+generations,category:'news',sourceUrls:[generations===1?url:second]}]}}
+   else result={supported:generations!==1,duplicate:false,mediaRelevant:true,mediaComplete:true,reason:'reviewed'};
+   return json({choices:[{finish_reason:'stop',message:{content:JSON.stringify(result)}}]});
+  }
+  return f.fetchImpl(u,o);
+ };
+ const r=await runAutomation({root,env:{AUTOMATION_ENABLED:'true',GROQ_API_KEY:'mock',AUTO_PUBLISH:'true'},fetchImpl,now});
+ assert.equal(r.status,'ready-to-publish');assert.deepEqual(r.changes.map(c=>c.status),['held','accepted']);assert.equal((await read(root,'posts')).length,1);assert.equal((await read(root,'videos')).length,1);
+});
+
+test('publisher leak publishes to article, leaks and video library with its own daily cap',async t=>{
+ const root=await setup(t),cfg=await read(root,'automation');Object.assign(cfg,{aiProvider:'groq',groqTextModel:'test',groqVisionModel:'test',aiMinIntervalMs:0,categories:['news'],discoveryMode:'publishers',leakDiscoveryMode:'publishers',publishers:[{name:'Publisher',endpoints:['https://www.rockstargames.com/feed']}],includeNewsVideos:true,dailyLimits:{news:2,leaks:1}});await fs.writeFile(root+'/data/automation.json',JSON.stringify(cfg));
+ const source=url+'-leak',f=fixture();
+ const fetchImpl=async(u,o)=>{
+  assert.ok(!u.startsWith('https://x.com'));
+  if(u.endsWith('/feed'))return new Response(`<item><title>GTA VI new leak</title><link>${source}</link></item>`);
+  if(u===source)return f.fetchImpl(url,o);
+  if(u.startsWith('https://api.groq.com')){
+   const prompt=JSON.parse(o.body).messages[0].content[0].text;
+   const result=prompt.startsWith('You edit')?{changes:[{...base,category:'news',title:'تسريب غير مؤكد عن اللعبة الجديدة',sourceUrls:[source]}]}:{supported:true,duplicate:false,mediaRelevant:true,mediaComplete:true};
+   return json({choices:[{finish_reason:'stop',message:{content:JSON.stringify(result)}}]});
+  }return f.fetchImpl(u,o);
+ };
+ const args={root,env:{AUTOMATION_ENABLED:'true',GROQ_API_KEY:'mock',AUTO_PUBLISH:'true'},fetchImpl,now,kind:'leaks'};
+ const r=await runAutomation(args);assert.equal(r.status,'ready-to-publish',JSON.stringify(r));
+ assert.equal((await read(root,'leaks')).length,1);assert.equal((await read(root,'posts'))[0].status,'تسريب غير مؤكد');assert.equal((await read(root,'leaks'))[0].articleId,(await read(root,'posts'))[0].id);assert.equal((await read(root,'videos')).length,1);
+ const state=await read(root,'automation-state');assert.equal(state.daily['2026-11-06'].leaks,1);assert.equal(state.daily['2026-11-06'].news,undefined);
+ const repeat=await runAutomation({...args,fetchImpl:()=>{throw Error('must not fetch after cap')}});assert.equal(repeat.status,'daily-limit-reached');
 });

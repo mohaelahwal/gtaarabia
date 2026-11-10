@@ -48,15 +48,15 @@ jobs:
           mkdir -p drafts
       - name: Check Groq Arabic and image access
         id: connection
-        if: inputs.mode != 'discovery'
+        if: inputs.mode == 'connection'
         run: node scripts/check-ai.mjs
       - name: Discover and review up to two new Arabic news articles
         if: inputs.mode != 'connection'
         env:
           AUTOMATION_ENABLED: 'true'
         run: npm run update
-      - name: Discover GTA VI leaks from the approved public account
-        if: ${{ !cancelled() && steps.connection.outcome == 'success' && inputs.mode != 'discovery' && inputs.mode != 'connection' }}
+      - name: Discover and review one GTA VI leak from publisher feeds
+        if: ${{ !cancelled() && inputs.mode != 'connection' }}
         env:
           AUTOMATION_ENABLED: 'true'
         run: node scripts/update-leaks.mjs

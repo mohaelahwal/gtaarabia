@@ -4,16 +4,36 @@
     "www.ign.com",
     "ign.com",
     "kotaku.com",
-    "www.kotaku.com"
+    "www.kotaku.com",
+    "rockstarintel.com",
+    "www.rockstarintel.com",
+    "www.videogameschronicle.com",
+    "videogameschronicle.com",
+    "www.gamesradar.com",
+    "gamesradar.com",
+    "www.pcgamer.com",
+    "pcgamer.com",
+    "www.eurogamer.net",
+    "eurogamer.net",
+    "www.pushsquare.com",
+    "pushsquare.com",
+    "www.purexbox.com",
+    "purexbox.com",
+    "insider-gaming.com",
+    "www.insider-gaming.com",
+    "gamingbolt.com",
+    "www.gamingbolt.com",
+    "www.gamespot.com",
+    "gamespot.com"
   ],
   "sourcePages": [],
   "discoveryPages": [],
-  "maxSources": 2,
-  "maxCharactersPerSource": 3000,
-  "notes": "Groq free-tier text and image review, direct publisher discovery, compact news-only prompts. At most 2 news and 1 leak per Qatar calendar day across published runs. Retry transient errors at most twice within a 10-request total budget. X access remains conditional; no bypass.",
+  "maxSources": 10,
+  "maxCharactersPerSource": 4000,
+  "notes": "Twelve publisher feeds with page fallbacks; only fresh GTA VI stories. Skip known sources before pool limits. 2 news + 1 unconfirmed leak per Qatar day; shared 10 AI-request budget, visual/evidence review, video-first presentation. Diagnostics distinguish unavailable sources, duplicates and held stories. Add trusted publisher endpoints and their exact media hosts to expand coverage.",
   "textModel": "gemini-3.8-flash",
   "maxAgeHours": 72,
-  "maxCandidates": 8,
+  "maxCandidates": 96,
   "timezone": "Asia/Qatar",
   "scheduleUTC": "0 4 * * *",
   "maxCandidatesPerCategory": 3,
@@ -35,7 +55,36 @@
     "sm.ign.com",
     "kotaku.com",
     "www.kotaku.com",
-    "i.kinja-img.com"
+    "i.kinja-img.com",
+    "www.ign.com",
+    "ign.com",
+    "rockstarintel.com",
+    "www.rockstarintel.com",
+    "www.videogameschronicle.com",
+    "videogameschronicle.com",
+    "www.gamesradar.com",
+    "gamesradar.com",
+    "www.pcgamer.com",
+    "pcgamer.com",
+    "www.eurogamer.net",
+    "eurogamer.net",
+    "www.pushsquare.com",
+    "pushsquare.com",
+    "www.purexbox.com",
+    "purexbox.com",
+    "insider-gaming.com",
+    "www.insider-gaming.com",
+    "gamingbolt.com",
+    "www.gamingbolt.com",
+    "www.gamespot.com",
+    "gamespot.com",
+    "cdn.mos.cms.futurecdn.net",
+    "images.pushsquare.com",
+    "images.purexbox.com",
+    "assetsio.gnwcdn.com",
+    "static0.gamerantimages.com",
+    "images.gamespot.com",
+    "cdn.videogameschronicle.com"
   ],
   "categories": [
     "news"
@@ -59,6 +108,76 @@
         "https://kotaku.com/rss",
         "https://kotaku.com/"
       ]
+    },
+    {
+      "name": "RockstarIntel",
+      "endpoints": [
+        "https://rockstarintel.com/feed/",
+        "https://rockstarintel.com/category/gta-6/"
+      ]
+    },
+    {
+      "name": "VGC",
+      "endpoints": [
+        "https://www.videogameschronicle.com/feed/",
+        "https://www.videogameschronicle.com/category/news/"
+      ]
+    },
+    {
+      "name": "GamesRadar",
+      "endpoints": [
+        "https://www.gamesradar.com/rss/",
+        "https://www.gamesradar.com/games/grand-theft-auto/"
+      ]
+    },
+    {
+      "name": "PC Gamer",
+      "endpoints": [
+        "https://www.pcgamer.com/rss/",
+        "https://www.pcgamer.com/games/grand-theft-auto/"
+      ]
+    },
+    {
+      "name": "Eurogamer",
+      "endpoints": [
+        "https://www.eurogamer.net/feed/news",
+        "https://www.eurogamer.net/"
+      ]
+    },
+    {
+      "name": "Push Square",
+      "endpoints": [
+        "https://www.pushsquare.com/feeds/latest",
+        "https://www.pushsquare.com/tags/gta-6"
+      ]
+    },
+    {
+      "name": "Pure Xbox",
+      "endpoints": [
+        "https://www.purexbox.com/feeds/latest",
+        "https://www.purexbox.com/tags/gta-6"
+      ]
+    },
+    {
+      "name": "Insider Gaming",
+      "endpoints": [
+        "https://insider-gaming.com/feed/",
+        "https://insider-gaming.com/"
+      ]
+    },
+    {
+      "name": "GamingBolt",
+      "endpoints": [
+        "https://gamingbolt.com/feed",
+        "https://gamingbolt.com/"
+      ]
+    },
+    {
+      "name": "GameSpot",
+      "endpoints": [
+        "https://www.gamespot.com/feeds/news/",
+        "https://www.gamespot.com/news/"
+      ]
     }
   ],
   "includeNewsVideos": true,
@@ -73,5 +192,8 @@
     "news": 2,
     "leaks": 1
   },
-  "aiMaxOutputTokens": 800
+  "aiMaxOutputTokens": 800,
+  "maxPerPublisher": 12,
+  "leakDiscoveryMode": "publishers",
+  "maxDraftAttempts": 5
 }
