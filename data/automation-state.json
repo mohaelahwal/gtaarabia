@@ -1,1 +1,33 @@
-{"seen":[]}
+{
+  "seen": [
+    "65bf19c9eb8290dab9e2595da89ac47d7f57773b0f5b143d851655598fe0aafd",
+    "aea1b6176f0aa8e8eb20d9a9771ec8f66618f7af85f65c768e74b836202f9335"
+  ],
+  "daily": {
+    "2026-11-10": {
+      "news": 2
+    }
+  },
+  "lastRun": "2026-11-10T17:04:02.733Z",
+  "lastChanges": [
+    {
+      "category": "news",
+      "title": "اتفاقية سحابية لعشر سنوات: GTA VI على إكس بوكس من اليوم الأول",
+      "action": "add",
+      "status": "accepted"
+    },
+    {
+      "category": "news",
+      "title": "سوني وإكس بوكس تؤكدان: GTA VI الأكثر طلباً مسبقاً في التاريخ",
+      "action": "update",
+      "status": "held",
+      "reason": "Exact supporting evidence required"
+    },
+    {
+      "category": "news",
+      "title": "زيلنيك: GTA VI أثّرت على مبيعات NBA 2K27",
+      "action": "add",
+      "status": "accepted"
+    }
+  ]
+}
