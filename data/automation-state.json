@@ -1,31 +1,22 @@
 {
   "seen": [
     "65bf19c9eb8290dab9e2595da89ac47d7f57773b0f5b143d851655598fe0aafd",
-    "aea1b6176f0aa8e8eb20d9a9771ec8f66618f7af85f65c768e74b836202f9335"
+    "aea1b6176f0aa8e8eb20d9a9771ec8f66618f7af85f65c768e74b836202f9335",
+    "704bef036586f81e517e8d1349cc29c6e4546b6c20bd38f07997bf0c4f8efd08",
+    "38c902713974d637760678c180a28e10beae59e46296b7c25b4d63e2a3fd66fc",
+    "af72bf4637db3033b26aee4cefd01e7cd275303a9c383210265185f7fe2dba38"
   ],
   "daily": {
-    "2026-11-10": {
-      "news": 2
+    "2026-11-11": {
+      "news": 2,
+      "leaks": 1
     }
   },
-  "lastRun": "2026-11-10T17:04:02.733Z",
+  "lastRun": "2026-11-11T11:46:30.533Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "اتفاقية سحابية لعشر سنوات: GTA VI على إكس بوكس من اليوم الأول",
-      "action": "add",
-      "status": "accepted"
-    },
-    {
-      "category": "news",
-      "title": "سوني وإكس بوكس تؤكدان: GTA VI الأكثر طلباً مسبقاً في التاريخ",
-      "action": "update",
-      "status": "held",
-      "reason": "Exact supporting evidence required"
-    },
-    {
-      "category": "news",
-      "title": "زيلنيك: GTA VI أثّرت على مبيعات NBA 2K27",
+      "title": "تسريب غير مؤكد: تحسينات تتبع الأشعة في GTA VI على PS5 Pro",
       "action": "add",
       "status": "accepted"
     }
