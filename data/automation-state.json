@@ -4,19 +4,22 @@
     "aea1b6176f0aa8e8eb20d9a9771ec8f66618f7af85f65c768e74b836202f9335",
     "704bef036586f81e517e8d1349cc29c6e4546b6c20bd38f07997bf0c4f8efd08",
     "38c902713974d637760678c180a28e10beae59e46296b7c25b4d63e2a3fd66fc",
-    "af72bf4637db3033b26aee4cefd01e7cd275303a9c383210265185f7fe2dba38"
+    "af72bf4637db3033b26aee4cefd01e7cd275303a9c383210265185f7fe2dba38",
+    "c0ec304d81443c4b4b472e3e2692d8e27eec79c9a3135ede024a700d713540b3",
+    "ded5e180816af4455bd19f82e0a73c683d10847853c523316fb388ef6c323a0c",
+    "81e39bdc19a344a0ac37bf4818b864af2da1984a2c5d8a7ba62cb31b084827b9"
   ],
   "daily": {
-    "2026-11-11": {
+    "2026-11-12": {
       "news": 2,
       "leaks": 1
     }
   },
-  "lastRun": "2026-11-11T11:46:30.533Z",
+  "lastRun": "2026-11-12T12:23:34.614Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "تسريب غير مؤكد: تحسينات تتبع الأشعة في GTA VI على PS5 Pro",
+      "title": "شائعة: GTA VI تتجاوز مليار دولار و10 ملايين نسخة قبل أسبوع من الإطلاق",
       "action": "add",
       "status": "accepted"
     }
