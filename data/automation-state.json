@@ -7,19 +7,22 @@
     "af72bf4637db3033b26aee4cefd01e7cd275303a9c383210265185f7fe2dba38",
     "c0ec304d81443c4b4b472e3e2692d8e27eec79c9a3135ede024a700d713540b3",
     "ded5e180816af4455bd19f82e0a73c683d10847853c523316fb388ef6c323a0c",
-    "81e39bdc19a344a0ac37bf4818b864af2da1984a2c5d8a7ba62cb31b084827b9"
+    "81e39bdc19a344a0ac37bf4818b864af2da1984a2c5d8a7ba62cb31b084827b9",
+    "281f1ef7bd5c8fa724427661c55798240c55541da1f82954ecb13ca954a04f76",
+    "ea4649c2d7c499acd0e3cd56937a08e01df1df64fcede4a2703b9b7b5d172a86",
+    "96f372dd009aae5c237caa3d4baee73296a5f0e437a9855ca11c3ceb99ad57b5"
   ],
   "daily": {
-    "2026-11-12": {
+    "2026-11-13": {
       "news": 2,
       "leaks": 1
     }
   },
-  "lastRun": "2026-11-12T12:23:34.614Z",
+  "lastRun": "2026-11-13T12:01:27.848Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "شائعة: GTA VI تتجاوز مليار دولار و10 ملايين نسخة قبل أسبوع من الإطلاق",
+      "title": "شائعة: صفقة إكس بوكس مع روكستار تتجاوز البث السحابي",
       "action": "add",
       "status": "accepted"
     }
