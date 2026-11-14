@@ -1,5 +1,69 @@
 [
   {
+    "image": "assets/discovered/47734f807963e50c6d6aebb4.jpg",
+    "imageCaption": "صورة توضيحية مرتبطة بالتقرير · الحقوق لأصحابها",
+    "source": "https://www.pcgamer.com/games/yes-some-brave-games-are-still-launching-on-steam-during-gta-6-launch-week",
+    "sourceUrls": [
+      "https://www.pcgamer.com/games/yes-some-brave-games-are-still-launching-on-steam-during-gta-6-launch-week"
+    ],
+    "updatedAt": "2026-11-14T11:15:12.499Z",
+    "automationEvidence": "not everyone is going to be playing GTA 6 next week",
+    "aliases": [],
+    "id": "2026-11-14-steam-games-launch-gta6-week",
+    "title": "ألعاب جديدة على ستيم تنافس أسبوع إطلاق GTA VI",
+    "excerpt": "أعلنت عدة استوديوهات عن إطلاق ألعابها على منصة ستيم خلال الأسبوع نفسه الذي يشهد صدور GTA VI، في تحدٍ غير معتاد لسياسات التأجيل السائدة بين الناشرين.",
+    "body": [
+      "على الرغم من الهيمنة المتوقعة لـ GTA VI على المشهد، قررت استوديوهات مثل بارادوكس وسبري فوكس الإبقاء على مواعيد إطلاق ألعابها دون تأجيل.",
+      "تشمل القائمة توسعة Crusader Kings 3: Silk and Silver التي تركز على التجارة، ولعبة Spirit Crossing الاجتماعية الهادئة، وHarma الروغلايك.",
+      "تُطرح هذه العناوين بين 16 و17 نوفمبر، مما يوفر خيارات بديلة للاعبين الذين يفضلون تجارب مختلفة عن عالم ليونيدا أو ينتظرون نسخة الحاسوب."
+    ],
+    "sources": [
+      {
+        "url": "https://www.pcgamer.com/games/yes-some-brave-games-are-still-launching-on-steam-during-gta-6-launch-week",
+        "title": "www.pcgamer.com"
+      }
+    ],
+    "publisher": "GTA Arabia",
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T11:15:12.499Z",
+    "category": "أخبار",
+    "status": "ملخص بمساعدة الذكاء الاصطناعي",
+    "videoId": null,
+    "videoFile": null
+  },
+  {
+    "image": "assets/discovered/5df8e6d07742649cf9fe3383.png",
+    "imageCaption": "صورة توضيحية مرتبطة بالتقرير · الحقوق لأصحابها",
+    "source": "https://rockstarintel.com/first-look-at-gta-vis-in-game-tv-show-macca-friends",
+    "sourceUrls": [
+      "https://rockstarintel.com/first-look-at-gta-vis-in-game-tv-show-macca-friends"
+    ],
+    "updatedAt": "2026-11-14T11:15:12.499Z",
+    "automationEvidence": "DiscussingFilm has shared an exclusive first look at Macca & Friends, a TV show set in the world of Grand Theft Auto VI.",
+    "aliases": [],
+    "id": "2026-11-14-gta6-macca-friends-tv-show",
+    "title": "نظرة أولى على برنامج \"ماكّا وأصدقاؤه\" التلفزيوني داخل GTA VI",
+    "excerpt": "كشفت تقارير حصرية عن برنامج تلفزيوني جديد داخل اللعبة بعنوان \"ماكّا وأصدقاؤه\"، يروي مغامرات التمساح ماكّا وأصدقائه في المستنقعات عبر ولاية ليونيدا، مع بثه عبر شبكة WEAZEL.",
+    "body": [
+      "أفاد موقع ديسكوسينغ فيلمز بنشره لمقطع حصري يعرض برنامج \"ماكّا وأصدقاؤه\"، وهو مسلسل تلفزيوني خيالي ضمن عالم GTA VI يتتبع مغامرات التمساح ماكّا وأصدقائه في المستنقعات عبر ولاية ليونيدا.",
+      "سيُعرض البرنامج عبر شبكة WEAZEL التلفزيونية داخل اللعبة عند الإطلاق في 19 نوفمبر، مما يسلط الضوء على جانب الترفيه والإعلام في ليونيدا، حيث سبق أن أظهرت روكستار إعلانات وعلامات تجارية خيالية في لقطات سابقة.",
+      "يُعدّ ماكّا شخصية معروفة من خلال merchandise رسمي سابق، لكن لا يزال غير واضح حجم المحتوى المتاح عند الإطلاق، إذ قد يكون مشروعاً مكتملاً أو مدعوماً بتحديثات موسمية مستقبلية."
+    ],
+    "sources": [
+      {
+        "url": "https://rockstarintel.com/first-look-at-gta-vis-in-game-tv-show-macca-friends",
+        "title": "rockstarintel.com"
+      }
+    ],
+    "publisher": "GTA Arabia",
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T11:15:12.499Z",
+    "category": "أخبار",
+    "status": "ملخص بمساعدة الذكاء الاصطناعي",
+    "videoId": "UhPvgbP7ps8",
+    "videoFile": null
+  },
+  {
     "image": "assets/discovered/81172039b1c4387f4c13ca81.jpg",
     "imageCaption": "صورة توضيحية مرتبطة بالتقرير · الحقوق لأصحابها",
     "source": "https://gamingbolt.com/xboxs-gta-6-deal-with-rockstar-games-extends-beyond-just-the-cloud-rumor",

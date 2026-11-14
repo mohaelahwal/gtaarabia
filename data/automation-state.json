@@ -10,19 +10,47 @@
     "81e39bdc19a344a0ac37bf4818b864af2da1984a2c5d8a7ba62cb31b084827b9",
     "281f1ef7bd5c8fa724427661c55798240c55541da1f82954ecb13ca954a04f76",
     "ea4649c2d7c499acd0e3cd56937a08e01df1df64fcede4a2703b9b7b5d172a86",
-    "96f372dd009aae5c237caa3d4baee73296a5f0e437a9855ca11c3ceb99ad57b5"
+    "96f372dd009aae5c237caa3d4baee73296a5f0e437a9855ca11c3ceb99ad57b5",
+    "05bdaed4e6b6f586fbb2782e358bb6da58bd172065e2598af6610ad7f56e6f09",
+    "25ae4f4c9792e4bb780bc6b70cfdb49c3a5d9397a8bba26ab9f7dd18667e77ad"
   ],
   "daily": {
-    "2026-11-13": {
-      "news": 2,
-      "leaks": 1
+    "2026-11-14": {
+      "news": 2
     }
   },
-  "lastRun": "2026-11-13T12:01:27.848Z",
+  "lastRun": "2026-11-14T11:15:12.499Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "شائعة: صفقة إكس بوكس مع روكستار تتجاوز البث السحابي",
+      "title": "حملة GTA VI على تويتش: مكافآت حصرية للمشاهدين قبل الإطلاق",
+      "action": "add",
+      "status": "held",
+      "reason": "Exact supporting evidence required"
+    },
+    {
+      "category": "news",
+      "title": "نظرة أولى على برنامج \"ماكّا وأصدقاؤه\" التلفزيوني داخل GTA VI",
+      "action": "add",
+      "status": "accepted"
+    },
+    {
+      "category": "news",
+      "title": "مخاوف من سرقة أكواد GTA VI عبر خدعة الكشاف في النسخ المادية",
+      "action": "add",
+      "status": "held",
+      "reason": "Relevant media not fully verified"
+    },
+    {
+      "category": "news",
+      "title": "اختبار أكواد GTA VI المادية: هل يمكن سرقتها عبر غلاف اللعبة؟",
+      "action": "add",
+      "status": "held",
+      "reason": "Relevant media not fully verified"
+    },
+    {
+      "category": "news",
+      "title": "ألعاب جديدة على ستيم تنافس أسبوع إطلاق GTA VI",
       "action": "add",
       "status": "accepted"
     }
