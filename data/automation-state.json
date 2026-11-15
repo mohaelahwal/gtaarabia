@@ -12,45 +12,22 @@
     "ea4649c2d7c499acd0e3cd56937a08e01df1df64fcede4a2703b9b7b5d172a86",
     "96f372dd009aae5c237caa3d4baee73296a5f0e437a9855ca11c3ceb99ad57b5",
     "05bdaed4e6b6f586fbb2782e358bb6da58bd172065e2598af6610ad7f56e6f09",
-    "25ae4f4c9792e4bb780bc6b70cfdb49c3a5d9397a8bba26ab9f7dd18667e77ad"
+    "25ae4f4c9792e4bb780bc6b70cfdb49c3a5d9397a8bba26ab9f7dd18667e77ad",
+    "d078b9e9370dd7ef74c16c5f6bc0f0543fdd9d03d9446db2fce9076d377d7253",
+    "0e0734eb0f04effcb167dc57a9fccc63b212f52d214b0b1da0257be60fecef56",
+    "349b73b2d9d2d88cc44f01dc96b7073a94ab5a0555a44963518c236916c38f87"
   ],
   "daily": {
-    "2026-11-14": {
-      "news": 2
+    "2026-11-15": {
+      "news": 2,
+      "leaks": 1
     }
   },
-  "lastRun": "2026-11-14T11:15:12.499Z",
+  "lastRun": "2026-11-15T11:51:25.574Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "حملة GTA VI على تويتش: مكافآت حصرية للمشاهدين قبل الإطلاق",
-      "action": "add",
-      "status": "held",
-      "reason": "Exact supporting evidence required"
-    },
-    {
-      "category": "news",
-      "title": "نظرة أولى على برنامج \"ماكّا وأصدقاؤه\" التلفزيوني داخل GTA VI",
-      "action": "add",
-      "status": "accepted"
-    },
-    {
-      "category": "news",
-      "title": "مخاوف من سرقة أكواد GTA VI عبر خدعة الكشاف في النسخ المادية",
-      "action": "add",
-      "status": "held",
-      "reason": "Relevant media not fully verified"
-    },
-    {
-      "category": "news",
-      "title": "اختبار أكواد GTA VI المادية: هل يمكن سرقتها عبر غلاف اللعبة؟",
-      "action": "add",
-      "status": "held",
-      "reason": "Relevant media not fully verified"
-    },
-    {
-      "category": "news",
-      "title": "ألعاب جديدة على ستيم تنافس أسبوع إطلاق GTA VI",
+      "title": "تسريب غير مؤكد: قائمة أغانٍ جديدة في ألبوم GTA VI تتداول",
       "action": "add",
       "status": "accepted"
     }
