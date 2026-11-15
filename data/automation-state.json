@@ -1,31 +1,33 @@
 {
   "seen": [
     "65bf19c9eb8290dab9e2595da89ac47d7f57773b0f5b143d851655598fe0aafd",
-    "aea1b6176f0aa8e8eb20d9a9771ec8f66618f7af85f65c768e74b836202f9335"
+    "aea1b6176f0aa8e8eb20d9a9771ec8f66618f7af85f65c768e74b836202f9335",
+    "704bef036586f81e517e8d1349cc29c6e4546b6c20bd38f07997bf0c4f8efd08",
+    "38c902713974d637760678c180a28e10beae59e46296b7c25b4d63e2a3fd66fc",
+    "af72bf4637db3033b26aee4cefd01e7cd275303a9c383210265185f7fe2dba38",
+    "c0ec304d81443c4b4b472e3e2692d8e27eec79c9a3135ede024a700d713540b3",
+    "ded5e180816af4455bd19f82e0a73c683d10847853c523316fb388ef6c323a0c",
+    "81e39bdc19a344a0ac37bf4818b864af2da1984a2c5d8a7ba62cb31b084827b9",
+    "281f1ef7bd5c8fa724427661c55798240c55541da1f82954ecb13ca954a04f76",
+    "ea4649c2d7c499acd0e3cd56937a08e01df1df64fcede4a2703b9b7b5d172a86",
+    "96f372dd009aae5c237caa3d4baee73296a5f0e437a9855ca11c3ceb99ad57b5",
+    "05bdaed4e6b6f586fbb2782e358bb6da58bd172065e2598af6610ad7f56e6f09",
+    "25ae4f4c9792e4bb780bc6b70cfdb49c3a5d9397a8bba26ab9f7dd18667e77ad",
+    "d078b9e9370dd7ef74c16c5f6bc0f0543fdd9d03d9446db2fce9076d377d7253",
+    "0e0734eb0f04effcb167dc57a9fccc63b212f52d214b0b1da0257be60fecef56",
+    "349b73b2d9d2d88cc44f01dc96b7073a94ab5a0555a44963518c236916c38f87"
   ],
   "daily": {
-    "2026-11-10": {
-      "news": 2
+    "2026-11-15": {
+      "news": 2,
+      "leaks": 1
     }
   },
-  "lastRun": "2026-11-10T17:04:02.733Z",
+  "lastRun": "2026-11-15T11:51:25.574Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "اتفاقية سحابية لعشر سنوات: GTA VI على إكس بوكس من اليوم الأول",
-      "action": "add",
-      "status": "accepted"
-    },
-    {
-      "category": "news",
-      "title": "سوني وإكس بوكس تؤكدان: GTA VI الأكثر طلباً مسبقاً في التاريخ",
-      "action": "update",
-      "status": "held",
-      "reason": "Exact supporting evidence required"
-    },
-    {
-      "category": "news",
-      "title": "زيلنيك: GTA VI أثّرت على مبيعات NBA 2K27",
+      "title": "تسريب غير مؤكد: قائمة أغانٍ جديدة في ألبوم GTA VI تتداول",
       "action": "add",
       "status": "accepted"
     }
