@@ -73,6 +73,83 @@
       "imageSource": "https://www.rockstargames.com/VI/launch-gallery",
       "imageCaption": "صورة رسمية © Rockstar Games؛ تحديد الهوية من تقرير IGN.",
       "articleId": "kodak-black-gta-vi-launch-gallery"
+    },
+    {
+      "name": "Raymond",
+      "nameAr": "رايموند",
+      "description": "يذكر أحد الرجال اسم رايموند عندما يصل جيسون ولوسيا إلى موقع الاستلام بتكليف من بوبي آيك. داخل المبنى، يتحدث رايموند مع إرنستو عبر الهاتف.",
+      "status": "footage",
+      "source": "https://www.rockstargames.com/VI/an-extended-look",
+      "image": "assets/characters/raymond.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/an-extended-look",
+      "imageCaption": "لقطة من العرض الموسّع © Rockstar Games.",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "name": "Mendez",
+      "nameAr": "مينديز",
+      "description": "ضابط في شرطة فايس سيتي يظهر أثناء مداهمة في العرض الموسّع. يتحدث جيسون ولوسيا عنه بعد مغادرتهما المكان.",
+      "status": "footage",
+      "source": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-characters/",
+      "image": "assets/characters/mendez.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/an-extended-look",
+      "imageCaption": "لقطة من العرض الموسّع © Rockstar Games.",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "name": "Lori Heder",
+      "nameAr": "لوري هيدر",
+      "description": "زوجة برايان هيدر. تظهر إلى جانبه عندما يلتقي جيسون ولوسيا به للحديث عن مهمة جديدة.",
+      "status": "footage",
+      "source": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-characters/",
+      "image": "assets/characters/lori-heder.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/an-extended-look",
+      "imageCaption": "لقطة من العرض الموسّع © Rockstar Games.",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "name": "Val",
+      "nameAr": "فال",
+      "description": "تظهر في مشاهد مهمة أندريس دي ليون ضمن العرض الموسّع. تفاصيل عملها وعلاقتها بأندريس لم تتضح بعد.",
+      "status": "footage",
+      "source": "https://www.rockstargames.com/VI/an-extended-look",
+      "image": "assets/characters/val.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/an-extended-look",
+      "imageCaption": "لقطة من العرض الموسّع © Rockstar Games.",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "name": "Andrés de León",
+      "nameAr": "أندريس دي ليون",
+      "description": "يتولى جيسون ولوسيا مهمة حمايته في العرض الموسّع، حيث يظهر في مشاهد مرتبطة بشركة ميغاموندو.",
+      "status": "footage",
+      "source": "https://www.rockstargames.com/VI/an-extended-look",
+      "image": "assets/characters/andres-de-leon.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/an-extended-look",
+      "imageCaption": "لقطة من العرض الموسّع © Rockstar Games.",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "name": "Petra Navarro",
+      "nameAr": "بيترا نافارو",
+      "description": "يُعرّفها الحوار في العرض الموسّع بأنها المديرة التنفيذية للعمليات في شركة ميغاموندو داخل عالم اللعبة.",
+      "status": "footage",
+      "source": "https://www.rockstargames.com/VI/an-extended-look",
+      "image": "assets/characters/petra-navarro.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/an-extended-look",
+      "imageCaption": "لقطة من العرض الموسّع © Rockstar Games.",
+      "updatedAt": "2026-11-14"
+    },
+    {
+      "name": "Stefani",
+      "nameAr": "ستيفاني",
+      "description": "تظهر في العرض الأول وهي تتحدث مع لوسيا في سجن ليونيدا. تعرّفها التغطية الصحفية بأنها مستشارتها في السجن.",
+      "status": "reported",
+      "source": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-characters/",
+      "image": "assets/characters/stefani.jpg",
+      "imageSource": "https://www.rockstargames.com/VI/trailer-1",
+      "imageCaption": "لقطة من العرض الأول © Rockstar Games.",
+      "updatedAt": "2026-11-14"
     }
   ],
   "locations": [
