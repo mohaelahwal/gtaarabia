@@ -1,3 +1,4 @@
+import {renderSocialLinks} from '../assets/social-links.js';
 import {renderArticleMedia} from '../article-media.js';
 import {renderLeonidaArticle} from '../leonida-article.js';
 import {renderPhoneArticle} from '../phone-article.js';
@@ -15,7 +16,8 @@ const leaks=await read('leaks');
 posts.splice(0,posts.length,...sortPosts(posts));
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base=config.siteUrl.replace(/\/$/,'');
-const template=await fs.readFile('templates/index.html','utf8');
+const socialLinks=renderSocialLinks(config.socials);
+const template=(await fs.readFile('templates/index.html','utf8')).replaceAll('data-socials></div>',`data-socials>${socialLinks}</div>`);
 const all=[];
 const add=(route,title,description,body='',image='assets/leonida.jpg')=>all.push({route,title,description,body,image,file:routeFile(route)});
 for(const [route,title,desc] of [['home','GTA 6 بالعربية: الأخبار والخريطة والعروض','تابع أخبار GTA 6 وGTA VI بالعربية، واستكشف خريطة ليونيدا والشخصيات والمركبات والأسلحة والفيديوهات، مع مصادر واضحة وتمييز المؤكد عن التحليل.'],['news','أخبار GTA 6 وGTA VI بالعربية','أحدث أخبار وتقارير جراند ثفت أوتو 6 بالعربية، مرتبة من الأحدث، مع مصادر روكستار وبلايستيشن وقراءات واضحة للشخصيات والعالم.'],['map','خريطة GTA 6 التفاعلية: ليونيدا وفايس سيتي','استكشف خريطة ليونيدا المقدمة للمجتمع مع 28 دبوساً، بحث وتكبير وتدوير وتفاصيل عند المرور. مواقع الصورة غير موثقة كإحداثيات اللعبة النهائية.'],['cars','سيارات GTA 6 وGTA 5: دليل المركبات والمقارنات','تصفح دليل المركبات مع صور ومصادر ومقارنة جنباً إلى جنب. تعرف على عناصر GTA VI المعلنة ومراجع GTA V وOnline مع توضيح حالة كل طراز.'],['weapons','أسلحة GTA 6 وGTA 5: الصور والمقارنات','دليل الأسلحة والمعدات مع صور ومواصفات موثقة ومقارنات. افصل إحصاءات GTA V وOnline عن أسلحة GTA VI المعلنة والمعلومات غير المؤكدة.'],['characters','الشخصيات','دليل شخصيات GTA VI بالعربية، من الأبطال إلى الوجوه التي ظهرت في عروض روكستار.'],['stories','عالم اللعبة','قصص وقراءات من عالم ليونيدا.'],['videos','مكتبة الفيديو','عروض رسمية وتحليلات من قنواتها الأصلية.'],['about','عن GTA Arabia','مجتمع عربي مستقل.']])add(route,title,desc);

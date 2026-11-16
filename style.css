@@ -100,3 +100,27 @@ nav a.nav-leaks{padding:9px 19px;border:1px solid #ffe39a;border-radius:6px;colo
 .leak-media .story-media{border-radius:0;min-height:220px}
 .leonida-feature>.story-media{margin:0 0 30px}
 .leonida-watch:not(:has(figure)){grid-template-columns:1fr}
+
+/* Profile links use the platform colors and high-contrast marks. */
+.socials .social-link {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-color: #ffffff24;
+}
+.socials .social-link--instagram { background: linear-gradient(140deg, #a42dbd, #e81b64 62%, #f15a49); }
+.socials .social-link--youtube { background: #e00019; }
+.socials .social-link--x,
+.socials .social-link--tiktok { background: #050505; }
+.socials .social-link:hover { border-color: white; }
+.socials .social-link:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+@media (max-width: 760px) {
+  header { flex-wrap: wrap; }
+  header .socials {
+    display: flex;
+    order: 1;
+    flex: 1 0 100%;
+    justify-content: center;
+    margin-inline-start: 0;
+  }
+}
