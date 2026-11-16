@@ -15,19 +15,22 @@
     "25ae4f4c9792e4bb780bc6b70cfdb49c3a5d9397a8bba26ab9f7dd18667e77ad",
     "d078b9e9370dd7ef74c16c5f6bc0f0543fdd9d03d9446db2fce9076d377d7253",
     "0e0734eb0f04effcb167dc57a9fccc63b212f52d214b0b1da0257be60fecef56",
-    "349b73b2d9d2d88cc44f01dc96b7073a94ab5a0555a44963518c236916c38f87"
+    "349b73b2d9d2d88cc44f01dc96b7073a94ab5a0555a44963518c236916c38f87",
+    "3cf90c6ea476f955e9017bbe80989c4201824679a20360647b6a9559a8fc1e7b",
+    "b912de7d31186d0519911d460947b3a8b84a493cc8c9a44733889fdc0db6a850",
+    "09ceff8ede0317abd734593e2c0506f2a78393938f316087e61fd91d77a47fa7"
   ],
   "daily": {
-    "2026-11-15": {
+    "2026-11-16": {
       "news": 2,
       "leaks": 1
     }
   },
-  "lastRun": "2026-11-15T11:51:25.574Z",
+  "lastRun": "2026-11-16T12:35:38.685Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "تسريب غير مؤكد: قائمة أغانٍ جديدة في ألبوم GTA VI تتداول",
+      "title": "تسريب غير مؤكد: مدة GTA VI قد تصل إلى 200 ساعة",
       "action": "add",
       "status": "accepted"
     }
