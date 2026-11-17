@@ -18,19 +18,22 @@
     "349b73b2d9d2d88cc44f01dc96b7073a94ab5a0555a44963518c236916c38f87",
     "3cf90c6ea476f955e9017bbe80989c4201824679a20360647b6a9559a8fc1e7b",
     "b912de7d31186d0519911d460947b3a8b84a493cc8c9a44733889fdc0db6a850",
-    "09ceff8ede0317abd734593e2c0506f2a78393938f316087e61fd91d77a47fa7"
+    "09ceff8ede0317abd734593e2c0506f2a78393938f316087e61fd91d77a47fa7",
+    "458a7abe88cde325f788570c212f1573e8781eac44f2768d66367f7ace24e446",
+    "4ecdfc4851a89678786561bbcb3300c25cf85d6f970dd0585061b5324bfdf929",
+    "8b9d4c715140c409df744f58337e1c2dd74f3e0e77a5676c8baeb298ae0de9e1"
   ],
   "daily": {
-    "2026-11-16": {
+    "2026-11-17": {
       "news": 2,
       "leaks": 1
     }
   },
-  "lastRun": "2026-11-16T12:35:38.685Z",
+  "lastRun": "2026-11-17T12:58:12.108Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "تسريب غير مؤكد: مدة GTA VI قد تصل إلى 200 ساعة",
+      "title": "شائعة: إطلاق GTA 6 أونلاين قد يتم في 2027",
       "action": "add",
       "status": "accepted"
     }
