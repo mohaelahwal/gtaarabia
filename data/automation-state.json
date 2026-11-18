@@ -21,19 +21,47 @@
     "09ceff8ede0317abd734593e2c0506f2a78393938f316087e61fd91d77a47fa7",
     "458a7abe88cde325f788570c212f1573e8781eac44f2768d66367f7ace24e446",
     "4ecdfc4851a89678786561bbcb3300c25cf85d6f970dd0585061b5324bfdf929",
-    "8b9d4c715140c409df744f58337e1c2dd74f3e0e77a5676c8baeb298ae0de9e1"
+    "8b9d4c715140c409df744f58337e1c2dd74f3e0e77a5676c8baeb298ae0de9e1",
+    "a73376ec3a49678955796110f08aa38847a8072c7cc828e70f9f9daf58eb2a11",
+    "a10c93a6824699f6bf82a4a402c2fc18c5b42303fe3e861d8428c34265a68b52"
   ],
   "daily": {
-    "2026-11-17": {
-      "news": 2,
-      "leaks": 1
+    "2026-11-18": {
+      "news": 2
     }
   },
-  "lastRun": "2026-11-17T12:58:12.108Z",
+  "lastRun": "2026-11-18T12:43:52.611Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "شائعة: إطلاق GTA 6 أونلاين قد يتم في 2027",
+      "title": "دليل GTA VI الشامل يبدأ: كل ما تحتاجه لإكمال اللعبة",
+      "action": "add",
+      "status": "held",
+      "reason": "Exact supporting evidence required"
+    },
+    {
+      "category": "news",
+      "title": "روكستار تكشف: خريطة GTA VI صُممت للتوسع المستقبلي",
+      "action": "add",
+      "status": "accepted"
+    },
+    {
+      "category": "news",
+      "title": "GTA VI تنطلق فردياً: ما الذي نعرفه عن وضع أونلاين؟",
+      "action": "add",
+      "status": "skipped",
+      "reason": "Duplicate or no meaningful new facts"
+    },
+    {
+      "category": "news",
+      "title": "تقييمات GTA VI: إجماع نقدي على أنها تحفة فنية جديدة",
+      "action": "add",
+      "status": "held",
+      "reason": "Relevant media not fully verified"
+    },
+    {
+      "category": "news",
+      "title": "دليل جديد: كيف تغيّر تسريحة جيسون ولوسيا في GTA VI",
       "action": "add",
       "status": "accepted"
     }
