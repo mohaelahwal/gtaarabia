@@ -1,3 +1,4 @@
+import {renderPinnedVideo} from '../assets/pinned-video.js';
 import {renderSocialLinks} from '../assets/social-links.js';
 import {renderArticleMedia} from '../article-media.js';
 import {renderLeonidaArticle} from '../leonida-article.js';
@@ -38,6 +39,7 @@ for(const p of all){
  if(p.route==='news'||p.route==='stories'){const subset=posts.filter(post=>post.category===(p.route==='news'?'أخبار':'عالم اللعبة'));p.body=subset.map(post=>`<article><a href="${routeFile('post/'+post.id)}"><h2>${esc(post.title)}</h2></a><time datetime="${post.date}">${post.date}</time><p>${esc(post.excerpt)}</p></article>`).join('');}
 }
 add('leaks','تسريبات GTA 6 بالعربية','لقطات ومعلومات متداولة عن GTA VI، مع توضيح أنها غير مؤكدة.',renderLeaks(leaks),'assets/leonida.jpg');
+for(const p of all.filter(p=>['home','videos'].includes(p.route)))p.body=renderPinnedVideo(videos)+p.body;
 addGuides(all);
 await fs.mkdir('dist',{recursive:true});for(const name of await fs.readdir('dist'))await fs.rm('dist/'+name,{recursive:true,force:true});
 for(const f of ['article-media.js','analytics.js','analytics.css','leonida-article.js','phone-article.js','leaks.js','style.css','app.js','routes.js','map.js','content.js','transitions.js','ads.js','assets','data'])await fs.cp(f,'dist/'+f,{recursive:true});

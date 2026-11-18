@@ -124,3 +124,11 @@ nav a.nav-leaks{padding:9px 19px;border:1px solid #ffe39a;border-radius:6px;colo
     margin-inline-start: 0;
   }
 }
+
+.pinned-video { padding: 32px 3%; background: radial-gradient(ellipse at top right,#8b147433,transparent 65%),#0e091d; border-bottom: 1px solid var(--line); }
+.pinned-video-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:22px; }
+.pinned-video-heading h2 { font-size:clamp(23px,3vw,38px); margin:6px 0; }
+.pinned-video-heading p { margin:0; color:var(--muted); }
+.pinned-video-player { position:relative; width:100%; aspect-ratio:16/9; background:#000; border:1px solid #70405f; border-radius:16px; overflow:hidden; }
+.pinned-video-player iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+@media(max-width:760px) { .pinned-video { padding:24px 5%; } .pinned-video-heading { align-items:flex-start; flex-direction:column; gap:15px; } .pinned-video-player { border-radius:10px; } }
