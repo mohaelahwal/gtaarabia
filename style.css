@@ -125,10 +125,18 @@ nav a.nav-leaks{padding:9px 19px;border:1px solid #ffe39a;border-radius:6px;colo
   }
 }
 
-.pinned-video { padding: 32px 3%; background: radial-gradient(ellipse at top right,#8b147433,transparent 65%),#0e091d; border-bottom: 1px solid var(--line); }
-.pinned-video-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:22px; }
-.pinned-video-heading h2 { font-size:clamp(23px,3vw,38px); margin:6px 0; }
-.pinned-video-heading p { margin:0; color:var(--muted); }
-.pinned-video-player { position:relative; width:100%; aspect-ratio:16/9; background:#000; border:1px solid #70405f; border-radius:16px; overflow:hidden; }
-.pinned-video-player iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
-@media(max-width:760px) { .pinned-video { padding:24px 5%; } .pinned-video-heading { align-items:flex-start; flex-direction:column; gap:15px; } .pinned-video-player { border-radius:10px; } }
+/* A short window into the stream leaves the video grid within reach. */
+.pinned-video { padding:18px 3%; background:radial-gradient(ellipse at top right,#8b147433,transparent 65%),#0e091d; border-bottom:1px solid var(--line); }
+.pinned-video-heading { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:12px; }
+.pinned-video-heading h2 { font-size:clamp(18px,2vw,25px); margin:0; }
+.pinned-video-heading p { margin:3px 0 0; color:var(--muted); font-size:12px; }
+.pinned-video-player { position:relative; height:clamp(160px,26vh,250px); background:#000; border:1px solid #70405f; border-radius:12px; overflow:hidden; }
+.pinned-video-player iframe { position:absolute; left:0; top:50%; transform:translateY(-50%); width:100%; height:auto; min-height:100%; aspect-ratio:16/9; border:0; }
+.pinned-video-fullscreen { position:absolute; bottom:12px; right:12px; z-index:1; padding:9px 16px; border:1px solid #ffffff70; border-radius:7px; background:#10091ee8; color:white; font:700 13px Cairo,Tahoma,sans-serif; cursor:pointer; }
+.pinned-video-fullscreen:focus-visible { outline:2px solid white; outline-offset:3px; }
+.pinned-video-player:fullscreen { height:100vh; width:100vw; border:0; border-radius:0; }
+.pinned-video-player:fullscreen iframe { top:0; transform:none; height:100%; aspect-ratio:auto; }
+.pinned-video-player.expanded { position:fixed; inset:0; width:100vw; height:100dvh; z-index:10000; border:0; border-radius:0; }
+.pinned-video-player.expanded iframe { top:0; transform:none; height:100%; aspect-ratio:auto; }
+.pinned-video .media-note { font-size:11px; margin:8px 0 0; }
+@media(max-width:760px) { .pinned-video { padding:15px 5%; } .pinned-video-heading { gap:10px; } .pinned-video-heading .outline { font-size:11px; padding:7px; } .pinned-video-player { height:clamp(140px,23vh,200px); } }
