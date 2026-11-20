@@ -25,24 +25,26 @@
     "a73376ec3a49678955796110f08aa38847a8072c7cc828e70f9f9daf58eb2a11",
     "a10c93a6824699f6bf82a4a402c2fc18c5b42303fe3e861d8428c34265a68b52",
     "9196546da8ef472e033572a4ab4ae7718250d5f1706a9ae03c5544617b5063dc",
-    "369f68da0ef4b4132b1055d8eac248b054e7c6eed119bac20c8ac801b6c2b0d2"
+    "369f68da0ef4b4132b1055d8eac248b054e7c6eed119bac20c8ac801b6c2b0d2",
+    "f1e9f86ebbb4dc2c397e3c8d79ed05fd7aedc636d77fbdba4576d45db351c738",
+    "f1ec6ff98ca3ee59bc74f53f68cf5eb5540580145d6e0ba187c4ef34acd9df1d"
   ],
   "daily": {
-    "2026-11-19": {
+    "2026-11-20": {
       "news": 2
     }
   },
-  "lastRun": "2026-11-19T12:34:43.914Z",
+  "lastRun": "2026-11-20T12:34:37.984Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "دليل GTA VI للفصل الأول: خطواتك الأولى في ليونيدا",
+      "title": "إصلاح مشكلة الإضاءة في GTA VI على PS5",
       "action": "add",
       "status": "accepted"
     },
     {
       "category": "news",
-      "title": "GTA VI تحطم الرقم القياسي لأعلى عدد مشاهدين للبث المباشر",
+      "title": "بن فيدر: GTA VI آخر لعبة ضخمة قبل عصر الذكاء الاصطناعي",
       "action": "add",
       "status": "accepted"
     }
