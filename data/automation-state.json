@@ -27,24 +27,26 @@
     "9196546da8ef472e033572a4ab4ae7718250d5f1706a9ae03c5544617b5063dc",
     "369f68da0ef4b4132b1055d8eac248b054e7c6eed119bac20c8ac801b6c2b0d2",
     "f1e9f86ebbb4dc2c397e3c8d79ed05fd7aedc636d77fbdba4576d45db351c738",
-    "f1ec6ff98ca3ee59bc74f53f68cf5eb5540580145d6e0ba187c4ef34acd9df1d"
+    "f1ec6ff98ca3ee59bc74f53f68cf5eb5540580145d6e0ba187c4ef34acd9df1d",
+    "d9ec6759145e8eb7acdfb42e7afedf4083a2cf25d538005771e08a762686741e",
+    "e8d1f73c6b0ed4a36e7f1c8eab82ec08288582a8ea31535a9f1c2ee34a6f9337"
   ],
   "daily": {
-    "2026-11-20": {
+    "2026-11-21": {
       "news": 2
     }
   },
-  "lastRun": "2026-11-20T12:34:37.984Z",
+  "lastRun": "2026-11-21T12:14:36.441Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "إصلاح مشكلة الإضاءة في GTA VI على PS5",
+      "title": "مصدر صمت جيسون: إلهام من فيلم جريمة 1972 وأبحاث حول المحاربين القدامى",
       "action": "add",
       "status": "accepted"
     },
     {
       "category": "news",
-      "title": "بن فيدر: GTA VI آخر لعبة ضخمة قبل عصر الذكاء الاصطناعي",
+      "title": "روكستار تكشف كيف جعلت الشخصيات غير القابلة للعب حية في GTA VI",
       "action": "add",
       "status": "accepted"
     }
