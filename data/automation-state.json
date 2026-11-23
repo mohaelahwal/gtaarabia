@@ -30,48 +30,28 @@
     "f1ec6ff98ca3ee59bc74f53f68cf5eb5540580145d6e0ba187c4ef34acd9df1d",
     "d9ec6759145e8eb7acdfb42e7afedf4083a2cf25d538005771e08a762686741e",
     "e8d1f73c6b0ed4a36e7f1c8eab82ec08288582a8ea31535a9f1c2ee34a6f9337",
-    "b27fb94be3dfd526d127b23969c7f27a01e0c63620a9529fa6edbd4b4d3ae747"
+    "b27fb94be3dfd526d127b23969c7f27a01e0c63620a9529fa6edbd4b4d3ae747",
+    "3f00336ac7278dd4dfddb812124e99abb02eb176445a4c75c7911459e0911f33",
+    "2e14fb06dd3ab6713e2158cf347f46e91cf2acc1567b6962fd3082874da36c55"
   ],
   "daily": {
-    "2026-11-22": {
-      "news": 1
+    "2026-11-23": {
+      "news": 2
     }
   },
-  "lastRun": "2026-11-22T12:20:11.627Z",
+  "lastRun": "2026-11-23T14:08:18.576Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "إحصائيات Circana: أكثر من نصف لاعبي الكونسول لعبوا GTA VI في يوم الإطلاق",
-      "action": "add",
-      "status": "held",
-      "reason": "Relevant media not fully verified"
-    },
-    {
-      "category": "news",
-      "title": "خدعة جديدة تفتح معدل الإطارات في GTA VI على إكس بوكس",
-      "action": "add",
-      "status": "held",
-      "reason": "Exact supporting evidence required"
-    },
-    {
-      "category": "news",
-      "title": "لاعب GTA VI يُحظر 30 يوماً لمشاركة صورة من المنتجع العاري",
-      "action": "add",
-      "status": "held",
-      "reason": "Relevant media not fully verified"
-    },
-    {
-      "category": "news",
-      "title": "دليل جديد: كيف تقلب سيارتك المقلوبة في GTA VI",
+      "title": "سيمو ليو يربط لوسيا في GTA VI بترويج فيلم Avengers: Doomsday",
       "action": "add",
       "status": "accepted"
     },
     {
       "category": "news",
-      "title": "مصدر صمت جيسون: إلهام من فيلم جريمة 1972 وأبحاث حول المحاربين القدامى",
-      "action": "update",
-      "status": "skipped",
-      "reason": "Duplicate or no meaningful new facts"
+      "title": "لماذا يجب عليك تجنب سرقة سيارات كويل في GTA VI؟",
+      "action": "add",
+      "status": "accepted"
     }
   ]
 }
