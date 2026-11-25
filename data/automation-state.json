@@ -25,26 +25,56 @@
     "a73376ec3a49678955796110f08aa38847a8072c7cc828e70f9f9daf58eb2a11",
     "a10c93a6824699f6bf82a4a402c2fc18c5b42303fe3e861d8428c34265a68b52",
     "9196546da8ef472e033572a4ab4ae7718250d5f1706a9ae03c5544617b5063dc",
-    "369f68da0ef4b4132b1055d8eac248b054e7c6eed119bac20c8ac801b6c2b0d2"
+    "369f68da0ef4b4132b1055d8eac248b054e7c6eed119bac20c8ac801b6c2b0d2",
+    "f1e9f86ebbb4dc2c397e3c8d79ed05fd7aedc636d77fbdba4576d45db351c738",
+    "f1ec6ff98ca3ee59bc74f53f68cf5eb5540580145d6e0ba187c4ef34acd9df1d",
+    "d9ec6759145e8eb7acdfb42e7afedf4083a2cf25d538005771e08a762686741e",
+    "e8d1f73c6b0ed4a36e7f1c8eab82ec08288582a8ea31535a9f1c2ee34a6f9337",
+    "b27fb94be3dfd526d127b23969c7f27a01e0c63620a9529fa6edbd4b4d3ae747",
+    "3f00336ac7278dd4dfddb812124e99abb02eb176445a4c75c7911459e0911f33",
+    "2e14fb06dd3ab6713e2158cf347f46e91cf2acc1567b6962fd3082874da36c55",
+    "7627319ca3f7889fb7ffe4b86bef3738d768948de3225952edc7c48b0d70f5a0"
   ],
   "daily": {
-    "2026-11-19": {
-      "news": 2
+    "2026-11-24": {
+      "news": 1
     }
   },
-  "lastRun": "2026-11-19T12:34:43.914Z",
+  "lastRun": "2026-11-24T14:38:04.990Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "دليل GTA VI للفصل الأول: خطواتك الأولى في ليونيدا",
+      "title": "دليل ألعاب الأركيد في GTA VI: أربعة ألعاب داخل اللعبة",
+      "action": "add",
+      "status": "held",
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7033, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
+    },
+    {
+      "category": "news",
+      "title": "دليل جديد: موقع سيارة ثراكس الأخيرة في قائمة راندي",
       "action": "add",
       "status": "accepted"
     },
     {
       "category": "news",
-      "title": "GTA VI تحطم الرقم القياسي لأعلى عدد مشاهدين للبث المباشر",
+      "title": "دليل جديد: سرقة صالون بيرل في GTA VI",
       "action": "add",
-      "status": "accepted"
+      "status": "held",
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7301, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
+    },
+    {
+      "category": "news",
+      "title": "قفزة هائلة في مبيعات أجهزة PS5 وXbox قبل إطلاق GTA VI",
+      "action": "add",
+      "status": "held",
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7124, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
+    },
+    {
+      "category": "news",
+      "title": "تجربة القنوات التلفزيونية داخل GTA VI: سخرية عميقة وإنتاج احترافي",
+      "action": "add",
+      "status": "held",
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7118, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
     }
   ]
 }
