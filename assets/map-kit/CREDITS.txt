@@ -1,0 +1,7 @@
+Map data: GTABase / gtadb.org and contributors, CC BY 4.0.
+https://www.gtabase.com/gta-6/map/
+https://creativecommons.org/licenses/by/4.0/
+Changes: Arabic UI, category translations, summaries and progress tracking by GTA Arabia.
+Game map, screenshots and game blips © Rockstar Games.
+Symbols: Google Material Symbols, Apache 2.0; game-icons.net, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
+Leaflet 1.9.4 BSD-2-Clause; Leaflet.markercluster 1.5.3 MIT.

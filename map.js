@@ -1,54 +1,299 @@
-export function mountMap({main,intro,esc,share,mapLocations}) {
- const locations = mapLocations;
- const regionNames={'vice-city':'فايس سيتي','port-gellhorn':'بورت غيلهورن','ambrosia':'أمبروسيا','mount-kalaga':'منتزه جبل كالاغا','grassrivers':'غراس ريفرز','leonida-keys':'ليونيدا كيز'};
- const galleryRegion=r=>regionNames[r.id]?r.id:({city:'vice-city',beach:'vice-city',transport:'vice-city',island:'leonida-keys',nature:'grassrivers'}[r.type]);
- const galleryFor=r=>r.photos?.length?r.photos:[1,2,3].map(n=>({src:`assets/map/${galleryRegion(r)}-${n}.jpg`,caption:`${regionNames[galleryRegion(r)]} · صورة ${n} من معرض روكستار`}));
- const types={all:'كل المواقع',city:'المدن والأحياء',nature:'الطبيعة والبحيرات',beach:'الشواطئ',island:'الجزر',transport:'المطارات والموانئ'};
- main.innerHTML=`<h1 class="sr-only">خريطة ليونيدا التفاعلية</h1><section class="section map-section"><div class="map-layout"><div class="map-viewport image-map" id="map" tabindex="0" aria-label="خريطة ليونيدا. اسحب للتحريك أو استخدم الأسهم. زائد وناقص للتكبير."><div class="map-world image-map-world"><img class="map-art" src="assets/leonida-map-vector.svg" alt="خريطة ليونيدا المرفقة مع أسماء المدن والشواطئ والجزر" draggable="false">${locations.map((r,i)=>`<button class="map-pin" data-location="${r.id}" style="left:${r.x/20.48}%;top:${r.y/20.48}%" aria-label="${r.name}" title="${r.name}"><span>${i+1}</span></button>`).join('')}</div><div id="map-tooltip" class="map-tooltip" role="tooltip" hidden></div><div class="map-search-overlay"><input id="map-search" class="filter-input" type="search" placeholder="ابحث عن مدينة أو جزيرة…" aria-label="البحث في مواقع الخريطة"></div><div class="map-controls"><button data-map="in" aria-label="تكبير">+</button><button data-map="out" aria-label="تصغير">−</button><button data-map="left" aria-label="تدوير يسار">↶</button><button data-map="right" aria-label="تدوير يمين">↷</button><button data-map="reset" aria-label="إظهار الخريطة كاملة">⌂</button></div><div class="map-compass"><span id="compass">↑</span><small>أعلى الصورة</small></div><output class="map-scale" id="map-scale" aria-label="مستوى التكبير"></output><span class="map-label">اسحب للاستكشاف · كبّر بعجلة الفأرة أو بإصبعين</span></div><aside class="map-sidebar"><div class="map-sidebar-title"><span class="eyebrow">دليل المواقع</span><h2>${locations.length} وجهة تنتظرك</h2></div><label for="region-filter">نوع الموقع</label><select id="region-filter">${Object.entries(types).map(([v,t])=>`<option value="${v}">${t}</option>`).join('')}</select><div class="location-info" id="location-info" aria-live="polite"></div><div class="location-list map-location-list">${locations.map((r,i)=>`<button data-location="${r.id}"><span>${String(i+1).padStart(2,'0')}</span>${r.name}<small>↗</small></button>`).join('')}</div><p id="map-empty" hidden>لا توجد مواقع مطابقة.</p><p class="map-hint">الأسهم للتحريك · + و − للتكبير · Q و E للتدوير · Home لعرض الخريطة كاملة.</p></aside></div></section><dialog class="map-photo-dialog" id="map-photo-dialog" aria-label="معرض صور الموقع"><button class="map-photo-close" aria-label="إغلاق الصور">×</button><img id="map-full-photo" alt=""><div class="map-photo-footer"><button data-photo-step="-1" aria-label="الصورة السابقة">→</button><p id="map-full-caption"></p><button data-photo-step="1" aria-label="الصورة التالية">←</button></div></dialog>`;
- const $=s=>main.querySelector(s), all=s=>[...main.querySelectorAll(s)],view=$('#map'),world=$('.image-map-world');
- let fit=1,z=1,a=0,x=0,y=0,selected=null,pointers=new Map(),gesture=null;
- const update=()=>{world.style.transform=`translate(calc(-50% + ${x}px),calc(-50% + ${y}px)) scale(${z}) rotate(${a}deg)`;world.style.setProperty('--pin-scale',1/z);world.style.setProperty('--pin-angle',`${-a}deg`);$('#compass').style.transform=`rotate(${a}deg)`;$('#map-scale').textContent=`${Math.round(z/fit*100)}%`;};
- const reset=()=>{fit=Math.min(view.clientWidth,view.clientHeight)/1000*.96;z=fit;a=x=y=0;update()};
- const zoom=(next,cx=0,cy=0)=>{next=Math.max(fit,Math.min(fit*9,next));const ratio=next/z;x=cx-(cx-x)*ratio;y=cy-(cy-y)*ratio;z=next;update()};
- const focus=r=>{z=Math.max(z,fit*2.7);const rad=a*Math.PI/180,px=(r.x/2.048-500),py=(r.y/2.048-500);x=-(px*Math.cos(rad)-py*Math.sin(rad))*z;y=-(px*Math.sin(rad)+py*Math.cos(rad))*z;update()};
- let photoIndex=0;
- const dialog=$('#map-photo-dialog');
- const showPhoto=index=>{
-  const photos=galleryFor(selected);photoIndex=(index+photos.length)%photos.length;const photo=photos[photoIndex];
-  for(const selector of ['#map-selected-photo','#map-full-photo']){const img=$(selector);img.src=photo.src;img.alt=photo.caption;}
-  $('#map-photo-caption').textContent=photo.caption;
-  $('#map-full-caption').textContent=selected.name+' · '+photo.caption+' · المصدر مرفق';
-  $('#map-photo-count').textContent=`${photoIndex+1} / ${photos.length}`;
-  all('[data-map-photo]').forEach(b=>{const active=Number(b.dataset.mapPhoto)===photoIndex;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
- };
- $('.map-photo-close').onclick=()=>dialog.close();
- dialog.onclick=e=>{if(e.target===dialog)dialog.close()};
- all('[data-photo-step]').forEach(b=>b.onclick=()=>showPhoto(photoIndex+Number(b.dataset.photoStep)));
- dialog.onkeydown=e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();showPhoto(photoIndex+(e.key==='ArrowLeft'?1:-1))}};
- const choose=(id,center=true)=>{
-  const r=locations.find(r=>r.id===id);if(!r)return;selected=r;
-  all('[data-location]').forEach(b=>{b.classList.toggle('active',b.dataset.location===id);b.setAttribute('aria-pressed',String(b.dataset.location===id))});
-  const photos=galleryFor(r);
-  $('#location-info').innerHTML=`<div class="map-photo-gallery"><button class="map-photo-main" id="open-map-photo" aria-label="عرض صور ${esc(r.name)} بحجم كبير"><img id="map-selected-photo" src="${photos[0].src}" alt="${esc(photos[0].caption)}"><span class="map-photo-expand">⤢ عرض الصورة</span><span id="map-photo-count">1 / ${photos.length}</span></button><div class="map-photo-thumbs">${photos.map((photo,i)=>`<button data-map-photo="${i}" aria-label="${esc(photo.caption)}" aria-pressed="${i===0}"><img src="${photo.src}" alt="" loading="lazy"></button>`).join('')}</div><p id="map-photo-caption"></p><a class="map-photo-credit" href="${esc(r.photoSource||'https://www.rockstargames.com/VI/media/screenshots')}" target="_blank" rel="noopener noreferrer">مصدر الصور ↗</a></div><div class="map-location-copy"><span class="badge ${r.official?'':'analysis'}">${r.official?'اسم منطقة معلن رسمياً':'تسمية في الخريطة المرفقة'}</span><h3>${esc(r.name)}</h3><p>${types[r.type]}</p>${r.description?`<p>${esc(r.description)}</p>`:''}${!r.official&&!r.photos?.length?'<p class="map-photo-context">صور مرجعية من '+regionNames[galleryRegion(r)]+'، وليست صوراً مؤكدة لهذا الموقع.</p>':''}<div class="map-detail-actions"><button class="outline" id="focus-location">قرّب الموقع ⌖</button><button class="outline" id="share-location">مشاركة الموقع ↗</button></div></div>`;
-  showPhoto(0);
-  all('[data-map-photo]').forEach(b=>b.onclick=()=>showPhoto(Number(b.dataset.mapPhoto)));
-  $('#open-map-photo').onclick=()=>dialog.showModal();
-  $('#focus-location').onclick=()=>focus(r);
-  $('#share-location').onclick=()=>{const url=new URL(location.href);url.searchParams.set('location',r.id);share(r.name+' | GTA Arabia',url.href)};
-  if(center){focus(r);const url=new URL(location.href);url.searchParams.set('location',r.id);history.replaceState(history.state,'',url.href)}
- };
- const control=action=>{if(action==='in')zoom(z*1.3);if(action==='out')zoom(z/1.3);if(action==='left'||action==='right'){a+=action==='left'?-15:15;update()}if(action==='reset')reset()};
- all('[data-map]').forEach(b=>b.onclick=()=>control(b.dataset.map));all('[data-location]').forEach(b=>b.onclick=()=>choose(b.dataset.location));
- const tip=$('#map-tooltip');
- const hideTip=()=>{tip.hidden=true;all('.map-pin').forEach(b=>b.removeAttribute('aria-describedby'))};
- const showTip=b=>{const r=locations.find(r=>r.id===b.dataset.location);tip.innerHTML=`<strong>${esc(r.name)}</strong><span>${esc(types[r.type])}</span><small>${r.official?'اسم منطقة معلن · الموضع بحسب الصورة':'الموضع والتسمية بحسب الصورة المرفقة'}</small><small>اضغط للتقريب وعرض التفاصيل</small>`;tip.hidden=false;b.setAttribute('aria-describedby','map-tooltip');const br=b.getBoundingClientRect(),vr=view.getBoundingClientRect();tip.style.left=Math.max(8,Math.min(view.clientWidth-tip.offsetWidth-8,br.left-vr.left+br.width/2-tip.offsetWidth/2))+'px';tip.style.top=Math.max(8,Math.min(view.clientHeight-tip.offsetHeight-8,br.top-vr.top-tip.offsetHeight-12))+'px';};
- all('.map-pin').forEach(b=>{b.onpointerenter=e=>{if(e.pointerType!=='touch')showTip(b)};b.onpointerleave=hideTip;b.onfocus=()=>showTip(b);b.onblur=hideTip;b.onkeydown=e=>{if(e.key==='Escape')hideTip()}});
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const asset = path => new URL(path, import.meta.url).href;
+const storageKey = 'gta-arabia-map-progress-v2';
+const count = value => new Intl.NumberFormat('ar').format(value);
 
- const filter=()=>{const q=$('#map-search').value.trim().toLowerCase(),type=$('#region-filter').value;let count=0;for(const r of locations){const visible=(!q||(r.name+' '+r.id).toLowerCase().includes(q))&&(type==='all'||r.type===type);all(`[data-location="${r.id}"]`).forEach(b=>b.hidden=!visible);if(visible)count++}$('#map-empty').hidden=count>0;};$('#map-search').oninput=filter;$('#region-filter').onchange=filter;
- const coords=e=>{const b=view.getBoundingClientRect();return {x:e.clientX-b.left-b.width/2,y:e.clientY-b.top-b.height/2}};
- const begin=()=>{const ps=[...pointers.values()];gesture=ps.length>=2?{kind:'pinch',d:Math.hypot(ps[0].x-ps[1].x,ps[0].y-ps[1].y),z,x,y,cx:(ps[0].x+ps[1].x)/2,cy:(ps[0].y+ps[1].y)/2}:ps.length?{kind:'drag',sx:ps[0].x,sy:ps[0].y,x,y}:null};
- view.onpointerdown=e=>{if(e.target.closest('button,input,select,a,label'))return;pointers.set(e.pointerId,coords(e));view.setPointerCapture(e.pointerId);begin()};
- view.onpointermove=e=>{if(!pointers.has(e.pointerId))return;pointers.set(e.pointerId,coords(e));const ps=[...pointers.values()];if(gesture?.kind==='pinch'&&ps.length>=2){const next=Math.max(fit,Math.min(fit*9,gesture.z*Math.hypot(ps[0].x-ps[1].x,ps[0].y-ps[1].y)/Math.max(gesture.d,1)));x=(ps[0].x+ps[1].x)/2-(gesture.cx-gesture.x)*next/gesture.z;y=(ps[0].y+ps[1].y)/2-(gesture.cy-gesture.y)*next/gesture.z;z=next}else if(gesture){x=gesture.x+ps[0].x-gesture.sx;y=gesture.y+ps[0].y-gesture.sy}update()};
- view.onpointerup=view.onpointercancel=e=>{pointers.delete(e.pointerId);begin()};view.addEventListener('wheel',e=>{e.preventDefault();const p=coords(e);zoom(z*(e.deltaY<0?1.15:1/1.15),p.x,p.y)},{passive:false});view.onkeydown=e=>{if(e.target!==view)return;let handled=true;switch(e.key){case'+':case'=':control('in');break;case'-':control('out');break;case'q':control('left');break;case'e':control('right');break;case'Home':reset();break;case'ArrowLeft':x-=35;break;case'ArrowRight':x+=35;break;case'ArrowUp':y-=35;break;case'ArrowDown':y+=35;break;default:handled=false}if(handled){e.preventDefault();update()}};
- reset();const initial=new URLSearchParams(location.search).get('location');choose(initial||'vice-city',!!initial);const observer=new ResizeObserver(()=>{const next=Math.min(view.clientWidth,view.clientHeight)/1000*.96;const ratio=next/fit;z*=ratio;x*=ratio;y*=ratio;fit=next;update()});observer.observe(view);return ()=>observer.disconnect();
+export function renderMapShell() {
+  return `<section class="explorer" aria-label="خريطة ليونيدا التفاعلية" dir="rtl">
+    <aside class="explorer-sidebar">
+      <div class="explorer-brand"><img src="assets/logo.svg" alt="GTA Arabia"><div><h1>خريطة ليونيدا</h1><p>استكشف. اكتشف. احفظ تقدمك.</p></div><button class="explorer-close" data-explorer="sidebar" aria-label="إخفاء الفلاتر">×</button></div>
+      <label class="explorer-search"><span>⌕</span><input type="search" data-explorer-search placeholder="ابحث عن موقع أو نشاط..." aria-label="البحث في المواقع والفئات"></label>
+      <div class="explorer-actions"><button data-explorer="all">إظهار الكل</button><button data-explorer="none">إخفاء الكل</button></div>
+      <div class="explorer-progress"><span>تم اكتشاف <strong data-found-count>٠</strong></span><span data-total-count>جاري التحميل</span><progress value="0" max="1" aria-label="تقدم الاستكشاف"></progress></div>
+      <div class="explorer-switches"><label><input type="checkbox" data-hide-found> إخفاء المكتشف</label><label><input type="checkbox" data-favorites-only> المفضلة فقط</label></div>
+      <div class="explorer-personal"><button data-explorer="personal">＋ علامتي الخاصة</button><button data-explorer="my-markers">علاماتي <span data-own-count>٠</span></button></div>
+      <div class="explorer-results" data-search-results hidden aria-live="polite"></div>
+      <div class="explorer-categories" data-map-categories><p class="explorer-loading" role="status">جاري تجهيز المواقع والفئات...</p></div>
+      <div class="explorer-storage"><span data-storage-status>يُحفظ تقدمك في هذا المتصفح</span><div><button data-explorer="export">تصدير التقدم</button><label class="explorer-import">استيراد<input type="file" accept="application/json" data-progress-file hidden></label></div></div>
+    </aside>
+    <div class="explorer-stage">
+      <div class="explorer-canvas" id="leonida-explorer-map" tabindex="0" aria-label="اسحب الخريطة للتحريك واستخدم زائد وناقص للتكبير"></div>
+      <button class="explorer-filter-open" data-explorer="sidebar">☰ الفلاتر</button>
+      <div class="explorer-tools"><button data-explorer="zoom-in" aria-label="تكبير">+</button><button data-explorer="zoom-out" aria-label="تصغير">−</button><button data-explorer="reset" aria-label="إظهار ليونيدا كاملة">⌖</button><button data-explorer="fullscreen" aria-label="ملء الشاشة">⛶</button></div>
+      <div class="explorer-status" role="status" data-map-status>تحميل الخريطة...</div>
+      <div class="explorer-credit">GTA Arabia · بيانات <a href="https://www.gtabase.com/gta-6/map/" target="_blank" rel="noopener noreferrer">GTABase / gtadb.org والمساهمون</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · الخريطة والصور © Rockstar Games</div>
+    </div>
+  </section>`;
+}
+
+let libraries;
+function loadLibraries() {
+  if (libraries) return libraries;
+  for (const name of ['leaflet.css','markercluster.css','explorer.css']) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet'; link.href = asset('assets/map-kit/' + name);
+    document.head.append(link);
+  }
+  const script = name => new Promise((resolve, reject) => {
+    const element = document.createElement('script');
+    element.src = asset('assets/map-kit/' + name);
+    element.onload = resolve;
+    element.onerror = () => reject(new Error('تعذر تحميل أدوات الخريطة. أعد المحاولة.'));
+    document.head.append(element);
+  });
+  libraries = script('leaflet.js').then(() => script('markercluster.js')).catch(error => { libraries = null; throw error; });
+  return libraries;
+}
+
+export function readMapProgress(storage) {
+  const empty = {found:[],favorites:[],notes:{},personal:[],hidden:[],hideFound:false,favoritesOnly:false};
+  try {
+    const saved = JSON.parse((storage || globalThis.localStorage).getItem(storageKey) || '{}');
+    for (const key of ['found','favorites','hidden']) if (Array.isArray(saved[key])) empty[key] = saved[key].filter(id => typeof id === 'string');
+    if (saved.notes && typeof saved.notes === 'object' && !Array.isArray(saved.notes)) {
+      empty.notes = Object.fromEntries(Object.entries(saved.notes).filter(([id,note]) => typeof note === 'string' && id.length < 150).map(([id,note]) => [id,note.slice(0,4000)]));
+    }
+    if (Array.isArray(saved.personal)) empty.personal = saved.personal.filter(p => typeof p.id === 'string' && /^personal-[a-zA-Z0-9-]{1,100}$/.test(p.id) && typeof p.name === 'string' && Number.isFinite(p.x) && Number.isFinite(p.y) && Math.abs(p.x) <= 16384 && Math.abs(p.y) <= 16384).map(p => ({id:p.id,name:p.name.slice(0,160),nameAr:p.name.slice(0,160),x:p.x,y:p.y,category:'personal'}));
+    empty.hideFound = saved.hideFound === true;
+    empty.favoritesOnly = saved.favoritesOnly === true;
+  } catch {}
+  return empty;
+}
+
+export function normalizeMapSearch(text) {
+  return String(text || '').toLowerCase().normalize('NFKD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي');
+}
+
+export function selectMapLocations(markers, {query='',hidden=[],hideFound=false,favoritesOnly=false,found=[],favorites=[]}, categoryById) {
+  const words = normalizeMapSearch(query);
+  const excluded = new Set(hidden), discovered = new Set(found), starred = new Set(favorites);
+  return markers.filter(marker => {
+    const category = categoryById[marker.category] || {};
+    return !excluded.has(marker.category) && (!hideFound || !discovered.has(marker.id)) &&
+      (!favoritesOnly || starred.has(marker.id)) &&
+      (!words || normalizeMapSearch([marker.name,marker.nameAr,category.name,category.nameAr].join(' ')).includes(words));
+  });
+}
+
+export function mountMap({main,share}) {
+  main.innerHTML = renderMapShell();
+  const root = main.querySelector('.explorer');
+  if (window.matchMedia('(max-width:800px)').matches) root.classList.add('sidebar-collapsed');
+  const $ = selector => root.querySelector(selector);
+  let disposed = false, map, observer, popup, adding = false, searchTimer;
+  const abort = new AbortController();
+  const state = readMapProgress();
+  function save() {
+    try { localStorage.setItem(storageKey,JSON.stringify(state)); $('[data-storage-status]').textContent = 'يُحفظ تقدمك في هذا المتصفح'; }
+    catch { $('[data-storage-status]').textContent = 'تعذر الحفظ محلياً؛ صدّر تقدمك للاحتفاظ به'; }
+  }
+  async function start() {
+    const [data,symbols] = await Promise.all([
+      fetch(asset('data/map-explorer.json'),{signal:abort.signal}).then(r => {if(!r.ok) throw Error('تعذر تحميل المواقع'); return r.json();}),
+      fetch(asset('assets/map-kit/symbols.json'),{signal:abort.signal}).then(r => r.json()),
+      loadLibraries()
+    ]);
+    if (disposed) return;
+    const L = window.L;
+    const categories = [...data.categories,{id:'personal',name:'Personal',nameAr:'علاماتي الخاصة',group:'properties',color:'#fa42bd',icon:'personal'}];
+    const byCategory = Object.fromEntries(categories.map(c => [c.id,c]));
+    const byGroup = Object.fromEntries(data.groups.map(g => [g.id,g]));
+    const totalByCategory = {};
+    data.markers.forEach(m => { totalByCategory[m.category] = (totalByCategory[m.category] || 0) + 1; });
+    const lookup = new Map(data.markers.map(m => [m.id,m]));
+    const allMarkers = () => [...data.markers,...state.personal];
+    const getLocation = id => lookup.get(id) || state.personal.find(m => m.id === id);
+    const worldBounds = L.latLngBounds([[-10112,-12032],[12032,5120]]);
+    const crs = L.extend({},L.CRS.Simple,{transformation:new L.Transformation(1/32,512,-1/32,512)});
+    map = L.map($('#leonida-explorer-map'),{crs,zoomControl:false,attributionControl:false,minZoom:0,maxZoom:7,maxBounds:worldBounds.pad(0.25),zoomSnap:0.25,preferCanvas:true});
+    const TileLayer = L.TileLayer.extend({
+      getTileUrl(coords) {
+        const file = coords.z + '/' + coords.z + ',' + coords.y + ',' + coords.x + '.jpg';
+        return coords.z <= 3 ? asset('assets/map-kit/tiles/' + file) : 'https://www.gtabase.com/images/gta-6/maps/tiles/in-game/' + file;
+      }
+    });
+    new TileLayer('',{tileSize:256,minNativeZoom:0,maxNativeZoom:6,bounds:worldBounds,keepBuffer:2,errorTileUrl:asset('assets/map-kit/sea.svg')}).addTo(map);
+    const viewAll = () => map.fitBounds(worldBounds,{padding:[20,20],animate:false});
+    viewAll();
+    const clusters = L.markerClusterGroup({
+      maxClusterRadius:35,disableClusteringAtZoom:4,showCoverageOnHover:false,spiderfyOnMaxZoom:true,
+      iconCreateFunction: cluster => L.divIcon({html:`<span>${count(cluster.getChildCount())}</span>`,className:'explorer-cluster',iconSize:[38,38]})
+    }).addTo(map);
+    function iconHTML(category) {
+      const symbol = symbols[category.icon];
+      if (symbol?.img) return `<img src="${asset('assets/map-kit/icons/' + symbol.img)}" alt="" width="24" height="24">`;
+      if (symbol?.paths?.length) return `<svg viewBox="${esc(symbol.viewBox)}" aria-hidden="true">${symbol.paths.map(path=>`<path d="${esc(path)}"/>`).join('')}</svg>`;
+      return '<span aria-hidden="true">★</span>';
+    }
+    const markers = new Map();
+    function createMarker(record) {
+      const category = byCategory[record.category];
+      const color = category.color || byGroup[category.group]?.color || '#fa42bd';
+      const discovered = state.found.includes(record.id);
+      const marker = L.marker([record.y,record.x],{
+        title:record.nameAr || record.name,
+        icon:L.divIcon({html:`<span class="explorer-pin ${discovered?'is-found':''}" style="--pin-color:${color}">${iconHTML(category)}${discovered?'<b>✓</b>':''}</span>`,className:'explorer-pin-wrap',iconSize:[29,29],iconAnchor:[14,25]})
+      }).on('click',() => open(record.id));
+      return marker;
+    }
+    function updateCounts() {
+      const found = new Set(state.found);
+      $('[data-found-count]').textContent = count(data.markers.filter(m=>found.has(m.id)).length);
+      $('[data-total-count]').textContent = 'من ' + count(data.markers.length) + ' موقع';
+      $('progress').max = data.markers.length;
+      $('progress').value = data.markers.filter(m=>found.has(m.id)).length;
+      $('[data-own-count]').textContent = count(state.personal.length);
+      categories.forEach(category => {
+        const records = category.id === 'personal' ? state.personal : data.markers.filter(m=>m.category===category.id);
+        const node = root.querySelector(`[data-category-count="${category.id}"]`);
+        if(node) node.textContent = count(records.filter(m=>found.has(m.id)).length)+' / '+count(records.length);
+      });
+    }
+    function renderCategories() {
+      $('[data-map-categories]').innerHTML = data.groups.map(group => {
+        const list = categories.filter(c=>c.group===group.id && (totalByCategory[c.id] || c.id==='personal'));
+        return `<details class="explorer-group" open><summary><strong>${esc(group.nameAr)}</strong><label title="تبديل المجموعة"><input type="checkbox" data-group="${group.id}" ${list.every(c=>!state.hidden.includes(c.id))?'checked':''} aria-label="إظهار أو إخفاء ${esc(group.nameAr)}"></label></summary><div>${list.map(category=>`<div class="explorer-category"><label><input type="checkbox" data-category="${category.id}" ${state.hidden.includes(category.id)?'':'checked'}><span class="explorer-category-icon" style="color:${category.color || group.color}">${iconHTML(category)}</span><span>${esc(category.nameAr)}</span></label><span class="explorer-category-count" data-category-count="${category.id}"></span><button data-next-category="${category.id}" title="الموقع التالي" aria-label="انتقل إلى موقع من ${esc(category.nameAr)}">‹</button></div>`).join('')}</div></details>`;
+      }).join('');
+      updateCounts();
+    }
+    function render() {
+      if(disposed) return;
+      const query = $('[data-explorer-search]').value;
+      const visible = selectMapLocations(allMarkers(),{...state,query},byCategory);
+      clusters.clearLayers();
+      clusters.addLayers(visible.map(record => {
+        if(!markers.has(record.id)) markers.set(record.id,createMarker(record));
+        return markers.get(record.id);
+      }));
+      $('[data-map-status]').textContent = count(visible.length)+' موقع ظاهر';
+      const searching = query.trim().length > 0;
+      $('[data-search-results]').hidden = !searching;
+      $('[data-map-categories]').hidden = searching;
+      if(searching) $('[data-search-results]').innerHTML = visible.length
+        ? `<p>${count(visible.length)} نتيجة</p>`+visible.slice(0,60).map(m=>`<button data-open-location="${m.id}"><strong>${esc(m.nameAr)}</strong><span>${esc(byCategory[m.category].nameAr)}</span></button>`).join('')
+        : '<p>لا توجد مواقع مطابقة. جرّب إظهار الكل أو تغيير البحث.</p>';
+      updateCounts();
+    }
+    function open(id) {
+      const record = getLocation(id);
+      if(!record) return;
+      const category = byCategory[record.category];
+      const found = state.found.includes(id), favorite = state.favorites.includes(id);
+      const photo = record.image_small || record.image;
+      const note = state.notes[id] || '';
+      const original = record.description && record.description !== record.descriptionAr
+        ? `<details class="explorer-original"><summary>تفاصيل المصدر الأصلية</summary><p lang="en" dir="ltr">${esc(record.description)}</p></details>` : '';
+      const html = `<article class="explorer-popup" dir="rtl">${photo?`<img class="explorer-popup-photo" src="${esc(photo)}" alt="${esc(record.nameAr)}" loading="lazy" onerror="this.hidden=true">`:''}<div class="explorer-popup-body"><small>${esc(category.nameAr)}</small><h2>${esc(record.nameAr || record.name)}</h2>${record.nameAr!==record.name?`<p class="explorer-original-name" dir="ltr">${esc(record.name)}</p>`:''}<p>${esc(record.descriptionAr || 'علامتك الخاصة على خريطة ليونيدا.')}</p>${record.facts?.length?`<dl>${record.facts.map(f=>`<div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`).join('')}</dl>`:''}${original}<div class="explorer-popup-actions"><button data-toggle-found="${id}" aria-pressed="${found}">${found?'✓ تم اكتشافه':'تحديد كمكتشف'}</button><button data-toggle-favorite="${id}" aria-pressed="${favorite}" aria-label="المفضلة">${favorite?'★':'☆'}</button><button data-share-location="${id}" aria-label="مشاركة الموقع">مشاركة</button></div><label class="explorer-note-label">ملاحظتي<textarea maxlength="4000" data-note="${id}" placeholder="اكتب ملاحظة لهذا الموقع...">${esc(note)}</textarea></label><button class="explorer-save-note" data-save-note="${id}">حفظ الملاحظة</button>${record.category==='personal'?`<button class="explorer-delete" data-delete-location="${id}">حذف علامتي</button>`:''}${record.shot_by?`<p class="explorer-photo-credit">الصورة: ${esc(record.shot_by)}</p>`:''}</div></article>`;
+      popup = L.popup({maxWidth:340,minWidth:250,autoPan:true,className:'explorer-leaflet-popup'}).setLatLng([record.y,record.x]).setContent(html).openOn(map);
+      const url = new URL(location.href); url.searchParams.set('location',id);
+      history.replaceState(history.state,'',url);
+    }
+    function focus(id) {
+      const record = getLocation(id);
+      if(!record) return;
+      if(state.hidden.includes(record.category)) state.hidden = state.hidden.filter(c=>c!==record.category);
+      $('[data-explorer-search]').value='';
+      state.hideFound=false; state.favoritesOnly=false;
+      $('[data-hide-found]').checked=false; $('[data-favorites-only]').checked=false;
+      save(); renderCategories();render();
+      const marker = markers.get(id);
+      map.setView([record.y,record.x],Math.max(4,map.getZoom()),{animate:false});
+      clusters.zoomToShowLayer(marker,()=>open(id));
+    }
+    renderCategories();render();
+    $('[data-hide-found]').checked = state.hideFound;
+    $('[data-favorites-only]').checked = state.favoritesOnly;
+    root.addEventListener('change',event=>{
+      const input=event.target;
+      if(input.matches('[data-category]')) {
+        state.hidden = state.hidden.filter(id=>id!==input.dataset.category);
+        if(!input.checked) state.hidden.push(input.dataset.category);
+      } else if(input.matches('[data-group]')) {
+        const ids=categories.filter(c=>c.group===input.dataset.group).map(c=>c.id);
+        state.hidden=state.hidden.filter(id=>!ids.includes(id));
+        if(!input.checked) state.hidden.push(...ids);
+      } else if(input.matches('[data-hide-found]')) state.hideFound=input.checked;
+      else if(input.matches('[data-favorites-only]')) state.favoritesOnly=input.checked;
+      else return;
+      save();renderCategories();render();
+    },{signal:abort.signal});
+    root.addEventListener('input',event=>{
+      if(!event.target.matches('[data-explorer-search]'))return;
+      clearTimeout(searchTimer);searchTimer=setTimeout(render,140);
+    },{signal:abort.signal});
+    root.addEventListener('click',async event=>{
+      const target=event.target.closest('button');
+      if(!target) return;
+      if(target.dataset.openLocation) focus(target.dataset.openLocation);
+      if(target.dataset.nextCategory) {
+        const records=allMarkers().filter(m=>m.category===target.dataset.nextCategory);
+        const next=records.find(m=>!state.found.includes(m.id)) || records[0];
+        if(next) focus(next.id);
+      }
+      const toggle=(key,id)=>{state[key]=state[key].includes(id)?state[key].filter(x=>x!==id):[...state[key],id];save();};
+      if(target.dataset.toggleFound) {
+        const id=target.dataset.toggleFound;
+        toggle('found',id); markers.delete(id);render();open(id);
+      }
+      if(target.dataset.toggleFavorite){toggle('favorites',target.dataset.toggleFavorite);render();open(target.dataset.toggleFavorite);}
+      if(target.dataset.saveNote){const id=target.dataset.saveNote;state.notes[id]=root.querySelector('[data-note]').value;save();target.textContent='تم الحفظ';}
+      if(target.dataset.shareLocation){
+        const id=target.dataset.shareLocation;const url=new URL(location.href);url.searchParams.set('location',id);
+        share((getLocation(id)?.nameAr || 'موقع')+' | GTA Arabia',url.href);
+      }
+      if(target.dataset.deleteLocation){
+        const id=target.dataset.deleteLocation;state.personal=state.personal.filter(m=>m.id!==id);state.found=state.found.filter(x=>x!==id);state.favorites=state.favorites.filter(x=>x!==id);delete state.notes[id];markers.delete(id);save();map.closePopup();renderCategories();render();
+      }
+      if(target.dataset.savePersonal){
+        const name=root.querySelector('[data-personal-name]').value.trim();
+        if(!name){root.querySelector('[data-personal-name]').focus();return;}
+        const record={id:'personal-'+crypto.randomUUID(),name,nameAr:name,category:'personal',x:Number(target.dataset.x),y:Number(target.dataset.y)};
+        state.personal.push(record);save();map.closePopup();renderCategories();focus(record.id);
+      }
+      const action=target.dataset.explorer;
+      if(action==='all'||action==='none'){state.hidden=action==='all'?[]:categories.map(c=>c.id);save();renderCategories();render();}
+      if(action==='sidebar'){root.classList.toggle('sidebar-collapsed');setTimeout(()=>map.invalidateSize(),220);}
+      if(action==='zoom-in')map.zoomIn();
+      if(action==='zoom-out')map.zoomOut();
+      if(action==='reset')viewAll();
+      if(action==='fullscreen'){
+        if(document.fullscreenElement)await document.exitFullscreen();
+        else try{await root.requestFullscreen();}catch{root.classList.toggle('explorer-screen');map.invalidateSize();}
+      }
+      if(action==='personal'){adding=!adding;$('[data-map-status]').textContent=adding?'اضغط على الخريطة لوضع علامتك':'تم إلغاء الإضافة';target.classList.toggle('active',adding);}
+      if(action==='my-markers'){state.hidden=categories.filter(c=>c.id!=='personal').map(c=>c.id);save();renderCategories();render();if(state.personal[0])map.setView([state.personal[0].y,state.personal[0].x],4);}
+      if(action==='export'){
+        const blob=new Blob([JSON.stringify({version:2,...state},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='gta-arabia-map-progress.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+      }
+    },{signal:abort.signal});
+    $('[data-progress-file]').addEventListener('change',async event=>{
+      const file=event.target.files[0];if(!file)return;
+      try{
+        if(file.size>2e6)throw Error('large');
+        const content=await file.text();const parsed=JSON.parse(content);
+        if(!parsed || !Array.isArray(parsed.found))throw Error('invalid');
+        Object.assign(state,readMapProgress({getItem:()=>content}));markers.clear();save();renderCategories();render();
+        $('[data-hide-found]').checked=state.hideFound;$('[data-favorites-only]').checked=state.favoritesOnly;
+        $('[data-map-status]').textContent='تم استيراد تقدمك';
+      }catch{$('[data-map-status]').textContent='تعذر استيراد الملف. اختر ملف تقدم صالحاً.';}
+      event.target.value='';
+    },{signal:abort.signal});
+    map.on('click',event=>{
+      if(!adding)return;adding=false;root.querySelector('[data-explorer="personal"]').classList.remove('active');
+      const {lat:y,lng:x}=event.latlng;
+      if(!worldBounds.contains(event.latlng)){ $('[data-map-status]').textContent='اختر موقعاً داخل حدود ليونيدا';return; }
+      L.popup({className:'explorer-leaflet-popup'}).setLatLng(event.latlng).setContent(`<div class="explorer-popup-body" dir="rtl"><h2>علامتي الخاصة</h2><label>اسم الموقع<input data-personal-name maxlength="160" placeholder="مثلاً: مكان الاختباء"></label><button data-save-personal="true" data-x="${x}" data-y="${y}">حفظ العلامة</button></div>`).openOn(map);
+    });
+    observer = new ResizeObserver(()=>map.invalidateSize());observer.observe($('.explorer-stage'));
+    const initial=new URLSearchParams(location.search).get('location');
+    if(initial)focus(initial);
+  }
+  start().catch(error=>{
+    if(disposed || error.name==='AbortError')return;
+    $('[data-map-status]').textContent=error.message;
+    $('[data-map-categories]').innerHTML='<p class="explorer-loading">تعذر تحميل الخريطة. تحقق من اتصالك ثم أعد تحميل الصفحة.</p>';
+  });
+  return ()=>{
+    disposed=true;abort.abort();clearTimeout(searchTimer);observer?.disconnect();map?.remove();
+  };
 }
