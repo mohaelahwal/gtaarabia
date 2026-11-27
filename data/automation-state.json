@@ -34,48 +34,49 @@
     "3f00336ac7278dd4dfddb812124e99abb02eb176445a4c75c7911459e0911f33",
     "2e14fb06dd3ab6713e2158cf347f46e91cf2acc1567b6962fd3082874da36c55",
     "7627319ca3f7889fb7ffe4b86bef3738d768948de3225952edc7c48b0d70f5a0",
-    "5726ae5beb949626bf07228f5348b4e31cdd6f98b5e3df775dba4668ec31a290"
+    "5726ae5beb949626bf07228f5348b4e31cdd6f98b5e3df775dba4668ec31a290",
+    "61f1e7a32356888febf275fb46eca22fbcb4991fa825b98ed1391d1aa89ed9ac"
   ],
   "daily": {
-    "2026-11-26": {
+    "2026-11-27": {
       "news": 1
     }
   },
-  "lastRun": "2026-11-26T13:37:31.941Z",
+  "lastRun": "2026-11-27T13:33:14.000Z",
   "lastChanges": [
     {
       "category": "news",
-      "title": "دليل مهمة \"بريكيد أب\": كيف تحصل على المكافأة الإضافية في GTA VI",
+      "title": "GTA VI تدفع السلسلة نحو تريليون مشاهدة على يوتيوب",
       "action": "add",
       "status": "held",
       "reason": "Exact supporting evidence required"
     },
     {
       "category": "news",
-      "title": "روبن نيلسون: ملفات الجريمة في GTA VI تشجع على خيارات تتجاوز العنف",
+      "title": "روبن نيلسون: منشار كهربائي كان سيبدو مبالغاً فيه في GTA VI",
       "action": "add",
       "status": "held",
-      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7141, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7097, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
     },
     {
       "category": "news",
-      "title": "روكستار توضح سبب غياب إعادة المهام في GTA VI",
+      "title": "روبن نيلسون: نظام الملف الإجرامي يوسّع خيارات اللعب في GTA VI",
       "action": "add",
       "status": "held",
-      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7023, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7002, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
     },
     {
       "category": "news",
-      "title": "دليل مهمة الكلمة الآمنة: كيف تؤثر اختياراتك على علاقة جيسون ولوسيا",
+      "title": "متسابق سابق في جران توريزمو ساهم في ضبط فيزياء السيارات في GTA VI",
       "action": "add",
       "status": "accepted"
     },
     {
       "category": "news",
-      "title": "فنان سابق في ذا لست أوف أس: GTA VI تقنية مذهلة تفوق توقعاتي",
-      "action": "add",
+      "title": "نتائج خيار \"صبي المسبح\" في مهمة الكلمة الآمنة: تأثير محدود على العلاقة",
+      "action": "update",
       "status": "held",
-      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7252, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
+      "reason": "Groq HTTP 413: Request too large for model `qwen/qwen3.8-27b` in organization `org_01m6w4acvjenat6gnr8n3a1snk` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Requested 7037, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing. No automatic retry."
     }
   ]
 }
